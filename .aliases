@@ -1,0 +1,4 @@
+alias vim="nvim"
+alias vimdiff="nvim -d"
+alias evim='nvim ~/.config/nvim/init.vim'
+alias gpus='git pull upstream staging'
