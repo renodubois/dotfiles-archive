@@ -4,6 +4,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } " NERDTree, on demand when it's toggled
 Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' } " NERDTree Git status icons (edited, untracked, etc.)
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } " IDE-like completion
+" fuzzy file search
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 " Lang plugins
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
@@ -51,8 +54,8 @@ inoremap <expr> ycm_trigger_key pumvisible() ? "<C-j>" : ycm_trigger_key;
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
-" TODO: Load plugins here (pathogen or vundle)
-
+" Bind fzf
+nnoremap <C-P> :Files<CR>
 
 " Turn on syntax highlighting
 syntax on
