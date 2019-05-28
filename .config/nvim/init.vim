@@ -8,10 +8,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py' } " IDE-like completion
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Lang plugins
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
-Plug 'elmcast/elm-vim'
-Plug 'StanAngeloff/php.vim'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 
