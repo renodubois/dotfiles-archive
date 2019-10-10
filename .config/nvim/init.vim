@@ -9,8 +9,12 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Lang plugins
 Plug 'sheerun/vim-polyglot'
+Plug 'vim-syntastic/syntastic'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'elmcast/elm-vim'
+" colorscheme
+Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
-
 
 " Don't try to be vi compatible
 set nocompatible
@@ -41,6 +45,9 @@ let g:NERDTreeQuitOnOpen=1
 let ycm_trigger_key = '<C-n>'
 let g:ycm_auto_trigger = 0
 let g:ycm_key_invoke_completion = ycm_trigger_key
+let g:ycm_semantic_triggers = {
+     \ 'elm' : ['.'],
+     \} 
 
 " this is some arcane magic to allow cycling through the YCM options
 " with the same key that opened it.
@@ -56,12 +63,24 @@ nnoremap <C-P> :Files<CR>
 
 " Turn on syntax highlighting
 syntax on
+color dracula
 
 " For plugins to load correctly
 filetype plugin indent on
 
+" Syntastic Settings
+let g:syntastic_typescript_checkers = ['tslint']
+let g:syntastic_javascript_checkers = ['tslint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Disable polyglot elm plugin
+let g:polyglot_disabled = ['elm']
+
 " TODO: Pick a leader key
-" let mapleader = ","
+let mapleader = ","
 
 " Security
 set modelines=0
@@ -124,10 +143,21 @@ inoremap <F1> <ESC>:set invfullscreen<CR>a
 nnoremap <F1> :set invfullscreen<CR>
 vnoremap <F1> :set invfullscreen<CR>
 
+" moving lines up/down
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
 " Textmate holdouts
 
 " Formatting
 map <leader>q gqip
+
+" Add italics
+highlight Comment cterm=italic
 
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
