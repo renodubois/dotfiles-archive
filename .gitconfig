@@ -1,0 +1,17 @@
+[core]
+	excludesfile = /Users/renodubois/.gitignore_global
+	editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Reno DuBois
+	email = renodubois@users.noreply.github.com
+	signingkey = 5E190D3C65FAC66D
+[commit]
+	template = /Users/renodubois/.stCommitMsg
+[gc]
+	autoDetach = false
