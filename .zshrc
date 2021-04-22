@@ -2,14 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-# TODO: Make this user a variable or get it dynamically
-export ZSH="/Users/renodubois/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -66,9 +62,6 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -92,12 +85,11 @@ if [ -f ~/.aliases ]; then
 	. ~/.aliases
 fi
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-# Set up fzf for vim fuzzy file search
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# Add certs for LACRM setup
+export CAROOT="/Users/renodubois/lacrm/LessAnnoyingCRM/certs"
 
 # Set terminal colors
-export TERM=xterm-256color-italic
+# export TERM=xterm-256color-italic
 
 # Add NVM to PATH for scripting. Make sure this is the last PATH variable change.
 export NVM_DIR="$HOME/.nvm"
@@ -105,3 +97,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+export PATH="/usr/local/sbin:$PATH"
+export JAVA_HOME="$(/usr/libexec/java_home)"
