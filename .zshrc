@@ -98,4 +98,3 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export PATH="/usr/local/sbin:$PATH"
-export JAVA_HOME="$(/usr/libexec/java_home)"
