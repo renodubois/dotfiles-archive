@@ -19,9 +19,23 @@ export CAROOT="/home/reno/lacrm/LessAnnoyingCRM/certs"
 # Set terminal colors
 # export TERM=xterm-256color-italic
 
-# Add NVM to PATH for scripting. Make sure this is the last PATH variable change.
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# fnm (replaces nvm)
+export PATH=/home/reno/.fnm:$PATH
+eval "`fnm env`"
+
+# fix git status being slow
+function git() {
+	if $(pwd -P | grep -q "^\/mnt\/c\/*"); then
+		git.exe "$@"
+	else
+		command git "$@"
+	fi
+}
 
 export PATH=/home/reno/.bin:$PATH
+export PATH=/home/reno/.local/bin:$PATH
+export PATH=/mnt/c/Program\ Files/Git/bin:$PATH
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export GOPATH=/home/reno/go
+export PATH=$GOPATH/bin:$PATH
