@@ -27,6 +27,7 @@ Plug 'neovim/nvim-lspconfig' " LSP config
 Plug 'tpope/vim-fugitive' " Git wrapper
 Plug 'gruvbox-community/gruvbox' " Gruvbox color scheme
 Plug 'vim-vdebug/vdebug' " Debugging
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } " Better Go support
 call plug#end()
 
 " Bindings
@@ -40,6 +41,7 @@ nnoremap <leader>gd :Git diff<CR>
 
 " Debugging
 let g:vdebug_options = { 'port':9001, 'path_maps': {'/vagrant/':'/Users/renodubois/lacrm/LessAnnoyingCRM/'}, 'server': '' }
+
 
 " LSP things
 lua << EOF
@@ -71,7 +73,21 @@ end
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.jedi_language_server.setup{}
 require'lspconfig'.intelephense.setup{}
+require'lspconfig'.gopls.setup{
+	cmd = {"gopls", "serve"},
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true
+			},
+			staticcheck = true
+		}
+	}
+}
 EOF
+
+" Enable Omnifunc for Go
+autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
 " enable Gruvbox 
 colorscheme gruvbox
