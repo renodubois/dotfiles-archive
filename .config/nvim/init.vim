@@ -84,6 +84,15 @@ require'lspconfig'.gopls.setup{
 		}
 	}
 }
+nvim_lsp.rls.setup {
+	settings = {
+		rust = {
+			unstable_features = true,
+			build_on_save = false,
+			all_features = true,
+		},
+	},
+}
 EOF
 
 " Enable Omnifunc for Go

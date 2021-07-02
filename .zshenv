@@ -39,3 +39,4 @@ export PATH=/mnt/c/Program\ Files/Git/bin:$PATH
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export GOPATH=/home/reno/go
 export PATH=$GOPATH/bin:$PATH
+. "$HOME/.cargo/env"
