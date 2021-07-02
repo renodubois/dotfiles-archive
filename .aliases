@@ -3,3 +3,5 @@ alias vimdiff="nvim -d"
 alias evim='nvim ~/.config/nvim/init.vim'
 alias gpus='git pull upstream staging'
 alias py='python3'
+alias gs='git status'
+alias gd='git diff'

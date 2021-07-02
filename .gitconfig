@@ -1,5 +1,4 @@
 [core]
-	excludesfile = /Users/renodubois/.gitignore_global
 	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -11,7 +10,5 @@
 	name = Reno DuBois
 	email = renodubois@users.noreply.github.com
 	signingkey = 5E190D3C65FAC66D
-[commit]
-	template = /Users/renodubois/.stCommitMsg
 [gc]
 	autoDetach = false

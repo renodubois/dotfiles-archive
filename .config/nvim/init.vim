@@ -40,7 +40,7 @@ nnoremap <leader>gc :Git commit<CR>
 nnoremap <leader>gd :Git diff<CR>
 
 " Debugging
-let g:vdebug_options = { 'port':9001, 'path_maps': {'/vagrant/':'/Users/renodubois/lacrm/LessAnnoyingCRM/'}, 'server': '' }
+let g:vdebug_options = { 'port':9000, 'path_maps': {'/vagrant/':getcwd()}, 'server': '' }
 
 
 " LSP things
