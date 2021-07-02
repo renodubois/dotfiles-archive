@@ -1,0 +1,766 @@
+2021-05-27 14:49:54	-->	reno (~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net) has joined #python
+2021-05-27 14:49:54	--	Topic for #python is "Anything Python is on-topic. | Don't paste, use https://bpa.st/+python | Welcome to Libera, our new home. Questions about this channel? https://www.pound-python.org | CoC: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Ops: #python-ops"
+2021-05-27 14:49:54	--	Topic set by nedbat (~nedbat@python/psf/nedbat) on Wed, 26 May 2021 09:05:22
+2021-05-27 14:49:54	--	Channel #python: 758 nicks (1 op, 0 voices, 757 normals)
+2021-05-27 14:49:56	--	Channel created on Wed, 19 May 2021 08:50:29
+2021-05-27 14:50:01	<--	guntbert (~yesitsme@user/guntbert) has quit (Quit: leaving)
+2021-05-27 14:51:06	-->	NoImNotNineVolt (~ninevolt@c-73-248-207-98.hsd1.nj.comcast.net) has joined #python
+2021-05-27 14:51:22	-->	brumla (~bruml@178.77.217.196) has joined #python
+2021-05-27 14:52:12	<--	teut (~teut@122.162.162.247) has quit (Quit: Connection closed)
+2021-05-27 14:53:03	raek	combining Hypothesis with FFI to test C code and show that is equivalent to a model in Python is just a breeze
+2021-05-27 14:54:04	-->	Arsanerit (~Gerrit@user/arsanerit) has joined #python
+2021-05-27 14:54:31	-->	lsrtl_ (~lsrtl@user/lsrtl) has joined #python
+2021-05-27 14:54:43	bjs	raek: I often use Python to test things that aren't written in Python
+2021-05-27 14:54:48	bjs	or really interoperate with Python at all
+2021-05-27 14:54:59	-->	Guddu (~Guddu@59.95.232.55) has joined #python
+2021-05-27 14:55:39	Arsanerit	I've used Python unit tests to test the correctness of a YAML file.
+2021-05-27 14:55:41	<--	cmagina (~cmagina@user/cmagina) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-05-27 14:55:42	raek	Python - it fits my mind
+2021-05-27 14:56:07	<--	brumla (~bruml@178.77.217.196) has quit (Ping timeout: 264 seconds)
+2021-05-27 14:56:39	raek	oh, the joy of programming! :-)
+2021-05-27 14:56:43	<--	lsrtl__ (~lsrtl@user/lsrtl) has quit (Ping timeout: 264 seconds)
+2021-05-27 14:57:04	<--	nomic (~nomic@2a00:23c6:9910:1201:dcc8:4fc3:e4d0:9c5b) has quit (Quit: Leaving)
+2021-05-27 14:57:37	-->	nomic (~nomic@2a00:23c6:9910:1201:dcc8:4fc3:e4d0:9c5b) has joined #python
+2021-05-27 14:57:54	-->	guntbert (~yesitsme@user/guntbert) has joined #python
+2021-05-27 15:00:01	-->	sigaren (~sigaren@user/sigaren) has joined #python
+2021-05-27 15:00:14	<--	Necoro (~Necoro@user/necoro) has quit (Quit: WeeChat 3.1)
+2021-05-27 15:00:30	-->	Necoro (~Necoro@user/necoro) has joined #python
+2021-05-27 15:00:32	<--	mambang (~mambang@user/mambang) has quit (Remote host closed the connection)
+2021-05-27 15:00:33	-->	especial (~especial@cm-84.214.231.176.getinternet.no) has joined #python
+2021-05-27 15:01:17	<--	guntbert (~yesitsme@user/guntbert) has quit (Client Quit)
+2021-05-27 15:01:42	-->	guntbert (~yesitsme@user/guntbert) has joined #python
+2021-05-27 15:01:46	-->	dece (~dece@dece.space) has joined #python
+2021-05-27 15:02:01	<--	bjs (sid190364@user/bjs) has quit
+2021-05-27 15:02:04	<--	sigaren (~sigaren@user/sigaren) has left #python
+2021-05-27 15:02:16	-->	bjs (sid190364@user/bjs) has joined #python
+2021-05-27 15:04:30	<--	SyntheticClamor (~Synthetic@2a01cb04008a92007da59076e1b0ce8b.ipv6.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2021-05-27 15:04:46	odoood	defn: we all need more of that Zen in our lives
+2021-05-27 15:04:49	<--	tachoknight (~textual@107-195-167-115.lightspeed.cicril.sbcglobal.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-05-27 15:05:40	-->	cmagina (~cmagina@user/cmagina) has joined #python
+2021-05-27 15:05:45	defn	 python -c "import this" | grep -i beautiful
+2021-05-27 15:06:01	-->	Tier (~tier@37.214.54.55) has joined #python
+2021-05-27 15:06:05	odoood	Beautiful is better than ugly
+2021-05-27 15:06:11	-->	y2o__ (~y2o@pc-128-133-45-190.cm.vtr.net) has joined #python
+2021-05-27 15:06:24	-->	sadg (~odd@45.83.220.210) has joined #python
+2021-05-27 15:06:35	<--	mspe (~user@tilde.team/user/mspe) has quit (Quit: WeeChat 2.8)
+2021-05-27 15:07:18	odoood	(also just `python -m this`)
+2021-05-27 15:07:21	<--	mpassiw (~pass@134.19.185.118) has quit (Quit: leaving)
+2021-05-27 15:08:45	<--	y2o_ (~y2o@pc-128-133-45-190.cm.vtr.net) has quit (Ping timeout: 244 seconds)
+2021-05-27 15:12:05	-->	dmvrtx (~dmvrtx@znc.dmvrtx.me) has joined #python
+2021-05-27 15:12:49	-->	mspe (~user@tilde.team/user/mspe) has joined #python
+2021-05-27 15:14:48	<--	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has quit (Quit: WeeChat 3.2-dev)
+2021-05-27 15:15:48	-->	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has joined #python
+2021-05-27 15:16:09	<--	arbitrandomuser (~Guest62@103.100.150.2) has quit (Ping timeout: 250 seconds)
+2021-05-27 15:17:29	-->	hyskaru (~hyskaru@user/hyskaru) has joined #python
+2021-05-27 15:17:36	<--	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has quit (Client Quit)
+2021-05-27 15:18:11	-->	pretty_dumm_guy (trottel@gateway/vpn/protonvpn/prettydummguy/x-88029655) has joined #python
+2021-05-27 15:18:12	<--	mspe (~user@tilde.team/user/mspe) has quit (Quit: WeeChat 2.8)
+2021-05-27 15:18:31	-->	mspe (~user@tilde.team/user/mspe) has joined #python
+2021-05-27 15:19:01	<--	arthem (~rehmat@user/arthem) has quit (Quit: Konversation terminated!)
+2021-05-27 15:19:12	habnabit_	raek, yes hypothesis+cffi is amazing for something akin to fuzzing
+2021-05-27 15:19:22	-->	zopsi (sid153252@id-153252.stonehaven.irccloud.com) has joined #python
+2021-05-27 15:19:22	<--	ku (~ku@2601:280:c780:7ea0:c5a6:e466:b3e6:a4ee) has quit (Ping timeout: 264 seconds)
+2021-05-27 15:20:16	-->	matsaman (~matsaman@user/matsaman) has joined #python
+2021-05-27 15:20:27	-->	ackyshak1 (~ackyshake@user/ackyshake) has joined #python
+2021-05-27 15:21:46	<--	kong (~harrison@c-174-51-131-199.hsd1.co.comcast.net) has quit (Ping timeout: 264 seconds)
+2021-05-27 15:22:01	<--	nomic (~nomic@2a00:23c6:9910:1201:dcc8:4fc3:e4d0:9c5b) has quit (Quit: Leaving)
+2021-05-27 15:22:48	<--	ackyshake (~ackyshake@user/ackyshake) has quit (Ping timeout: 244 seconds)
+2021-05-27 15:22:50	--	ackyshak1 is now known as ackyshake
+2021-05-27 15:23:18	<--	Necoro (~Necoro@user/necoro) has quit (Quit: WeeChat 3.1)
+2021-05-27 15:31:23	<--	leitz (~LeamHall@c-174-56-144-2.hsd1.sc.comcast.net) has quit (Quit: nappy time)
+2021-05-27 15:31:26	-->	alexbk (~alexbk@c-73-157-41-15.hsd1.wa.comcast.net) has joined #python
+2021-05-27 15:33:23	-->	sed (~sed@pool-100-7-53-231.rcmdva.fios.verizon.net) has joined #python
+2021-05-27 15:34:26	<--	zeden (~zeden@user/zeden) has quit (Quit: WeeChat 3.0.1)
+2021-05-27 15:34:33	<--	seds (sid492514@brockwell.irccloud.com) has quit (Changing host)
+2021-05-27 15:34:33	-->	seds (sid492514@user/seds) has joined #python
+2021-05-27 15:36:39	-->	yolo (~xxiao@159.89.184.51) has joined #python
+2021-05-27 15:36:53	<--	ackyshake (~ackyshake@user/ackyshake) has quit (Quit: Soupy Twist!)
+2021-05-27 15:37:48	-->	osxtra (~root@136.49.108.80) has joined #python
+2021-05-27 15:37:53	-->	ackyshake (~ackyshake@user/ackyshake) has joined #python
+2021-05-27 15:38:38	stealth_	does it make any sense to use `global some_dict` ?
+2021-05-27 15:39:47	<--	ackyshake (~ackyshake@user/ackyshake) has quit (Client Quit)
+2021-05-27 15:40:54	-->	ackyshake (~ackyshake@user/ackyshake) has joined #python
+2021-05-27 15:41:13	<--	ulif (~nick@gf6.gnufix.de) has quit (Changing host)
+2021-05-27 15:41:13	-->	ulif (~nick@user/ulif) has joined #python
+2021-05-27 15:41:16	ChrisWarrick	stealth_: context?
+2021-05-27 15:41:47	--	Roey is now known as itsNotCalledADog
+2021-05-27 15:41:48	stealth_	ChrisWarrick, `some_dict = {}` and being used within a function
+2021-05-27 15:41:51	--	itsNotCalledADog is now known as Roey
+2021-05-27 15:42:06	-->	abhixec (~abhixec@c-67-169-139-16.hsd1.ca.comcast.net) has joined #python
+2021-05-27 15:42:18	ChrisWarrick	stealth_: global variables tend to be a terrible idea in general
+2021-05-27 15:42:57	stealth_	ChrisWarrick, its not my code, i am just reading a code from someone else, i thought it was funny used it
+2021-05-27 15:43:52	<--	NOTevil (~NOTevil@user/notevil) has quit (Quit: NOTevil)
+2021-05-27 15:44:16	stealth_	even the best of coders make silly mistakes it seems
+2021-05-27 15:44:36	<--	et (~et@user/et) has quit (Quit: ZNC 1.8.0 - https://znc.in)
+2021-05-27 15:45:04	-->	rom16384 (~Adium@2001:818:e755:fa00:11a9:197e:2608:483) has joined #python
+2021-05-27 15:45:55	<--	guntbert (~yesitsme@user/guntbert) has quit (Quit: leaving)
+2021-05-27 15:45:56	-->	moltar (~moltar@2600:8802:1301:e9f0:94be:219c:7fdb:fa4d) has joined #python
+2021-05-27 15:46:10	<--	rom16384 (~Adium@2001:818:e755:fa00:11a9:197e:2608:483) has left #python
+2021-05-27 15:46:36	<--	gusto (~Augustus@109.255.100.54) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-05-27 15:47:28	-->	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has joined #python
+2021-05-27 15:47:39	-->	arthur_livingsto (~arthur_li@167.89.254.27) has joined #python
+2021-05-27 15:47:54	<--	arthur_livingsto (~arthur_li@167.89.254.27) has quit (Client Quit)
+2021-05-27 15:48:24	stealth_	could be that it was a normal variable and later they changed it to dict and forgot to remove the global
+2021-05-27 15:49:01	-->	et (~et@user/et) has joined #python
+2021-05-27 15:49:05	-->	fon (~fon@98.42.89.33) has joined #python
+2021-05-27 15:49:28	-->	Quaking (~arthur_li@167.89.254.27) has joined #python
+2021-05-27 15:49:59	<--	slav0nic (slav0nic@python.su) has quit (Ping timeout: 264 seconds)
+2021-05-27 15:50:32	<--	Quaking (~arthur_li@167.89.254.27) has quit (Client Quit)
+2021-05-27 15:50:40	<--	Tier (~tier@37.214.54.55) has quit (Quit: Leaving)
+2021-05-27 15:50:50	-->	Quaking (~Quaking@167.89.254.27) has joined #python
+2021-05-27 15:51:55	-->	guntbert (~yesitsme@user/guntbert) has joined #python
+2021-05-27 15:53:30	<--	Julian (~tos9@172.58.231.62) has quit (Quit: leaving)
+2021-05-27 15:57:10	<--	et (~et@user/et) has quit (Ping timeout: 264 seconds)
+2021-05-27 15:57:59	<--	dmvrtx (~dmvrtx@znc.dmvrtx.me) has quit (Quit: ZNC 1.7.5+deb4 - https://znc.in)
+2021-05-27 15:58:10	rjwiii	Hello. I'm using RHEL 7 with Python 3.6.8. Is there any built in function in datetime to calculate business days? Please don't suggest Pandas or DateUtil and I am not able to install third party libraries ...
+2021-05-27 15:58:47	-->	et (~et@user/et) has joined #python
+2021-05-27 16:00:22	SnoopJ	rjwiii, you might be able to do something like with the `calendar` library in stdlib, but it's not clear what "calculate business days" means
+2021-05-27 16:02:01	<--	Akuli (~Akuli@82-203-162-245.bb.dnainternet.fi) has quit (Quit: Leaving)
+2021-05-27 16:02:29	FunkyBob	rjwiii: ugh.... I did a business days calculator some years ago
+2021-05-27 16:02:57	-->	Fiji (~Fiji@user/fiji) has joined #python
+2021-05-27 16:03:01	habnabit_	rjwiii, which days are considered holidays?
+2021-05-27 16:03:14	<--	causa-sui (~causa_sui@c-68-60-125-136.hsd1.mi.comcast.net) has quit (Ping timeout: 265 seconds)
+2021-05-27 16:04:38	<--	mojvei (~mojvei@user/mojvei) has quit (Quit: WeeChat 2.3)
+2021-05-27 16:04:38	rjwiii	SnoopJ: By "calculate business days", I meant do date math with business days ... ex: Monday - 1 = Friday, etc
+2021-05-27 16:04:43	<--	rendar (~rendar@user/rendar) has quit
+2021-05-27 16:04:59	rjwiii	habnabit_: weekends & holidays ...
+2021-05-27 16:05:19	grym	rjwiii: weekends are "easy", holidays are going to be a giant pain :)
+2021-05-27 16:05:19	habnabit_	rjwiii, holidays are considered holidays? that's a bit tautological
+2021-05-27 16:05:32	grym	(obligatory "but time just sucks")
+2021-05-27 16:05:57	MacGyver	I'm not aware of any such function, probably because it's difficult enough to work with the calendar, let alone 200 different ones.
+2021-05-27 16:06:17	MacGyver	(Holidays aren't universal, after all, so you'd at the very least need a holiday per timezone.)
+2021-05-27 16:06:29	SnoopJ	rjwiii, `calendar` can tell you the day of the week given the year, month, and day, but it doesn't have any notion of "business day" built in. Holidays will be particularly tricky.
+2021-05-27 16:06:39	tudor	also changing quickly and unexpectedly. Enough trouble wih the timezones.
+2021-05-27 16:06:47	rjwiii	MacGyver: it's for a big company ... I'll assume US holidays ...
+2021-05-27 16:06:49	<--	guntbert (~yesitsme@user/guntbert) has quit (Quit: leaving)
+2021-05-27 16:07:07	-->	guntbert (~yesitsme@user/guntbert) has joined #python
+2021-05-27 16:07:08	MacGyver	That assumption is probably wrong, but my comment isn't about your assumptions.
+2021-05-27 16:07:18	MacGyver	It's about this not being a thing in the standard library, which is what you asked for.
+2021-05-27 16:07:47	rjwiii	MacGyver: true, that ...
+2021-05-27 16:08:18	ChrisWarrick	rjwiii: convince your big company (whose country of origin you aren’t sure of?) to let you install third-party libraries, then you can find something for this
+2021-05-27 16:08:25	rjwiii	MacGyver: If I could install third party packages, I'd install Pandas and be done with it ... :(
+2021-05-27 16:08:38	grym	note that US holidays are thorny too; i know of at least two county-specific ones that matter for me personally
+2021-05-27 16:08:46	grym	oh, wait, i moved, one of them no longer does
+2021-05-27 16:08:52	grym	(i moved 2 miles)
+2021-05-27 16:08:58	tudor	:)
+2021-05-27 16:09:45	tudor	rjwiii: google for enrico service, that's the closest you will have other than the one you write yourself.
+2021-05-27 16:10:13	rjwiii	Thanks for your suggestions ... I'll try rolling my own ...
+2021-05-27 16:11:01	-->	dazi (~dazi@tmo-083-220.customers.d1-online.com) has joined #python
+2021-05-27 16:12:27	<--	cod1 (~codl@user/codl) has quit (Read error: Connection reset by peer)
+2021-05-27 16:13:02	<--	entuland (~entuland@user/entuland) has quit (Quit: Leaving)
+2021-05-27 16:13:11	fon	hi folks!, I am trying to protect my public webhooks (requests.post call) from calling internal hosts, currently I check with socket.gethostbyname and then issue a request in the event that I have verified that's a public host
+2021-05-27 16:13:18	Guddu	Could someone please help me with a urwid script? The code is at https://pastebin.com/zFzqTuGE
+2021-05-27 16:13:20	infobob	https://bpaste.net/YCLQ (repasted for Guddu)
+2021-05-27 16:13:29	fon	however that's kind of useless since an attacker and rebind the DNS answer I guess..
+2021-05-27 16:13:33	Guddu	I get an error AttributeError: 'ListBox' object has no attribute 'rows'
+2021-05-27 16:13:33	Guddu	 and not sure why. Cannot seem to figure out.
+2021-05-27 16:13:37	ChrisWarrick	fon: what are your webhooks and how is the internal hosts thing relevant?
+2021-05-27 16:13:57	-->	selimcan (~selimcan@5.101.23.179) has joined #python
+2021-05-27 16:14:04	fon	attackers could scan internal hosts,... hit other services ,etc
+2021-05-27 16:14:29	habnabit_	fon, usually webhooks are protected by sending a signature of some sort with the incoming request
+2021-05-27 16:14:44	habnabit_	fon, you validate the signature, and reject anything that doesn't pass
+2021-05-27 16:15:06	<--	zodd (~zodd@84-106-80-107.cable.dynamic.v4.ziggo.nl) has quit (Ping timeout: 272 seconds)
+2021-05-27 16:15:33	fon	you might not have understand me
+2021-05-27 16:15:43	fon	I am the one who's sending the webhook request out
+2021-05-27 16:16:09	fon	so I need to verify that my users don't just use a "public domain" that resolves to an internal host, and theoretically hit an internal service
+2021-05-27 16:16:22	<--	kosh (~kosh@user/kosh) has quit (Ping timeout: 272 seconds)
+2021-05-27 16:16:54	fon	so any tips on essentially how to verify that the connection I am creating with a request.post call is with a public IP address?
+2021-05-27 16:17:18	-->	cacheyourdreams (~cacheyour@user/cacheyourdreams) has joined #python
+2021-05-27 16:17:36	stealth_	fon, why not use a login way ?
+2021-05-27 16:17:50	-->	withered_wolf (~withered_@1437135-v103.1561-static.stchilaa.metronetinc.net) has joined #python
+2021-05-27 16:17:57	fon	@stealth_ what do you mean?
+2021-05-27 16:18:00	graingert	oh you want to prevent server side request forgery fon ?
+2021-05-27 16:18:07	fon	yep
+2021-05-27 16:18:40	-->	gvsa123 (~gvsa123@node-1w7jr9ycskqkbpvuqq2bbwt0p.ipv6.telus.net) has joined #python
+2021-05-27 16:18:44	graingert	fon: https://owasp.org/www-community/attacks/Server_Side_Request_Forgery
+2021-05-27 16:19:12	graingert	fon: you need an allowlist in your httpadaptor
+2021-05-27 16:19:14	habnabit_	graingert, the mitigation section seems to be, uh, empty
+2021-05-27 16:19:24	graingert	habnabit_: yeah there's no way to mitigate it
+2021-05-27 16:19:33	gvsa123	found it!
+2021-05-27 16:19:55	habnabit_	but libraries like defusedxml exist, so presumably there's some way to provide a framework for mitigating it
+2021-05-27 16:19:58	graingert	habnabit_: aws request you to pass a header to say "And-Yes-I-Mean-It"
+2021-05-27 16:20:00	fon	@graingert wonderful, will look into the allowlist
+2021-05-27 16:20:14	fon	for SaaS companies that are in AWS
+2021-05-27 16:20:20	fon	and don't use imdsv2, are a little screwed
+2021-05-27 16:20:21	graingert	that's a deny list
+2021-05-27 16:20:30	fon	if they provide webhook debugging features etc
+2021-05-27 16:20:43	<--	matsaman (~matsaman@user/matsaman) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:21:15	fon	imdsv2 at least easily prevent folks from grabbing literally your env vars and such
+2021-05-27 16:21:24	graingert	habnabit_: auth by source address is dumb basically
+2021-05-27 16:21:42	-->	entuland (~entuland@user/entuland) has joined #python
+2021-05-27 16:22:07	<--	withered_wolf (~withered_@1437135-v103.1561-static.stchilaa.metronetinc.net) has quit (Ping timeout: 244 seconds)
+2021-05-27 16:22:09	habnabit_	graingert, sure, but you can say 'permit only hosts in public subnets'
+2021-05-27 16:22:13	stealth_	fon, you could serve multiple ports like e.g port 80 for external and 8080 for internal use, use firewall to block access to 8080 for anything but internal ip
+2021-05-27 16:22:22	<--	KyleInProgress (~KyleInPro@47.185.232.231) has quit (Quit: My iMac has gone to sleep. ZZZzzz…)
+2021-05-27 16:23:16	graingert	right but you can't rely on people not putting stuff in your network that just let you connect to them
+2021-05-27 16:23:27	<--	manti7 (~manti7@176.10.104.94) has quit (Quit: WeeChat 3.1)
+2021-05-27 16:24:11	<--	odoood (~odoood@2601:c8:c003:a550::2) has quit (Ping timeout: 244 seconds)
+2021-05-27 16:24:24	graingert	this is similar to devices on your local network being connected to from your browser
+2021-05-27 16:25:04	fon	This is kind of what I am looking for: https://stackoverflow.com/questions/44531962/python-get-ip-from-http-request-using-requests-module
+2021-05-27 16:25:09	graingert	eg fetch("https://192.168.0.1/set_wifi_password.aspx?new=haha&old=SOME_PUBLIC_DEFAULT
+2021-05-27 16:25:26	-->	Geronimo (~Geronimo@user/geronimo) has joined #python
+2021-05-27 16:25:30	graingert	fon: probly you want to pass everything through nginx
+2021-05-27 16:25:52	graingert	or some other thing
+2021-05-27 16:25:58	fon	yeah that would be a better solution indeed
+2021-05-27 16:25:59	<--	aosaigh (~aosaigh@user/aosaigh) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-05-27 16:26:10	graingert	or buy a VPN and use that
+2021-05-27 16:26:34	graingert	and only allow TLS so the VPN provider doesn't get your data
+2021-05-27 16:26:39	<--	phy1729 (~phy1729@zsh/wizard/phy1729) has left #python
+2021-05-27 16:26:40	<--	jeho (~jehoshaph@c-24-21-32-6.hsd1.or.comcast.net) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:26:50	graingert	then the VPN provider can worry about that
+2021-05-27 16:27:10	graingert	then firewall your EC2 machine to only be able to access the vpn
+2021-05-27 16:28:47	<--	especial (~especial@cm-84.214.231.176.getinternet.no) has quit (Remote host closed the connection)
+2021-05-27 16:28:49	graingert	also you can use a transport and configure the dns lookups too
+2021-05-27 16:28:54	kee	graingert: Or just use Tor?
+2021-05-27 16:28:59	<--	zyzzyxdonta (~zyzzyxdon@p54bdfd77.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2021-05-27 16:29:17	stealth_	fon, you are looking up host per request?
+2021-05-27 16:29:19	graingert	probably your webhook destinations don't want to be connected to from tor
+2021-05-27 16:29:26	SnoopJ	probably
+2021-05-27 16:29:50	fon	@stealth_ I should, yes
+2021-05-27 16:30:01	stealth_	fon, that is going to be expensive
+2021-05-27 16:30:02	-->	withered_wolf (~withered_@1437135-v103.1561-static.stchilaa.metronetinc.net) has joined #python
+2021-05-27 16:30:16	stealth_	fon, how much request per day is going through this?
+2021-05-27 16:30:23	<--	Vonter (~Vonter@user/vonter) has quit (Ping timeout: 244 seconds)
+2021-05-27 16:31:18	<--	cmagina (~cmagina@user/cmagina) has quit (Quit: cmagina)
+2021-05-27 16:31:25	-->	zeden (~zeden@user/zeden) has joined #python
+2021-05-27 16:31:26	fon	should look it up, but around 50K RPM, something like that, it's going to be growing massively soon
+2021-05-27 16:32:01	<--	codl (~codl@user/codl) has quit (Quit: quit)
+2021-05-27 16:32:09	stealth_	fon, you don't want to be looking up that many dns host though!
+2021-05-27 16:33:35	fon	wouldn't I be resolving under the hood anyway when doing request.post?
+2021-05-27 16:33:41	<--	zeden (~zeden@user/zeden) has quit (Client Quit)
+2021-05-27 16:34:22	-->	bfahr (~quassel@96.31.208.199) has joined #python
+2021-05-27 16:34:28	-->	zeden (~zeden@user/zeden) has joined #python
+2021-05-27 16:34:30	<--	mattheww (~mattheww@cpc92312-cmbg19-2-0-cust557.5-4.cable.virginm.net) has quit (Quit: Leaving)
+2021-05-27 16:34:59	stealth_	fon, you are post'ing to different domains?
+2021-05-27 16:35:06	-->	dakh7_ (~dakh7@ip98-169-201-138.dc.dc.cox.net) has joined #python
+2021-05-27 16:35:17	fon	yes, this is a SaaS company, think Stripe
+2021-05-27 16:35:29	fon	where customers configure their destination
+2021-05-27 16:35:34	<--	pacbard (~pacbard@user/pacbard) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-05-27 16:35:49	<--	dirt_over_polish (~dirt_over@static-96-245-74-187.phlapa.fios.verizon.net) has quit (Quit: Leaving)
+2021-05-27 16:36:05	<--	ssbr (~scorchsab@c-174-61-157-141.hsd1.wa.comcast.net) has quit (Ping timeout: 252 seconds)
+2021-05-27 16:36:10	fon	I have no control, nor I want to have, over what the domains resolve to
+2021-05-27 16:36:16	<--	selimcan (~selimcan@5.101.23.179) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:36:23	stealth_	fon, so this first process is to confirm where they are coming from?
+2021-05-27 16:36:46	<--	rbtEngrDude (~textual@2600:8800:a610:3e00:ad74:3457:c989:3d02) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:37:03	stealth_	fon, you also have authentication code for user to use while post'ing?
+2021-05-27 16:38:01	fon	sure, I do, the user can configure that, but that's not the problem, the problem is that if in the future, someone adds an internal service that accepts a POST to do something destructive, or some other service that returns sensitive data
+2021-05-27 16:38:14	-->	akoana (~ah@user/akoana) has joined #python
+2021-05-27 16:38:24	fon	a user can set their domain to resolve to an internal IP and go through the debug logs and figure out stuff, or create harm
+2021-05-27 16:38:27	<--	indepndnt (~indepndnt@75.12.148.112) has quit (Quit: Leaving)
+2021-05-27 16:39:07	-->	b800h (~b800h@205.210.187.81.in-addr.arpa) has joined #python
+2021-05-27 16:39:21	stealth_	fon, an external user shouldn't be able to do any harm to your end unless you actually allow it
+2021-05-27 16:39:32	-->	thomasross (~thomasros@ppp-66-225-170-16.vianet.ca) has joined #python
+2021-05-27 16:39:48	fon	huh?
+2021-05-27 16:40:04	habnabit_	stealth_, respectfully, you don't know what you're talking about on this one
+2021-05-27 16:40:20	-->	pacbard (~pacbard@user/pacbard) has joined #python
+2021-05-27 16:40:54	stealth_	habnabit_, fine, you take over, only being web stuff for 20+ years, what do i know.
+2021-05-27 16:41:22	-->	codl (~codl@user/codl) has joined #python
+2021-05-27 16:41:45	kee	stealth_: Doesn't mean you understand the conversation, or this specialism. I've loads of front-end experience, and I have no clue what they're talking about.
+2021-05-27 16:42:49	kee	Though I think you were right about AWS pricing being expensive per-request.
+2021-05-27 16:43:32	-->	Aran (~Aran@port-92-194-80-170.dynamic.as20676.net) has joined #python
+2021-05-27 16:44:06	habnabit_	fon, setting an http proxy for requests to use on outbound requests is probably going to be the easiest way to do this. you can set up squid as the http proxy and configure what destinations it'll connect to
+2021-05-27 16:44:22	habnabit_	fon, that might have been what the nginx suggestion was about, but i wasn't sure
+2021-05-27 16:44:41	-->	PJBoy (~PJBoy@user/pjboy) has joined #python
+2021-05-27 16:44:46	fon	it sounds like it's the most flexible indeed, also helpful for monitoring etc
+2021-05-27 16:44:55	-->	cmagina (~cmagina@user/cmagina) has joined #python
+2021-05-27 16:45:15	<--	lazr47 (~kvirc@69-58-32-213.kresanet.org) has quit (Quit: KVIrc 5.0.0 Aria http://www.kvirc.net/)
+2021-05-27 16:46:43	-->	altendky (sid135382@stonehaven.irccloud.com) has joined #python
+2021-05-27 16:48:36	<--	gry (~quassel@botters/gry) has left #python (gone)
+2021-05-27 16:51:03	<--	pacbard (~pacbard@user/pacbard) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2021-05-27 16:51:46	<--	kee (~wizzwizz4@user/wizzwizz4) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:53:31	-->	pacbard (~pacbard@user/pacbard) has joined #python
+2021-05-27 16:53:43	<--	sed (~sed@pool-100-7-53-231.rcmdva.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:54:39	Guddu	Could someone help me with a python urwid library query?
+2021-05-27 16:54:54	fon	So I was thinking how Stripe would handle this, turns out they open sourced their solution: https://github.com/stripe/smokescreen
+2021-05-27 16:55:03	Guddu	I get an error AttributeError: 'ListBox' object has no attribute 'rows'
+2021-05-27 16:55:09	Guddu	The code is at https://pastebin.com/zFzqTuGE
+2021-05-27 16:55:09	infobob	https://bpaste.net/YCLQ (repasted for Guddu)
+2021-05-27 16:55:28	habnabit_	fon, oh rad i need to bookmark this
+2021-05-27 16:55:39	-->	tijuco (~tijuco@45.131.195.122) has joined #python
+2021-05-27 16:55:44	-->	matsaman (~matsaman@user/matsaman) has joined #python
+2021-05-27 16:56:04	<--	lsrtl_ (~lsrtl@user/lsrtl) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:57:33	grym	Guddu: i don't know much about urwid, but their docs certainly suggest that attributeerror is correct
+2021-05-27 16:58:05	-->	rbtEngrDude (~textual@2600:8800:a610:3e00:155d:b224:1cdc:573a) has joined #python
+2021-05-27 16:58:44	-->	Unode (~Unode@194.94.44.220) has joined #python
+2021-05-27 16:59:29	Guddu	grym, attributeerror is correct as in? :-)
+2021-05-27 17:00:00	<--	Arsanerit (~Gerrit@user/arsanerit) has quit (Remote host closed the connection)
+2021-05-27 17:09:29	--	irc: disconnected from server
+2021-05-27 17:41:24	-->	reno (~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net) has joined #python
+2021-05-27 17:41:24	--	Topic for #python is "Anything Python is on-topic. | Don't paste, use https://bpa.st/+python | Welcome to Libera, our new home. Questions about this channel? https://www.pound-python.org | CoC: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Ops: #python-ops"
+2021-05-27 17:41:24	--	Topic set by nedbat (~nedbat@python/psf/nedbat) on Wed, 26 May 2021 09:05:21
+2021-05-27 17:41:24	--	Channel #python: 745 nicks (1 op, 0 voices, 744 normals)
+2021-05-27 17:41:27	--	Channel created on Wed, 19 May 2021 08:50:29
+2021-05-27 17:42:15	-->	Elodin (~weechat@user/elodin) has joined #python
+2021-05-27 17:43:26	-->	tomgus1 (~tomgus1@2a02:c7f:d2b0:e600:6839:ff98:d9c4:24f) has joined #python
+2021-05-27 17:45:01	-->	Wombatzus (~user@135-180-24-110.fiber.dynamic.sonic.net) has joined #python
+2021-05-27 17:45:30	<--	tomgus1 (~tomgus1@2a02:c7f:d2b0:e600:6839:ff98:d9c4:24f) has quit (Read error: Connection reset by peer)
+2021-05-27 17:46:48	-->	cmagina (~cmagina@user/cmagina) has joined #python
+2021-05-27 19:03:33	--	irc: disconnected from server
+2021-05-27 19:03:58	-->	reno (~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net) has joined #python
+2021-05-27 19:03:58	--	Topic for #python is "Anything Python is on-topic. | Don't paste, use https://bpa.st/+python | Welcome to Libera, our new home. Questions about this channel? https://www.pound-python.org | CoC: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Ops: #python-ops"
+2021-05-27 19:03:58	--	Topic set by nedbat (~nedbat@python/psf/nedbat) on Wed, 26 May 2021 09:05:22
+2021-05-27 19:03:58	--	Channel #python: 748 nicks (1 op, 0 voices, 747 normals)
+2021-05-27 19:04:01	--	Channel created on Wed, 19 May 2021 08:50:29
+2021-05-27 19:04:31	<--	Lando-HoloNet (~Lando@user/lando-spacepimp) has quit (Ping timeout: 264 seconds)
+2021-05-27 19:05:29	<--	Auron (~Auron956@user/auron) has quit (Remote host closed the connection)
+2021-05-27 19:06:24	<--	ackyshake (~ackyshake@user/ackyshake) has quit (Quit: Soupy Twist!)
+2021-05-27 19:07:14	-->	ku (~ku@2601:280:c780:7ea0:bdb5:230d:40c:e48e) has joined #python
+2021-05-27 19:07:47	<--	radu242 (~radu242@pool-108-41-101-29.nycmny.fios.verizon.net) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-05-27 19:08:07	-->	ackyshake (~ackyshake@user/ackyshake) has joined #python
+2021-05-27 19:08:21	-->	leduyquang753 (~leduyquan@27.73.107.184) has joined #python
+2021-05-27 19:09:12	-->	radu242 (~radu242@pool-108-41-101-29.nycmny.fios.verizon.net) has joined #python
+2021-05-27 19:10:27	-->	CatCow (~wtf_over@c-73-96-109-206.hsd1.or.comcast.net) has joined #python
+2021-05-27 19:11:47	-->	mns (~mns@c-73-119-178-157.hsd1.ma.comcast.net) has joined #python
+2021-05-27 19:14:19	-->	mgubyt (u@mgub.yt) has joined #python
+2021-05-27 19:16:03	<--	predmijat (~predmijat@mail.strogopro.com) has quit (Quit: bye)
+2021-05-27 19:16:56	grym	beeza: tias
+2021-05-27 19:17:46	-->	p-i- (~Ohmu@node-4yt.pool-118-173.dynamic.totinternet.net) has joined #python
+2021-05-27 19:18:14	-->	tos9 (~tos9@172.58.231.62) has joined #python
+2021-05-28 09:18:23	--	irc: disconnected from server
+2021-05-28 09:18:47	-->	reno (~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net) has joined #python
+2021-05-28 09:18:47	--	Topic for #python is "Anything Python is on-topic. | Don't paste, use https://bpa.st/+python | Welcome to Libera, our new home. Questions about this channel? https://www.pound-python.org | CoC: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Ops: #python-ops"
+2021-05-28 09:18:47	--	Topic set by nedbat (~nedbat@python/psf/nedbat) on Wed, 26 May 2021 09:05:22
+2021-05-28 09:18:47	--	Channel #python: 783 nicks (0 ops, 0 voices, 783 normals)
+2021-05-28 09:18:49	--	Channel created on Wed, 19 May 2021 08:50:29
+2021-05-28 09:18:52	__that__	Architecture-dependent packages cannot be installed on other ones, correct?
+2021-05-28 09:18:58	Yhg1s	__that__: I suggest filing a bug with aiohttp.
+2021-05-28 09:19:00	grym	jinsun: yes, windows paths are always strings
+2021-05-28 09:19:12	<--	Malka (~Malka@ns300725.ip-91-121-65.eu) has quit (Read error: Connection reset by peer)
+2021-05-28 09:19:18	-->	v01d4lph4 (~v01d4lph4@user/v01d4lph4) has joined #python
+2021-05-28 09:19:22	Yhg1s	__that__: pip will not install them, yes.
+2021-05-28 09:21:13	-->	entuland_ (~entuland@user/entuland) has joined #python
+2021-05-28 09:21:21	-->	CombatVet (~c4@gateway/tor-sasl/combatvet) has joined #python
+2021-05-28 09:21:23	<--	K285 (~K285@2401:4900:30ca:48ff:193c:56f1:7826:4bc) has quit (Client Quit)
+2021-05-28 09:22:19	<--	Rum (~u0_a262@user/rum) has quit (Quit: WeeChat 3.0.1)
+2021-05-28 09:23:26	__that__	Thanks Yhg1s. So the only option I have to get the latest version of the package is to build a wheel out of the tarball. Is that possible? I guess I will need the right setuptools, etc...
+2021-05-28 09:23:35	<--	v01d4lph4 (~v01d4lph4@user/v01d4lph4) has quit (Ping timeout: 244 seconds)
+2021-05-28 09:24:07	-->	brezanac (~brezanac@dynamic-213-198-222-227.adsl.eunet.rs) has joined #python
+2021-05-28 09:24:45	-->	duszek (~duszek@adla206.neoplus.adsl.tpnet.pl) has joined #python
+2021-05-28 09:24:50	<--	entuland (~entuland@user/entuland) has quit (Ping timeout: 265 seconds)
+2021-05-28 09:24:57	duszek	can anyone find what's wrong in my program?
+2021-05-28 09:25:29	Yhg1s	__that__: pip install --no-binary aiohttp aiohttp
+2021-05-28 09:26:50	jabberwock	do you folks use sshuttle by chance? I keep getting an error about missing zlib but not sure if it's coming from my client or the server
+2021-05-28 09:26:56	__that__	Yhg1s, thanks for that. Apologies for keeping asking. So If I have Python repo with both win_amd64 and manylinux packages would the former be picked up automatically by pipenv from Windows and Linux, respectively? It sounds trivially yes?
+2021-05-28 09:26:58	jabberwock	since I have zlib
+2021-05-28 09:27:16	duszek	can anyone find what's wrong in my program?
+2021-05-28 09:27:28	Yhg1s	__that__: I don't know about pipenv, but pip, sure.
+2021-05-28 09:27:34	jabberwock	duszek: please include a link to your https://bpa.st/+python
+2021-05-28 09:27:38	Yhg1s	duszek: you'd have to tell us about the program, what it's doing and what you want it to do instead.
+2021-05-28 09:27:56	duszek	ok, it will take some time
+2021-05-28 09:28:00	duszek	in meantime, you can chat
+2021-05-28 09:28:02	jabberwock	is it multiple files?
+2021-05-28 09:28:24	duszek	jabberwock: 2 files: one is for program, second a text file from which the program gets its data from
+2021-05-28 09:28:36	jabberwock	kk
+2021-05-28 09:28:48	__that__	Yhg1s, I believe pipenv uses pip under the hood... Although I guess badly. Thanks a lot for your tips as usual
+2021-05-28 09:30:45	<--	guyru (~guyru@user/guyru) has quit (Ping timeout: 250 seconds)
+2021-05-28 09:31:07	<--	varaindemian100 (~varaindem@86.124.78.162) has quit (Quit: Client closed)
+2021-05-28 09:31:29	<--	brumla (~bruml@178.77.217.196) has quit (Ping timeout: 264 seconds)
+2021-05-28 09:33:15	<--	Ivan72 (~Ivan@ip-7-19.unn.ru) has quit (Quit: Client closed)
+2021-05-28 09:33:55	<--	whaley (~whaley@066-169-090-170.res.spectrum.com) has quit (Ping timeout: 244 seconds)
+2021-05-28 09:34:50	-->	Malka (~Malka@ns300725.ip-91-121-65.eu) has joined #python
+2021-05-28 09:36:29	<--	noctavian (~noctavian@81.196.28.233) has quit (Quit: Connection closed)
+2021-05-28 09:36:30	<--	sedeki (~textual@user/sedeki) has quit (Ping timeout: 272 seconds)
+2021-05-28 09:36:31	<--	ggnoredo (~user@78.186.15.89) has quit (Remote host closed the connection)
+2021-05-28 09:36:47	-->	srhm (~ascii@user/srhm) has joined #python
+2021-05-28 09:36:55	-->	Death916_lap1 (~Death916@user/death916) has joined #python
+2021-05-28 09:38:02	-->	autophagy (~mika@user/autophagy) has joined #python
+2021-05-28 09:38:12	<--	duszek (~duszek@adla206.neoplus.adsl.tpnet.pl) has quit (Ping timeout: 272 seconds)
+2021-05-28 09:40:18	<--	death916_lap (~Death916@user/death916) has quit (Ping timeout: 265 seconds)
+2021-05-28 09:40:22	--	Death916_lap1 is now known as death916_lap
+2021-05-28 09:42:25	-->	ddavis (~ddavis@c-24-98-76-80.hsd1.ga.comcast.net) has joined #python
+2021-05-28 09:44:59	-->	brumla (~bruml@178.77.217.196) has joined #python
+2021-05-28 09:45:18	-->	solar (solar@gateway/vpn/protonvpn/solar) has joined #python
+2021-05-28 09:45:24	__that__	So aiohttp-3.7.4.post0-cp36-cp36m-manylinux1_i686.whl (1.3 MB) seems to me that supports only 32bit platform but if I interpret it well PEP 513 https://packaging.python.org/specifications/platform-compatibility-tags/#platform-tags-for-common-linux-distributions says that the tag manylinux1 should support both architectures?
+2021-05-28 09:46:27	__that__	sorry for the fuss here
+2021-05-28 09:46:40	<--	N00k_ZA (~N00k_ZA@146.232.221.115) has quit (Quit: Connection closed)
+2021-05-28 09:48:23	-->	Matheo_bis (~Matheo_bi@91-163-165-135.subs.proxad.net) has joined #python
+2021-05-28 09:48:32	<--	teut (~teut@122.162.162.247) has quit (Ping timeout: 272 seconds)
+2021-05-28 09:48:46	-->	korros (~korros@047-133-235-113.res.spectrum.com) has joined #python
+2021-05-28 09:48:49	-->	roro (~roro@user/roro) has joined #python
+2021-05-28 09:49:38	-->	seachdamh_ (~seachdamh@user/seachdamh) has joined #python
+2021-05-28 09:49:56	<--	seachdamh_ (~seachdamh@user/seachdamh) has quit (Client Quit)
+2021-05-28 09:50:10	-->	slickymasterWork (~slickymas@ubuntu/member/slickymaster) has joined #python
+2021-05-28 09:50:33	-->	candyman1 (~candyman@user/candyman) has joined #python
+2021-05-28 09:51:36	-->	slowButPresent (~slowButPr@user/slowbutpresent) has joined #python
+2021-05-28 09:51:37	<--	cedric (~cedric@2a01:cb11:867:c200:f7d5:8dcf:13b4:1b30) has quit (Quit: Konversation terminated!)
+2021-05-28 09:51:52	<--	candyman1 (~candyman@user/candyman) has quit (Remote host closed the connection)
+2021-05-28 09:53:21	-->	fofoni (~fofoni@user/fofoni) has joined #python
+2021-05-28 09:53:27	<--	timkofu (~timkofu@user/timkofu) has quit (Quit: leaving)
+2021-05-28 09:54:26	-->	marienz_ (~marienz@libera/staff/marienz) has joined #python
+2021-05-28 09:54:41	<--	brezanac (~brezanac@dynamic-213-198-222-227.adsl.eunet.rs) has quit (Quit: Leaving)
+2021-05-28 09:55:35	-->	burningserenity (~burningse@142-196-178-216.res.spectrum.com) has joined #python
+2021-05-28 09:56:08	<--	burningserenity (~burningse@142-196-178-216.res.spectrum.com) has left #python (The Lounge - https://thelounge.chat)
+2021-05-28 09:56:09	<--	cmagina (~cmagina@user/cmagina) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-05-28 09:56:39	<--	leduyquang753 (~leduyquan@27.73.107.184) has quit (Quit: leaving)
+2021-05-28 09:58:57	-->	Karyon (~Karyon@user/karyon) has joined #python
+2021-05-28 10:00:18	-->	winter (~winter@2603-6011-f901-9e5b-0000-0000-0000-08cf.res6.spectrum.com) has joined #python
+2021-05-28 10:01:11	-->	tos9_ (~tos9@172.58.231.62) has joined #python
+2021-05-28 10:01:33	-->	Death916_lap1 (~Death916@user/death916) has joined #python
+2021-05-28 10:02:56	<--	Death916_lap1 (~Death916@user/death916) has quit (Read error: Connection reset by peer)
+2021-05-28 10:03:49	-->	Death916_lap1 (~Death916@user/death916) has joined #python
+2021-05-28 10:04:59	<--	death916_lap (~Death916@user/death916) has quit (Ping timeout: 264 seconds)
+2021-05-28 10:05:37	<--	schumaml1 (~schumaml@dslb-178-002-190-100.178.002.pools.vodafone-ip.de) has quit (Quit: WeeChat 3.0.1)
+2021-05-28 10:06:09	<--	SparkleKraken (~SparkleKr@97e407ec.skybroadband.com) has quit (Quit: Leaving)
+2021-05-28 10:08:41	<--	Death916_lap1 (~Death916@user/death916) has quit (Ping timeout: 264 seconds)
+2021-05-28 10:09:10	-->	Death916_lap1 (~Death916@user/death916) has joined #python
+2021-05-28 10:09:10	--	Death916_lap1 is now known as death916_lap
+2021-05-28 10:10:36	-->	zware (~zach@python/psf/zware) has joined #python
+2021-05-28 10:11:33	<--	finster (~finster@2a01:4f8:c17:4faa::2) has quit (Quit: leaving)
+2021-05-28 10:12:35	-->	mambang (~mambang@user/mambang) has joined #python
+2021-05-28 10:14:16	-->	whaley (~whaley@066-169-090-170.res.spectrum.com) has joined #python
+2021-05-28 10:14:27	--	gildarts is now known as gildarts-soju
+2021-05-28 10:14:45	--	gildarts-soju is now known as gildarts
+2021-05-28 10:16:08	<--	tos9_ (~tos9@172.58.231.62) has quit (Quit: leaving)
+2021-05-28 10:16:37	<--	Julian (~tos9@172.58.231.62) has quit (Quit: leaving)
+2021-05-28 10:16:45	-->	tos9_ (~tos9@172.58.231.62) has joined #python
+2021-05-28 10:17:04	--	tos9_ is now known as Julian
+2021-05-28 10:17:15	-->	ku (~ku@2601:280:c780:7ea0:bdb5:230d:40c:e48e) has joined #python
+2021-05-28 10:18:01	-->	mwd5650 (~mwd5650@fwbb-192-149-255-3.inxnet.net) has joined #python
+2021-05-28 10:18:42	<--	death916_lap (~Death916@user/death916) has quit (Ping timeout: 252 seconds)
+2021-05-28 10:20:53	-->	death916_lap (~Death916@user/death916) has joined #python
+2021-05-28 10:21:28	<--	nre (~nre@55d46dd3.access.ecotel.net) has quit (Ping timeout: 272 seconds)
+2021-05-28 10:21:30	-->	LuxuryMode (uid91005@id-91005.charlton.irccloud.com) has joined #python
+2021-05-28 10:22:16	<--	ddavis (~ddavis@c-24-98-76-80.hsd1.ga.comcast.net) has quit (Read error: Connection reset by peer)
+2021-05-28 10:26:07	<--	korros (~korros@047-133-235-113.res.spectrum.com) has quit (Ping timeout: 248 seconds)
+2021-05-28 10:27:27	-->	Moosadee (~Moosadee@136.32.155.193) has joined #python
+2021-05-28 10:28:52	<--	whaley (~whaley@066-169-090-170.res.spectrum.com) has quit (Ping timeout: 272 seconds)
+2021-05-28 10:29:12	-->	pynthon (~omar@80-60-40-192.fixed.kpn.net) has joined #python
+2021-05-28 10:30:46	<--	death916_lap (~Death916@user/death916) has quit (Ping timeout: 272 seconds)
+2021-05-28 10:30:47	-->	vodkra (~vodkra@user/vodkra) has joined #python
+2021-05-28 10:31:07	-->	whaley (~whaley@066-169-090-170.res.spectrum.com) has joined #python
+2021-05-28 10:31:16	<--	brumla (~bruml@178.77.217.196) has quit (Ping timeout: 244 seconds)
+2021-05-28 10:32:43	<--	tree (~psb@user/psb) has quit (Quit: tree)
+2021-05-28 10:34:18	-->	Quaking_ (~Quaking@167.89.254.27) has joined #python
+2021-05-28 10:34:46	<--	Quaking (~Quaking@167.89.254.27) has quit (Ping timeout: 272 seconds)
+2021-05-28 10:35:37	<--	dakh7_ (~dakh7@ip98-169-201-138.dc.dc.cox.net) has quit (Read error: Connection reset by peer)
+2021-05-28 10:35:58	-->	especial (~especial@cm-84.214.231.176.getinternet.no) has joined #python
+2021-05-28 10:36:34	-->	teut (~teut@122.162.162.247) has joined #python
+2021-05-28 10:37:07	<--	bfahr (~quassel@96.31.208.199) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-05-28 10:39:16	-->	sedeki (~textual@user/sedeki) has joined #python
+2021-05-28 10:40:54	<--	fjmorazan (~quassel@user/fjmorazan) has quit (Quit: fjmorazan)
+2021-05-28 10:42:00	-->	fjmorazan (~quassel@user/fjmorazan) has joined #python
+2021-05-28 10:42:19	-->	ganchan (~thomas_w@user/ganchan) has joined #python
+2021-05-28 10:43:07	<--	basudev (~basudev@sourcehut/user/basudev) has quit (Quit: basudev)
+2021-05-28 10:44:05	-->	nanonyme (nanonyme@kapsi.fi) has joined #python
+2021-05-28 10:44:24	-->	FluffyMask (~FluffyMas@47.184.156.179) has joined #python
+2021-05-28 10:44:47	-->	fon (~fon@98.42.89.33) has joined #python
+2021-05-28 10:45:06	-->	nathanjell (~Nathan@d162-157-36-152.abhsia.telus.net) has joined #python
+2021-05-28 10:46:52	-->	zbe (~zbe@pleiades.zbe.bz) has joined #python
+2021-05-28 10:47:44	<--	larkfisherman (~larkfishe@217.75.204.126) has quit (Quit: Leaving)
+2021-05-28 10:49:05	<--	bancroft (~bancroft@bras-base-mtrlpq3015w-grc-11-70-55-136-62.dsl.bell.ca) has quit (Remote host closed the connection)
+2021-05-28 10:49:33	-->	zyzzyxdonta (~zyzzyxdon@p54bdfeea.dip0.t-ipconnect.de) has joined #python
+2021-05-28 10:50:43	<--	Moosadee (~Moosadee@136.32.155.193) has quit (Ping timeout: 264 seconds)
+2021-05-28 10:50:44	<--	zyzzyxdonta (~zyzzyxdon@p54bdfeea.dip0.t-ipconnect.de) has quit (Client Quit)
+2021-05-28 10:51:28	<--	kindablue (znc@irc.tpurist.com) has quit (Quit: System Rebooting..)
+2021-05-28 10:51:51	-->	vlado (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has joined #python
+2021-05-28 10:52:04	<--	vlado (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has quit (Client Quit)
+2021-05-28 10:52:05	-->	pleb66 (~luke@user/pleb66) has joined #python
+2021-05-28 10:52:15	-->	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has joined #python
+2021-05-28 10:52:21	-->	kindablue (znc@irc.tpurist.com) has joined #python
+2021-05-28 10:52:43	vladoski	Hey guys, is there a way to overload the .method "operator" like in foo.baz
+2021-05-28 10:52:49	vladoski	so I can get "baz" as a str?
+2021-05-28 10:52:56	grym	getattr?
+2021-05-28 10:53:04	mefistofeles	is it expected that keys from dictionaries to be "short"? Should I expect some kind of weird behavior or overhead if I have really long strings fro keys in a dictionary?
+2021-05-28 10:53:13	grym	mefistofeles: nope, that's fine
+2021-05-28 10:53:25	mefistofeles	grym: thanks
+2021-05-28 10:53:25	grym	mefistofeles: the only requirement for a key is that it's hashable
+2021-05-28 10:53:29	-->	sco1 (~sco1@pool-108-26-161-197.bstnma.fios.verizon.net) has joined #python
+2021-05-28 10:53:38	-->	Blankspace (~abcd@2401:4900:3b32:fe4e:75d5:c2a1:2e97:5521) has joined #python
+2021-05-28 10:53:49	grym	so tuple(range(1_000_000)) is a valid but really weird key
+2021-05-28 10:54:27	-->	hnOsmium0001 (uid453710@id-453710.stonehaven.irccloud.com) has joined #python
+2021-05-28 10:54:29	vladoski	grym thanks
+2021-05-28 10:54:43	--	domhnall is now known as Guest4362
+2021-05-28 10:55:02	-->	NOTevil (~NOTevil@user/notevil) has joined #python
+2021-05-28 10:55:15	-->	domhnall (~domhnall@user/domhnall/x-2887755) has joined #python
+2021-05-28 10:56:19	Ohmu	Might some engineer spare the bandwidth to help me with some asyncio architecture? I KNOW this isn't right. https://bpa.st/7CSA
+2021-05-28 10:57:30	Ohmu	I'm monitoring a Telegram channel from 3 Telegram accounts. And I'm sending messages from A->B B->C C->A at 25Hz to force Telegram to flush its buffer & read the message promptly.
+2021-05-28 10:58:07	<--	Guest4362 (~domhnall@user/domhnall/x-2887755) has quit (Ping timeout: 248 seconds)
+2021-05-28 10:58:09	<--	stkrdknmibalz (~test@rrcs-75-87-43-226.sw.biz.rr.com) has quit (Quit: WeeChat 3.0.1)
+2021-05-28 10:58:17	<--	reticuli (~reticuli@user/reticuli) has quit (Ping timeout: 252 seconds)
+2021-05-28 10:58:25	Ohmu	And I know that's FUBAR in and of itself, but I can't be waiting 30s for a message.
+2021-05-28 10:58:29	<--	sco1 (~sco1@pool-108-26-161-197.bstnma.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2021-05-28 10:58:32	-->	nomic (~nomic@2a00:23c6:9910:1201:dcc8:4fc3:e4d0:9c5b) has joined #python
+2021-05-28 10:58:36	Ohmu	This gets it down to 1-2s delay.
+2021-05-28 10:58:58	Ohmu	I'm trying to get my head around a sane arch.
+2021-05-28 10:59:10	Ohmu	That code _works_. But it's clumsy.
+2021-05-28 10:59:42	-->	GiLgAmEzH (~gilgamezh@a214055.upc-a.chello.nl) has joined #python
+2021-05-28 10:59:49	-->	bwe (~bwe@2a01:4f8:1c1c:4878::2) has joined #python
+2021-05-28 11:00:18	<--	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 11:01:40	Ohmu	My three client objects should really be visible outside of `async def process_account` and maybe a timer on a different thread should take care of sending a message from one to the next.
+2021-05-28 11:02:29	FLHerne	mefistofeles: There'll be a bit of overhead, because calculating the hash of a string is O(n) in its length
+2021-05-28 11:02:59	<--	sedeki (~textual@user/sedeki) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-05-28 11:03:08	FLHerne	but `str` caches its own hash value, and dicts cache the hashes of their objects, so it's probably not huge
+2021-05-28 11:04:02	-->	acnebs_ (~acnebs@2604:a880:400:d0::1a64:c001) has joined #python
+2021-05-28 11:05:03	<--	domhnall (~domhnall@user/domhnall/x-2887755) has quit (Ping timeout: 248 seconds)
+2021-05-28 11:05:48	<--	is0ke3 (~is0ke3@user/is0ke3) has quit (Ping timeout: 272 seconds)
+2021-05-28 11:05:54	--	acnebs_ is now known as acnebs
+2021-05-28 11:06:09	-->	GeorgeK (~GeorgeK@cpe-70-92-5-228.wi.res.rr.com) has joined #python
+2021-05-28 11:06:38	-->	domhnall (~domhnall@user/domhnall/x-2887755) has joined #python
+2021-05-28 11:06:39	<--	ku (~ku@2601:280:c780:7ea0:bdb5:230d:40c:e48e) has quit (Ping timeout: 248 seconds)
+2021-05-28 11:07:25	<--	pleb66 (~luke@user/pleb66) has quit (Quit: WeeChat 3.1)
+2021-05-28 11:07:33	-->	is0ke3 (~is0ke3@user/is0ke3) has joined #python
+2021-05-28 11:07:34	-->	superboot (~agentgasm@user/superboot) has joined #python
+2021-05-28 11:08:29	<--	JanC (~janc@user/janc) has quit (Read error: Connection reset by peer)
+2021-05-28 11:08:45	-->	JanC (~janc@user/janc) has joined #python
+2021-05-28 11:09:04	-->	sco1 (~sco1@pool-108-26-161-197.bstnma.fios.verizon.net) has joined #python
+2021-05-28 11:10:06	-->	ioxzev1z (~ioxzev1z@user/ioxzev1z) has joined #python
+2021-05-28 11:10:44	<--	domhnall (~domhnall@user/domhnall/x-2887755) has quit (Quit: leaving)
+2021-05-28 11:11:08	ttys000	how do i pass sort a custom method? is that what lambda x: x is?
+2021-05-28 11:11:37	habnabit_	ttys000, with the key= parameter
+2021-05-28 11:11:46	ttys000	i'm trying to sort a log file based on dates, i came up with this:
+2021-05-28 11:11:48	ttys000	deep_logs.sort(key = lambda x:datetime.strptime(re.search('\[([^\s]+).+\]', x).group(1), "%d/%b/%Y:%H:%M:%S").timestamp())
+2021-05-28 11:11:55	-->	FFY00 (~FFY00@user/ffy00) has joined #python
+2021-05-28 11:12:07	ttys000	but maybe i don't understand lambda
+2021-05-28 11:12:15	-->	kickingvegas (~cchoi@c-24-130-175-68.hsd1.ca.comcast.net) has joined #python
+2021-05-28 11:12:51	<--	chaosite (~chaosite@user/chaosite) has quit (Ping timeout: 264 seconds)
+2021-05-28 11:13:07	<--	orkim (~orkim@user/orkim) has quit (Quit: quit)
+2021-05-28 11:13:19	-->	orkim (~orkim@user/orkim) has joined #python
+2021-05-28 11:13:33	SnoopJ	ttys000, `lambda` is a keyword that lets you build a small one-expression function that is "anonymous" (it has no name)
+2021-05-28 11:13:35	<--	sco1 (~sco1@pool-108-26-161-197.bstnma.fios.verizon.net) has quit (Ping timeout: 248 seconds)
+2021-05-28 11:13:56	ttys000	ok, so that's what i thought.
+2021-05-28 11:14:06	ttys000	so i don't understand then why my code doesn't work
+2021-05-28 11:14:08	SnoopJ	but you can pass a "regular" function, too, or even callable objects. `sorted(iterable, key=something)` just assumes it can do something(a, b) when comparing
+2021-05-28 11:14:20	habnabit_	ttys000, what makes you think it doesn't work?
+2021-05-28 11:14:23	-->	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has joined #python
+2021-05-28 11:14:29	ttys000	example input row
+2021-05-28 11:14:31	ttys000	95.82.135.191 - - [28/May/2021:15:40:03 +0000] "POST /wp-login.php HTTP/1.1" 200 8172 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)"
+2021-05-28 11:14:32	habnabit_	ttys000, if you need help with an error, you should show us the error first :)
+2021-05-28 11:14:37	ttys000	AttributeError: 'NoneType' object has no attribute 'group'
+2021-05-28 11:14:54	SnoopJ	that looks like a regex has failed to match anything
+2021-05-28 11:14:57	ttys000	but if i loop through the file the regex works.
+2021-05-28 11:15:01	-->	YoungPotato (~user@c-67-186-254-165.hsd1.ut.comcast.net) has joined #python
+2021-05-28 11:15:09	SnoopJ	`re` has the annoying habit of returning None when there isn't a match instead of an empty Match object
+2021-05-28 11:15:35	grym	ttys000: are you _sure_ you get at least one match per row for all rows
+2021-05-28 11:15:42	ttys000	oh
+2021-05-28 11:15:42	-->	RandomGuy (~RandomBlo@2a02:c7d:e52:2900:5635:30ff:fe9b:9195) has joined #python
+2021-05-28 11:15:48	ttys000	maybe theres a blank line at the end
+2021-05-28 11:15:51	ttys000	damn i didn't think of that
+2021-05-28 11:16:03	ttys000	thanks
+2021-05-28 11:16:12	grym	trailing newline gets me about once a month
+2021-05-28 11:17:06	lambda	ttys000: depends on what exactly you want to do, but personally I'd parse the lines into objects (e.g. dataclasses) first, throwing out any blank lines etc, then sort the objects
+2021-05-28 11:17:36	SnoopJ	the assignment expression was introduced in part because of `re`'s misbehavior in this fashion, so you can do `if (m := re.match(...)): do_matched_logic(m)` instead of `m = re.match(...); if m: do_matched_logic(m)`
+2021-05-28 11:17:41	<--	Blankspace (~abcd@2401:4900:3b32:fe4e:75d5:c2a1:2e97:5521) has quit (Changing host)
+2021-05-28 11:17:41	-->	Blankspace (~abcd@user/blankspace) has joined #python
+2021-05-28 11:17:53	<--	Quaking_ (~Quaking@167.89.254.27) has quit (Quit: WeeChat 3.1)
+2021-05-28 11:18:25	lambda	ttys000: if you really just want to sort the list of strings by date code, then write those strings back out, the direct sort is fine of course
+2021-05-28 11:19:54	mefistofeles	FLHerne: oh, thanks
+2021-05-28 11:20:23	<--	tg (~tg@rockylinux/infra/tg) has quit (Quit: tg)
+2021-05-28 11:21:56	<--	__that__ (~Guest17@195.59.168.125) has quit (Quit: Client closed)
+2021-05-28 11:22:12	ttys000	> if (m := re.match(...)): do_matched_logic(m)
+2021-05-28 11:22:13	ttys000	neatt
+2021-05-28 11:22:17	-->	Quaking (~Quaking@167.89.254.27) has joined #python
+2021-05-28 11:22:36	SnoopJ	that is 3.8+ syntax, for what it's worth
+2021-05-28 11:22:52	SnoopJ	but 3.8 is good, I would encourage you to make that your minimum version with 3.6 about to retire :)
+2021-05-28 11:24:27	-->	aganders3 (~aganders3@c-73-253-41-35.hsd1.ma.comcast.net) has joined #python
+2021-05-28 11:25:29	-->	a6a45081-2b83 (~aditya@106.212.79.20) has joined #python
+2021-05-28 11:25:46	-->	stkrdknmibalz (~test@rrcs-75-87-43-226.sw.biz.rr.com) has joined #python
+2021-05-28 11:26:27	-->	argento (~argent0@168.227.96.51) has joined #python
+2021-05-28 11:28:31	-->	PdimH (~pdimh@user/pdimh) has joined #python
+2021-05-28 11:28:39	<--	GeorgeK (~GeorgeK@cpe-70-92-5-228.wi.res.rr.com) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-05-28 11:28:57	-->	GeorgeK (~GeorgeK@cpe-70-92-5-228.wi.res.rr.com) has joined #python
+2021-05-28 11:30:15	<--	lsrtl_ (~lsrtl@user/lsrtl) has quit (Ping timeout: 264 seconds)
+2021-05-28 11:31:41	<--	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 11:33:06	<--	sbanwart (~sbanwart@cpe-174-100-90-239.neo.res.rr.com) has quit (Quit: WeeChat 3.1)
+2021-05-28 11:33:19	mefistofeles	is there a way to make something like a nested default dictionary with list? So something like defaultdict(defaultdict(list)) (but that doesn't work, of course)
+2021-05-28 11:34:10	<--	Mija (~Mija@user/mija) has quit (Quit: Mija)
+2021-05-28 11:34:34	<--	fivegruel (~fivegruel@2a02:8071:b5b3:2b00::ebcc) has quit (Quit: Client closed)
+2021-05-28 11:35:55	mefistofeles	ok, maybe a lambda as fabricator should work
+2021-05-28 11:36:04	nanonyme	Yeah, factory function should be fine
+2021-05-28 11:36:09	aganders3	@mefistofeles: try `d = defaultdict(lambda: defaultdict(list))`
+2021-05-28 11:36:11	habnabit_	mefistofeles, defaultdict takes any 0-argument callable, sure
+2021-05-28 11:36:30	aganders3	too slow :/
+2021-05-28 11:36:41	<--	Titore (~Titore@user/titore) has quit (Quit: Leaving)
+2021-05-28 11:37:19	-->	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has joined #python
+2021-05-28 11:40:21	<--	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has quit (Client Quit)
+2021-05-28 11:40:33	<--	Blankspace (~abcd@user/blankspace) has quit (Quit: why did you ban me)
+2021-05-28 11:40:53	<--	RandomGuy (~RandomBlo@2a02:c7d:e52:2900:5635:30ff:fe9b:9195) has left #python (Leaving)
+2021-05-28 11:41:34	<--	Julian (~tos9@172.58.231.62) has quit (Quit: leaving)
+2021-05-28 11:41:37	-->	thiras (~thiras@user/thiras) has joined #python
+2021-05-28 11:41:51	<--	winter (~winter@2603-6011-f901-9e5b-0000-0000-0000-08cf.res6.spectrum.com) has quit (Ping timeout: 248 seconds)
+2021-05-28 11:43:02	mefistofeles	hmm I don't get it https://bpa.st/7GEQ
+2021-05-28 11:43:11	-->	Lando-SpacePimp (~Lando@user/lando-spacepimp) has joined #python
+2021-05-28 11:43:13	mefistofeles	but if I do a simple example in a python console it works...
+2021-05-28 11:43:42	-->	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has joined #python
+2021-05-28 11:44:33	<--	a6a45081-2b83 (~aditya@106.212.79.20) has quit (Quit: Konversation terminated!)
+2021-05-28 11:44:53	SnoopJ	mefistofeles, guessing one of `entry_code, smiles` are not integers or slices, heh.
+2021-05-28 11:44:56	-->	a6a45081-2b83 (~aditya@106.212.79.20) has joined #python
+2021-05-28 11:45:14	<--	Maikel (~Maikel@130.61.63.136) has quit (Quit: The Lounge - https://thelounge.chat)
+2021-05-28 11:45:19	<--	PdimH (~pdimh@user/pdimh) has quit (Quit: WeeChat 3.1)
+2021-05-28 11:45:41	mefistofeles	SnoopJ: yeah, they aren't... so I think I'm understanding this wrong
+2021-05-28 11:45:46	<--	kindablue (znc@irc.tpurist.com) has quit (Quit: System Rebooting..)
+2021-05-28 11:45:58	mefistofeles	SnoopJ: so I was expecting self.data[entry] to be a defaultdict, but it is a list
+2021-05-28 11:46:39	-->	TJ- (~root@2a02:8011:2007:0:bd20:fda8:74c0:5593) has joined #python
+2021-05-28 11:46:40	-->	kindablue (znc@irc.tpurist.com) has joined #python
+2021-05-28 11:46:51	<--	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has quit (Client Quit)
+2021-05-28 11:47:01	SnoopJ	mefistofeles, oh, it's because you only use the factory once
+2021-05-28 11:47:10	SnoopJ	I think
+2021-05-28 11:47:28	<--	DnzAtWrk (~DnzAtWrk@mobile-access-6df04b-240.dhcp.inet.fi) has quit (Quit: Leaving)
+2021-05-28 11:47:30	-->	Maikel (~Maikel@130.61.63.136) has joined #python
+2021-05-28 11:47:39	-->	dicajo (~dicajo@072-186-122-186.res.spectrum.com) has joined #python
+2021-05-28 11:48:31	SnoopJ	hmm no, the first level *should* give you a defaultdict
+2021-05-28 11:48:38	SnoopJ	mefistofeles, do you assign to self.data anywhere else?
+2021-05-28 11:48:39	mefistofeles	SnoopJ: oh, no, it is my bad, sorry
+2021-05-28 11:48:43	mefistofeles	sorry for the noise
+2021-05-28 11:48:49	mefistofeles	I had to change other part of the code :)
+2021-05-28 11:48:57	mefistofeles	SnoopJ: yeah exactly that
+2021-05-28 11:49:56	mefistofeles	hmmm, which makes me realize that I may be doing something wrong there in terms of design :P
+2021-05-28 11:50:30	-->	gildarts-soju (16abab341f@user/gildarts) has joined #python
+2021-05-28 11:50:39	phryk	is the coding: utf-8 hint still needed in python 3?
+2021-05-28 11:50:52	-->	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has joined #python
+2021-05-28 11:50:53	mefistofeles	phryk: not really, as far as I remember
+2021-05-28 11:51:45	--	gildarts is now known as gildcloud
+2021-05-28 11:52:38	--	gildarts-soju is now known as gildarts
+2021-05-28 11:52:56	SnoopJ	phryk, UTF-8 is the default encoding starting in Python 3
+2021-05-28 11:53:04	<--	GiLgAmEzH (~gilgamezh@a214055.upc-a.chello.nl) has quit (Read error: Connection reset by peer)
+2021-05-28 11:53:18	habnabit_	default *source file encoding
+2021-05-28 11:53:33	habnabit_	python has a few different defaults and they're not all utf-8
+2021-05-28 11:53:39	SnoopJ	yes, sorry; other encodings may depend on locale, but it just assumes the source file is UTF-8 unless you say otherwise
+2021-05-28 11:54:49	phryk	ah, okay.
+2021-05-28 11:55:22	phryk	also, I'm kinda wondering, why pydoc.getdoc returns the coding: utf-8 comment instead of the actual docstring – is this normal behavior or worthy of a bug report?
+2021-05-28 11:55:47	 *	phryk is currently refining the HTML5 doc renderer he wrote for his project back when it was 2.7…
+2021-05-28 11:55:50	habnabit_	phryk, what did you call it on?
+2021-05-28 11:56:18	-->	v01d4lph4 (~v01d4lph4@user/v01d4lph4) has joined #python
+2021-05-28 11:56:33	phryk	habnabit_: the first parameter passed to .docmodule
+2021-05-28 11:56:43	SnoopJ	phryk, getdoc() will "get the doc string _or comments_ for an object" (emphasis mine)
+2021-05-28 11:56:52	phryk	it's called "object" in my code, should be the module object.
+2021-05-28 11:56:57	<--	slickymasterWork (~slickymas@ubuntu/member/slickymaster) has quit (Quit: Connection closed)
+2021-05-28 11:57:04	habnabit_	phryk, sounds like it was doing source inspection on the module to find the first comment in it
+2021-05-28 11:58:46	-->	Jormungandr89 (~brad@136.49.61.2) has joined #python
+2021-05-28 11:59:13	phryk	Oh, a """ string that's not bound to any var is just considered a comment?
+2021-05-28 11:59:19	SnoopJ	no
+2021-05-28 11:59:38	grym	phryk: if you put it in the right place, that's a __doc__
+2021-05-28 11:59:46	grym	if you put it in the wrong place, it's not
+2021-05-28 11:59:47	habnabit_	phryk, """ is never comments, no. it's a string literal
+2021-05-28 11:59:50	SnoopJ	but if a string literal appears as the first statement in a module/etc., it's the docstring: https://www.python.org/dev/peps/pep-0257/#what-is-a-docstring
+2021-05-28 11:59:59	<--	Maikel (~Maikel@130.61.63.136) has quit (Read error: Connection reset by peer)
+2021-05-28 12:00:28	phryk	ah alright. then i just remove all the unicode hints in my codefiles and i should be golden. :)
+2021-05-28 12:00:30	SnoopJ	looks like pydoc.getdoc() is smart enough to ignore a coding specifier if there is one
+2021-05-28 12:00:47	<--	kosh (~kosh@user/kosh) has quit (Ping timeout: 264 seconds)
+2021-05-28 12:01:09	habnabit_	phryk, sometimes people do get confused though and call """ comments
+2021-05-28 12:01:18	-->	Lord_of_Life (~Lord@user/lord-of-life/x-2819915) has joined #python
+2021-05-28 12:01:22	-->	Betal (~Beta@user/betal) has joined #python
+2021-05-28 12:01:23	-->	brumla (~bruml@178.77.217.196) has joined #python
+2021-05-28 12:01:37	SnoopJ	oh, no, it doesn't ignore it at all, it's just that if a docstring is present it takes priority, heh
+2021-05-28 12:01:46	-->	Maikel (~Maikel@130.61.63.136) has joined #python
+2021-05-28 12:04:01	-->	Tier (~tier@37.214.54.55) has joined #python
+2021-05-28 12:04:06	phryk	SnoopJ: ah okay, so the hint would only show up as the heading in my renderer if there's a utf-8 hint but no docstring, got it. just removed all the utf-8 hints anyways. :)
+2021-05-28 12:04:19	-->	Sasazuka (~Sasazuka@user/sasazuka) has joined #python
+2021-05-28 12:05:09	phryk	oooh, I just realized the hints were made to headings because of the "#" at the beginning (I'm running the docstrings through a markdown parser)
+2021-05-28 12:05:42	SnoopJ	it's "just" a quirk of pydoc that it falls back on the first comment if a docstring isn't present
+2021-05-28 12:05:49	<--	v01d4lph4 (~v01d4lph4@user/v01d4lph4) has quit (Remote host closed the connection)
+2021-05-28 12:06:48	<--	FluffyMask (~FluffyMas@47.184.156.179) has quit (Changing host)
+2021-05-28 12:06:48	-->	FluffyMask (~FluffyMas@user/fluffymask) has joined #python
+2021-05-28 12:06:49	-->	v01d4lph4 (~v01d4lph4@user/v01d4lph4) has joined #python
+2021-05-28 12:07:44	-->	ipadla (~rm@109-252-121-216.nat.spd-mgts.ru) has joined #python
+2021-05-28 12:07:47	SnoopJ	getdoc() is pretty straightforward: `result = _getdoc(object) or inspect.getcomments(object)` where _getdoc() seeks a docstring and getcomments() doesn't try to distinguish source encoding specifiers (but does ignore shebangs)
+2021-05-28 12:07:55	<--	chele (~chele@user/chele) has quit (Remote host closed the connection)
+2021-05-28 12:09:10	phryk	yeah, I'm just beginning to get back into this. has been years since i touched my autodoc module.^^
+2021-05-28 12:09:14	<--	nomic (~nomic@2a00:23c6:9910:1201:dcc8:4fc3:e4d0:9c5b) has quit (Quit: Leaving)
+2021-05-28 12:09:41	phryk	last time, i basically just made sure it doesn't crash on python3, but some features are half-broken now.^^
+2021-05-28 12:09:42	habnabit_	phryk, these days there's a project everyone uses called 'sphinx' for documentation
+2021-05-28 12:09:48	phryk	i am aware.
+2021-05-28 12:10:12	phryk	i'm using it for other software. but this is a webframework that renders its own documentation – i.e. for the exact version installed.
+2021-05-28 12:10:24	habnabit_	phryk, oh, like fastapi
+2021-05-28 12:10:36	phryk	not aware of fastapi^^
+2021-05-28 12:10:57	SnoopJ	darling framework of the moment that can do the same trick
+2021-05-28 12:11:34	<--	mwd5650 (~mwd5650@fwbb-192-149-255-3.inxnet.net) has quit (Ping timeout: 265 seconds)
+2021-05-28 12:12:07	phryk	cool. my thing is way more niche tho… a flask+peewee based framework that uses 0 client-side scripting (enforces it, too) and has a bit of a data journalism twist with custom SVG plotting and a data editor for simple analysis.
+2021-05-28 12:12:26	habnabit_	oh, yikes, peewee
+2021-05-28 12:12:28	phryk	been working on it forever.
+2021-05-28 12:12:37	phryk	what's your issue with peewee?
+2021-05-28 12:12:39	SnoopJ	is it a "dashboard?"
+2021-05-28 12:12:51	habnabit_	it's an activerecord ORM
+2021-05-28 12:12:52	grym	it's a non-sqla orm
+2021-05-28 12:13:08	phryk	i really disliked sqlalchemy :F
+2021-05-28 12:13:19	phryk	a previous iteration of this project used it^^
+2021-05-28 12:13:30	habnabit_	i'll use other ORMs, but activerecord is just so bad
+2021-05-28 12:13:47	habnabit_	i.e. objects have a 'save' method and you need to assemble them in dependency order yourself
+2021-05-28 12:13:51	grym	i've been pretty amused/fascinated with what simon willison gets up to w/r/t data journalism
+2021-05-28 12:14:08	phryk	SnoopJ: not a dashboard. it's geared towards DIY data journalism – i.e. integrated toolset for data analysis, visualization and publication.
+2021-05-28 12:14:30	SnoopJ	neat, makes me think of datasette a little bit
+2021-05-28 12:14:45	SnoopJ	probably because "data journalism" heh
+2021-05-28 12:16:20	phryk	the no client-side scripting is a bit of an issue ofc. interactivity of visualizations is pretty limited because it's just SVG+CSS
+2021-05-28 12:16:21	dicajo	if you haven't checked it out, and like flask, i do suggest at least giving fastapi a once over.
+2021-05-28 12:16:44	habnabit_	yeah with fastapi i think there's no longer any reason to use flask
+2021-05-28 12:17:40	phryk	I've been working on this in one form or another since… 2012? fifth iteration currently, not going to do a rewrite now. :P
+2021-05-28 12:18:10	phryk	starred the datasette and fastapi repos tho, no time to really look into them right now – already working on 3+ projects in parallel^^
+2021-05-28 12:18:51	-->	Akuli (~Akuli@82-203-164-53.bb.dnainternet.fi) has joined #python
+2021-05-28 12:19:59	phryk	also habnabit_, having a .save just seems so much more intuitive to me. one of my main goals was having an intuitive OOP API. Also doing a lot of things by inheritance, which I gather is also a bit controversial in python circles. :P
+2021-05-28 12:20:15	-->	jbowen (~jbowen@fedora/jbowen) has joined #python
+2021-05-28 12:20:28	SnoopJ	phryk, simonw is about as "data journalism" as it gets. He gave an excellent presentation about datasette to the Boston Python meetup last year: https://www.youtube.com/watch?v=zFQKUQ5IKWs
+2021-05-28 12:20:36	habnabit_	phryk, 'intuitive' is not something i'd ever apply to programming and it's a trap here
+2021-05-28 12:20:49	<--	a6a45081-2b83 (~aditya@106.212.79.20) has quit (Read error: Connection reset by peer)
+2021-05-28 12:20:50	SnoopJ	but I understand what you mean re: project inertia
+2021-05-28 12:21:13	SnoopJ	I am inclined to agree that I think I won't ever reach for flask over FastAPI again, but who knows?
+2021-05-28 12:21:19	<--	jbowen (~jbowen@fedora/jbowen) has left #python
+2021-05-28 12:21:19	<--	danisztls (~weechat@user/danisztls) has quit (Ping timeout: 248 seconds)
+2021-05-28 12:21:46	habnabit_	phryk, putting the save methods on the objects makes the user of the ORM have to do more work; sqlalchemy's session instead relieves the programmer of that work by doing more work in the library
+2021-05-28 12:22:26	<--	Ergo^ (~ergo@185.55.8.59.c.fiberdirekt.net) has quit (Ping timeout: 272 seconds)
+2021-05-28 12:22:46	phryk	habnabit_: at the cost of it having a steeper learning curve.
+2021-05-28 12:22:59	-->	CodeMouse92 (~CodeMouse@user/codemouse92) has joined #python
+2021-05-28 12:23:07	-->	GeniusMusing (~geniusmus@199.91.225.59) has joined #python
+2021-05-28 12:23:21	habnabit_	phryk, i don't think that's true. i picked up sqlalchemy _way_ faster because it handles things like this
+2021-05-28 12:23:38	phryk	well, for me it was exactly the other way around.^^
+2021-05-28 12:24:12	phryk	i mean i had an iteration using sqla and work just went so much faster for me when i switched to peewee…
+2021-05-28 12:24:59	phryk	i have heard similar things regarding pandas and tried integrating it, but after ~1.5y ripped it out a few months ago and things have been much better for me since^^
+2021-05-28 12:25:28	SnoopJ	pandas has a lot of jank when you're not doing exploratory work
+2021-05-28 12:25:29	<--	argento (~argent0@168.227.96.51) has quit (Ping timeout: 264 seconds)
+2021-05-28 12:25:43	grym	pandas api is actually like 8 mini-APIs in a trenchcoat
+2021-05-28 12:25:53	phryk	and it's extremely painful if you want to persist the datasets…
+2021-05-28 12:26:03	phryk	which is kind of a central thing for me.
+2021-05-28 12:26:57	phryk	pandas probably has the most opaque API i have ever dealt with… spent over a year with it and couldn't make heads or tails of it. :F
+2021-05-28 12:27:17	-->	cmagina (~cmagina@user/cmagina) has joined #python
+2021-05-28 12:27:26	SnoopJ	it's gotten better in/since 2.x, but...still janky
+2021-05-28 12:27:38	phryk	anyhow, I'll be diving back into my autodoc code :)
+2021-05-28 12:28:13	-->	esro (~esro@nat1.krakowskiinternet.pl) has joined #python
+2021-05-28 12:28:52	<--	rendar (~rendar@user/rendar) has quit
+2021-05-28 12:30:44	<--	whaley (~whaley@066-169-090-170.res.spectrum.com) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 12:33:04	-->	kosh (~kosh@user/kosh) has joined #python
+2021-05-28 12:33:16	-->	jcirc (~jcarlos@226.red-80-39-212.dynamicip.rima-tde.net) has joined #python
+2021-05-28 12:33:28	<--	esro (~esro@nat1.krakowskiinternet.pl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 12:35:11	-->	Doxin (~Doxin@Powder/Dragon/Doxin) has joined #python
+2021-05-28 12:35:51	-->	Ergo^ (~ergo@185.55.8.59.c.fiberdirekt.net) has joined #python
+2021-05-28 12:36:05	-->	esro (~esro@nat1.krakowskiinternet.pl) has joined #python
+2021-05-28 12:36:44	-->	xrogaan (~xrogaan@user/xrogaan) has joined #python
+2021-05-28 12:39:31	-->	nre (~nre@55d46dd3.access.ecotel.net) has joined #python
+2021-05-28 12:40:48	<--	esro (~esro@nat1.krakowskiinternet.pl) has quit (Client Quit)
+2021-05-28 12:41:35	<--	jetchisel (~jetchisel@user/jetchisel) has quit (Ping timeout: 248 seconds)
+2021-05-28 12:41:54	<--	SyntheticClamor (~Synthetic@2a01cb04008a92007da59076e1b0ce8b.ipv6.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2021-05-28 12:42:02	<--	Ohmu (~Ohmu@node-4yt.pool-118-173.dynamic.totinternet.net) has quit (Remote host closed the connection)
+2021-05-28 12:42:18	<--	gildcloud (sid245064@user/gildarts) has left #python
+2021-05-28 12:43:55	-->	jetchisel (jetchisel@user/jetchisel) has joined #python
+2021-05-28 12:44:16	-->	qzd (uid237765@id-237765.tooting.irccloud.com) has joined #python
+2021-05-28 12:44:35	<--	Ergo^ (~ergo@185.55.8.59.c.fiberdirekt.net) has quit (Ping timeout: 264 seconds)
+2021-05-28 12:47:38	<--	jinsun (~quassel@122.175.162.109) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2021-05-28 12:47:45	<--	Torro (Torro@gateway/vpn/protonvpn/torro) has quit (Quit: bye)
+2021-05-28 12:50:49	--	birb is now known as erica
+2021-05-28 12:51:17	-->	nomic (~nomic@2a00:23c6:9910:1201:dcc8:4fc3:e4d0:9c5b) has joined #python
+2021-05-28 12:51:39	<--	CombatVet (~c4@gateway/tor-sasl/combatvet) has quit (Changing host)
+2021-05-28 12:51:39	-->	CombatVet (~c4@user/combatvet) has joined #python
+2021-05-28 12:51:46	-->	Rum (~u0_a262@user/rum) has joined #python
+2021-05-28 12:51:53	-->	Nact (~l@host-85-27-126-59.dynamic.voo.be) has joined #python
+2021-05-28 12:52:15	<--	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 12:52:21	<--	gildarts (16abab341f@user/gildarts) has quit (Remote host closed the connection)
+2021-05-28 12:52:29	-->	gildarts (16abab341f@user/gildarts) has joined #python
+2021-05-28 12:54:17	-->	bitdex (~bitdex@gateway/tor-sasl/bitdex) has joined #python
+2021-05-28 12:54:39	-->	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has joined #python
+2021-05-28 12:54:43	-->	asd (~noname@user/asd) has joined #python
+2021-05-28 12:56:30	<--	Naan (~Naan@user/naan) has quit (Quit: Leaving)
+2021-05-28 12:57:03	<--	brumla (~bruml@178.77.217.196) has quit (Ping timeout: 248 seconds)
+2021-05-28 12:57:50	<--	vladoski (~vladoski@2001:b07:add:d406:8de1:c03c:426d:6fe5) has quit (Client Quit)
+2021-05-28 12:59:35	-->	amahl (~amahl@dxv5skyy95x-mzmyd9kkt-3.rev.dnainternet.fi) has joined #python
+2021-05-28 13:00:07	<--	ipadla (~rm@109-252-121-216.nat.spd-mgts.ru) has quit (Quit: leaving)
+2021-05-28 13:00:23	-->	viktorivan (~ivan@187.223.151.156) has joined #python
+2021-05-28 13:03:16	<--	especial (~especial@cm-84.214.231.176.getinternet.no) has quit (Remote host closed the connection)
+2021-05-28 13:05:38	-->	Guddu (~Guddu@117.222.80.81) has joined #python
+2021-05-28 13:09:47	<--	sbmsr (~pi@212.102.61.51) has quit (Ping timeout: 264 seconds)
+2021-05-28 13:09:51	-->	sco1 (~sco1@pool-108-26-161-197.bstnma.fios.verizon.net) has joined #python
+2021-05-28 13:11:35	-->	sbmsr (~pi@2600:1700:63d0:4830:9670:3c44:ca85:cefd) has joined #python
+2021-05-28 13:12:46	<--	Elodin (~weechat@user/elodin) has quit (Read error: Connection reset by peer)
+2021-05-28 13:13:16	<--	Matheo_bis (~Matheo_bi@91-163-165-135.subs.proxad.net) has quit (Quit: Konversation terminated!)
+2021-05-28 13:16:15	<--	sco1 (~sco1@pool-108-26-161-197.bstnma.fios.verizon.net) has quit (Ping timeout: 248 seconds)
+2021-05-28 13:16:35	-->	vaio (~gary@user/ghost) has joined #python
+2021-05-28 13:17:42	<--	vlm (~vlm@user/vlm) has quit (Read error: Connection reset by peer)
+2021-05-28 13:19:48	-->	vlm (~vlm@user/vlm) has joined #python
+2021-05-28 13:20:19	-->	yannick_ (~yannick@user/rhax) has joined #python
+2021-05-28 13:20:48	-->	brumla (~bruml@178.77.217.196) has joined #python

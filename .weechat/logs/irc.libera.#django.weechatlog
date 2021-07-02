@@ -1,0 +1,455 @@
+2021-05-27 14:48:56	-->	reno (~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net) has joined #django
+2021-05-27 14:48:56	--	Topic for #django is "Welcome to #django || Please provide code and __full__ traceback in a pastebin || Pastebin at: http://dpaste.de/ -- do not use pastebin.com! || Django CoC applies: https://www.djangoproject.com/conduct/ || Django bugfix releases issued: 3.2.3, 3.1.11, and 2.2.23 https://www.djangoproject.com/weblog/2021/may/13/bugfix-releases/""
+2021-05-27 14:48:56	--	Topic set by felixx on Thu, 20 May 2021 02:55:46
+2021-05-27 14:48:56	--	Channel #django: 188 nicks (1 op, 4 voices, 183 normals)
+2021-05-27 14:48:58	--	Channel created on Wed, 19 May 2021 08:50:34
+2021-05-27 14:54:45	-->	bartdag (~bartdag@bras-base-mtrlpq0736w-grc-04-174-93-214-78.dsl.bell.ca) has joined #django
+2021-05-27 14:54:59	-->	Guddu (~Guddu@59.95.232.55) has joined #django
+2021-05-27 14:59:40	<--	bartdag (~bartdag@bras-base-mtrlpq0736w-grc-04-174-93-214-78.dsl.bell.ca) has quit (Ping timeout: 264 seconds)
+2021-05-27 15:00:32	<--	mambang (~mambang@user/mambang) has quit (Remote host closed the connection)
+2021-05-27 15:00:33	-->	especial (~especial@cm-84.214.231.176.getinternet.no) has joined #django
+2021-05-27 15:00:47	<--	salman (~user@user/salman) has quit (Remote host closed the connection)
+2021-05-27 15:02:01	<--	bjs (sid190364@user/bjs) has quit
+2021-05-27 15:02:13	-->	bjs (sid190364@user/bjs) has joined #django
+2021-05-27 15:03:42	-->	nichlas (nichlas@gateway/vpn/protonvpn/nichlas) has joined #django
+2021-05-27 15:06:01	-->	Tier (~tier@37.214.54.55) has joined #django
+2021-05-27 15:06:24	-->	sadg (~odd@45.83.220.210) has joined #django
+2021-05-27 15:07:24	<--	EvilDMP (~EvilDMP@django/moderator/EvilDMP) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-27 15:07:51	-->	EvilDMP (~EvilDMP@django/moderator/EvilDMP) has joined #django
+2021-05-27 15:07:51	--	Mode #django [+v EvilDMP] by ChanServ
+2021-05-27 15:08:20	<--	EvilDMP (~EvilDMP@django/moderator/EvilDMP) has quit (Client Quit)
+2021-05-27 15:08:53	-->	EvilDMP (~EvilDMP@django/moderator/EvilDMP) has joined #django
+2021-05-27 15:08:53	--	Mode #django [+v EvilDMP] by ChanServ
+2021-05-27 15:09:08	<--	EvilDMP (~EvilDMP@django/moderator/EvilDMP) has quit (Client Quit)
+2021-05-27 15:09:37	-->	EvilDMP (~EvilDMP@django/moderator/EvilDMP) has joined #django
+2021-05-27 15:09:37	--	Mode #django [+v EvilDMP] by ChanServ
+2021-05-27 15:09:55	<--	EvilDMP (~EvilDMP@django/moderator/EvilDMP) has quit (Client Quit)
+2021-05-27 15:10:24	-->	EvilDMP (~EvilDMP@django/moderator/EvilDMP) has joined #django
+2021-05-27 15:10:24	--	Mode #django [+v EvilDMP] by ChanServ
+2021-05-27 15:10:43	<--	EvilDMP (~EvilDMP@django/moderator/EvilDMP) has quit (Client Quit)
+2021-05-27 15:13:38	-->	pulsar17_ (~pulsar17@146.196.33.126) has joined #django
+2021-05-27 15:15:30	-->	hombrelaser (~luis@187-167-217-35.static.axtel.net) has joined #django
+2021-05-27 15:16:28	<--	pulsar17 (~pulsar17@146.196.33.71) has quit (Ping timeout: 264 seconds)
+2021-05-27 15:16:46	--	pulsar17_ is now known as pulsar17
+2021-05-27 15:32:49	-->	salman (~user@user/salman) has joined #django
+2021-05-27 15:33:15	<--	salman (~user@user/salman) has quit (Remote host closed the connection)
+2021-05-27 15:33:23	-->	sed (~sed@pool-100-7-53-231.rcmdva.fios.verizon.net) has joined #django
+2021-05-27 15:37:49	-->	dundermph (~dundermph@dynamic-acs-24-144-159-194.zoominternet.net) has joined #django
+2021-05-27 15:38:02	-->	pulsar17_ (~pulsar17@146.196.33.239) has joined #django
+2021-05-27 15:39:14	dundermph	ChrisWarrick: Hi! Just wanted to let you know (in case you lost sleep last night, haha) that looks like we had the query wrapped in a `list()` call and it was executing on all 100k records without splicing. We had some python logic putting groups you were invited to at the top of the list, moved that to an annotate
+2021-05-27 15:40:07	dundermph	query went from 15s to ~200-400ms
+2021-05-27 15:41:03	ChrisWarrick	dundermph: oh, that makes a lot of sense
+2021-05-27 15:41:04	<--	pulsar17 (~pulsar17@146.196.33.126) has quit (Ping timeout: 264 seconds)
+2021-05-27 15:43:12	<--	pulsar17_ (~pulsar17@146.196.33.239) has quit (Quit: Leaving)
+2021-05-27 15:44:50	-->	rom16384 (~Adium@2001:818:e755:fa00:11a9:197e:2608:483) has joined #django
+2021-05-27 15:44:51	<--	mjacksonw (~mjacksonw@146.115.135.232) has quit (Quit: My iMac has gone to sleep. ZZZzzz…)
+2021-05-27 15:45:31	wallbroken	FunkyBob: here? i need to ask you a thing
+2021-05-27 15:49:20	-->	Abraxas (~Abraxas@user/abraxas) has joined #django
+2021-05-27 15:49:59	<--	slav0nic (slav0nic@python.su) has quit (Ping timeout: 264 seconds)
+2021-05-27 15:50:40	<--	Tier (~tier@37.214.54.55) has quit (Quit: Leaving)
+2021-05-27 15:50:48	-->	mjacksonw (~mjacksonw@146.115.135.232) has joined #django
+2021-05-27 15:51:38	FunkyBob	wallbroken: stop asking to ask... just ask
+2021-05-27 15:56:57	wallbroken	ok
+2021-05-27 15:57:46	wallbroken	i have a problem here:
+2021-05-27 15:57:46	wallbroken	https://github.com/ClaudioViti/lookbook/blob/multi-user-dev/shoes/templates/shoes/minicartView_list.html#L79
+2021-05-27 15:57:49	wallbroken	in this line
+2021-05-27 15:57:55	wallbroken	the if is wrong
+2021-05-27 15:58:05	wallbroken	and i don't know how to fix it
+2021-05-27 15:58:20	-->	koo6 (~koo6@89-24-13-235.customers.tmcz.cz) has joined #django
+2021-05-27 15:58:30	wallbroken	this if adds "checked" if the condition is true
+2021-05-27 15:59:13	wallbroken	this is the field on the shoe object: urgent_user = models.ManyToManyField('auth.User', related_name='urgent_items', blank=True)
+2021-05-27 15:59:46	FunkyBob	and how did you built the list urgent_ids?
+2021-05-27 16:01:00	wallbroken	https://github.com/ClaudioViti/lookbook/blob/multi-user-dev/shoes/views.py#L105
+2021-05-27 16:01:31	<--	dundermph (~dundermph@dynamic-acs-24-144-159-194.zoominternet.net) has quit (Remote host closed the connection)
+2021-05-27 16:02:10	<--	mjacksonw (~mjacksonw@146.115.135.232) has quit (Quit: My iMac has gone to sleep. ZZZzzz…)
+2021-05-27 16:04:05	FunkyBob	so when you say it's wrong
+2021-05-27 16:04:11	FunkyBob	you mean... you think it should be set, and it's not?
+2021-05-27 16:05:01	wallbroken	FunkyBob: it means that if i change the state from the admin page
+2021-05-27 16:05:09	wallbroken	the page won't get the right state
+2021-05-27 16:05:29	wallbroken	it means that is not considering the right variable
+2021-05-27 16:05:31	FunkyBob	and what steps have you taken to debug this?
+2021-05-27 16:05:44	FunkyBob	        context['urgent_ids'] = self.request.user.favourite_items.values_list('pk', flat=True)
+2021-05-27 16:05:47	FunkyBob	there's your problem
+2021-05-27 16:05:49	wallbroken	FunkyBob: well, it was an all day job
+2021-05-27 16:05:56	wallbroken	when you change the state from the page
+2021-05-27 16:06:09	wallbroken	a javascript code is triggered that creates a post request
+2021-05-27 16:06:20	FunkyBob	you've made a cut'n'pasto
+2021-05-27 16:06:32	wallbroken	it is sent and effectively changes the variable on the server
+2021-05-27 16:06:47	wallbroken	and this is all ok
+2021-05-27 16:06:52	wallbroken	but then, when i refresh the page
+2021-05-27 16:06:59	wallbroken	i'll get again the original value
+2021-05-27 16:07:16	wallbroken	so, when the page loads, is not pulling the right value
+2021-05-27 16:07:23	FunkyBob	shut up, wallbroken
+2021-05-27 16:07:26	FunkyBob	and read what I said
+2021-05-27 16:07:56	wallbroken	why you say there is my problem?
+2021-05-27 16:08:03	wallbroken	ok. favourite
+2021-05-27 16:08:54	wallbroken	FunkyBob: ok, now it works
+2021-05-27 16:08:55	wallbroken	thank you
+2021-05-27 16:09:09	wallbroken	i would also ask you about another bug i'm trying to fix
+2021-05-27 16:09:37	wallbroken	https://github.com/ClaudioViti/lookbook/blob/multi-user-dev/shoes/views.py#L214
+2021-05-27 16:09:42	wallbroken	i tried writing this line
+2021-05-27 16:10:00	wallbroken	which must remove the user
+2021-05-27 16:10:05	wallbroken	but it's not doing that
+2021-05-27 16:10:36	wallbroken	well, don't read that line. i know that is wrong
+2021-05-27 16:11:04	wallbroken	but the idea is: set the flag off for that user after sending the email
+2021-05-27 16:11:57	-->	mjacksonw (~mjacksonw@146.115.135.232) has joined #django
+2021-05-27 16:13:48	FunkyBob	just the one?
+2021-05-27 16:14:01	FunkyBob	shouldn't it clear the users whole list of cart items?
+2021-05-27 16:15:51	wallbroken	FunkyBob: did you know the new logic i implemented? the old logic was: set a boolean flag for each item
+2021-05-27 16:16:13	FunkyBob	yes, I see it
+2021-05-27 16:16:14	wallbroken	now is set the users that the item needs to have.
+2021-05-27 16:16:15	wallbroken	ok
+2021-05-27 16:16:18	FunkyBob	you added a bunch of m2m fields
+2021-05-27 16:16:41	wallbroken	well... when i send the order from a specific user
+2021-05-27 16:16:54	wallbroken	i want to set the m2m flag off for that user i'm sending on
+2021-05-27 16:17:02	FunkyBob	also, line 207 is redundant
+2021-05-27 16:17:14	FunkyBob	yes, you want to _clear_ the m2m for that user
+2021-05-27 16:17:44	wallbroken	exactly
+2021-05-27 16:17:50	-->	withered_wolf (~withered_@1437135-v103.1561-static.stchilaa.metronetinc.net) has joined #django
+2021-05-27 16:18:21	FunkyBob	but that's not what  your code says, at all
+2021-05-27 16:19:36	wallbroken	yes, i did it wrong and i'm asking for help about that
+2021-05-27 16:20:16	FunkyBob	        queryset = request.user.cart_items.all()
+2021-05-27 16:20:20	FunkyBob	start from that
+2021-05-27 16:20:31	FunkyBob	that is the set of cart items of interest...
+2021-05-27 16:20:34	FunkyBob	and you want to clear  that set
+2021-05-27 16:20:51	FunkyBob	you already figured that out... that they're the ones you want
+2021-05-27 16:21:12	FunkyBob	https://docs.djangoproject.com/en/3.2/ref/models/relations/#django.db.models.fields.related.RelatedManager.clear
+2021-05-27 16:21:19	<--	koo6 (~koo6@89-24-13-235.customers.tmcz.cz) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:21:40	wallbroken	FunkyBob: i already checked that page
+2021-05-27 16:21:47	wallbroken	in fact i tried using .remove()
+2021-05-27 16:22:07	<--	withered_wolf (~withered_@1437135-v103.1561-static.stchilaa.metronetinc.net) has quit (Ping timeout: 244 seconds)
+2021-05-27 16:22:22	<--	KyleInProgress (~KyleInPro@47.185.232.231) has quit (Quit: My iMac has gone to sleep. ZZZzzz…)
+2021-05-27 16:22:43	FunkyBob	and I'm suggesting a different way
+2021-05-27 16:22:47	<--	eskatonic (~eskatonic@2601:645:4001:3130::7989) has quit (Changing host)
+2021-05-27 16:22:47	-->	eskatonic (~eskatonic@user/eskatonic) has joined #django
+2021-05-27 16:23:15	FunkyBob	you want to clear the users set of cart items... so do it from the users side
+2021-05-27 16:23:57	wallbroken	what does that mean?
+2021-05-27 16:24:29	wallbroken	cart_user
+2021-05-27 16:24:41	wallbroken	cart_user.remove()
+2021-05-27 16:25:18	<--	mjacksonw (~mjacksonw@146.115.135.232) has quit (Quit: My iMac has gone to sleep. ZZZzzz…)
+2021-05-27 16:25:28	FunkyBob	no, not remove
+2021-05-27 16:25:45	FunkyBob	that's why I linked you to the _clear_ method
+2021-05-27 16:25:59	<--	aosaigh (~aosaigh@user/aosaigh) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2021-05-27 16:26:55	wallbroken	cart_user.clear() ?
+2021-05-27 16:28:47	<--	especial (~especial@cm-84.214.231.176.getinternet.no) has quit (Remote host closed the connection)
+2021-05-27 16:29:05	FunkyBob	try it
+2021-05-27 16:29:26	FunkyBob	though I still think you should start from request.uset.cart_items.
+2021-05-27 16:30:02	-->	withered_wolf (~withered_@1437135-v103.1561-static.stchilaa.metronetinc.net) has joined #django
+2021-05-27 16:30:05	wallbroken	well. cart_items is not an object of user
+2021-05-27 16:30:12	wallbroken	is an object of shoe
+2021-05-27 16:30:36	FunkyBob	queryset = request.user.cart_items.all()  <-- that's from your own code, and appears to work
+2021-05-27 16:30:43	FunkyBob	all relations are two-ay
+2021-05-27 16:30:55	FunkyBob	you can use a m2m from both sides
+2021-05-27 16:31:01	wallbroken	ok
+2021-05-27 16:31:17	wallbroken	request.user.cart_items.clear()
+2021-05-27 16:31:21	wallbroken	that's ok?
+2021-05-27 16:31:39	cusco	.delete() perhaps
+2021-05-27 16:31:52	FunkyBob	no
+2021-05-27 16:31:54	FunkyBob	.clear is right
+2021-05-27 16:31:58	cusco	sorry
+2021-05-27 16:32:01	cusco	what does clear do?
+2021-05-27 16:32:05	FunkyBob	clears a m2m relation
+2021-05-27 16:32:09	cusco	ah
+2021-05-27 16:33:46	wallbroken	'ManyRelatedManager' object has no attribute 'delete'
+2021-05-27 16:34:06	<--	rom16384 (~Adium@2001:818:e755:fa00:11a9:197e:2608:483) has left #django
+2021-05-27 16:34:31	wallbroken	FunkyBob: yes, it's working
+2021-05-27 16:35:00	wallbroken	multi user is too hard
+2021-05-27 16:35:09	wallbroken	i'm working very hard to manage all the cases
+2021-05-27 16:38:14	wallbroken	oh, another bug...
+2021-05-27 16:38:16	wallbroken	damn...
+2021-05-27 16:38:56	-->	mjacksonw (~mjacksonw@146.115.135.232) has joined #django
+2021-05-27 16:39:07	-->	b800h (~b800h@205.210.187.81.in-addr.arpa) has joined #django
+2021-05-27 16:39:33	-->	thomasross (~thomasros@ppp-66-225-170-16.vianet.ca) has joined #django
+2021-05-27 16:40:30	wallbroken	https://github.com/ClaudioViti/lookbook/blob/multi-user-dev/shoes/templates/shoes/minicartView_list.html#L58
+2021-05-27 16:41:00	wallbroken	this should shoe all the items in the cart of everyone if "is staff"
+2021-05-27 16:41:58	FunkyBob	I think you might want to clean up that template a bit... I don't think the {% for shoeimage  ... is closed soon enough
+2021-05-27 16:42:18	FunkyBob	because the Remove button, and the shoe.cart_user.all iteration are inside it
+2021-05-27 16:43:39	wallbroken	do i need to remove % for shoeimage ?
+2021-05-27 16:43:49	FunkyBob	no
+2021-05-27 16:44:01	FunkyBob	you just need to start and end the for loop more sensibly
+2021-05-27 16:44:15	FunkyBob	https://github.com/ClaudioViti/lookbook/blob/multi-user-dev/shoes/templates/shoes/minicartView_list.html#L60
+2021-05-27 16:44:22	FunkyBob	where is the matching {% endfor %} for that line?
+2021-05-27 16:44:34	FunkyBob	look at what's included in that... should it be shown for each image?
+2021-05-27 16:45:56	wallbroken	the number of for are the same number of endfor
+2021-05-27 16:46:19	FunkyBob	that was not the question
+2021-05-27 16:46:33	wallbroken	the only point is that the cart is not showing all the items
+2021-05-27 16:47:06	wallbroken	the cart should show (is is staff) all the items for all the users with the cart flag enabled
+2021-05-27 16:47:13	wallbroken	*if
+2021-05-27 16:47:47	wallbroken	I ALSO added a column reporting the list of user which have that specific item in their cart
+2021-05-27 16:47:52	wallbroken	and it works
+2021-05-27 16:48:40	FunkyBob	well, I think your template mistakes may be causing problems.
+2021-05-27 16:48:48	FunkyBob	not necessarily these problems, but problems.
+2021-05-27 16:49:55	wallbroken	can we fix those mistakes?
+2021-05-27 16:50:04	<--	synack (~synack@user/synack) has left #django
+2021-05-27 16:50:07	<--	knbk (~quassel@84-24-92-123.cable.dynamic.v4.ziggo.nl) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:51:15	FunkyBob	you can
+2021-05-27 16:52:57	djacobs	FunkyBob, you must have been standing in front of the line when they we're handing out patience!
+2021-05-27 16:53:13	djacobs	were*
+2021-05-27 16:53:25	FunkyBob	djacobs: so I keep hearing
+2021-05-27 16:53:26	djacobs	it just keeps going on and on
+2021-05-27 16:53:43	<--	sed (~sed@pool-100-7-53-231.rcmdva.fios.verizon.net) has quit (Ping timeout: 264 seconds)
+2021-05-27 16:53:53	djacobs	it still amazes me! :D not many can handle this amount
+2021-05-27 16:54:43	djacobs	Is there anyone who has experience with building cloud applications which need to connect to network printers in different networks ?
+2021-05-27 16:55:21	djacobs	if not, i will probably have to resort to.. this :( https://github.com/dymosoftware/DCD-SDK-Sample
+2021-05-27 16:55:45	wallbroken	FunkyBob: what generates objects_list ?
+2021-05-27 16:55:52	FunkyBob	your view
+2021-05-27 16:55:57	wallbroken	i know
+2021-05-27 16:56:17	FunkyBob	djacobs: "connect to" is a little vgue
+2021-05-27 16:56:20	FunkyBob	vague
+2021-05-27 16:57:13	wallbroken	FunkyBob: https://github.com/ClaudioViti/lookbook/blob/multi-user-dev/shoes/views.py#L94
+2021-05-27 16:57:17	wallbroken	do you think this is right?
+2021-05-27 16:58:12	FunkyBob	so for superuser their minicart should contain all shoes?
+2021-05-27 16:58:27	FunkyBob	also... why do you keep filtering by user... when it's already filtered by user?  (line 98 , 99 there)
+2021-05-27 16:58:49	FunkyBob	user.cart_items.all() is only the cart items related to this user
+2021-05-27 16:59:14	wallbroken	11:58:12 PM - FunkyBob: so for superuser their minicart should contain all shoes? <<<<< yes, i said it above
+2021-05-27 17:00:01	FunkyBob	seems bizarre, but, then, yes
+2021-05-27 17:00:22	FunkyBob	but that's not what you said above
+2021-05-27 17:00:38	FunkyBob	21:05 < wallbroken> the cart should show (is is staff) all the items for all the users with the cart flag enabled
+2021-05-27 17:00:54	wallbroken	yes, and i confirm this
+2021-05-27 17:01:00	wallbroken	why you said is not the same?
+2021-05-27 17:01:02	FunkyBob	but that's not what you just confirmed
+2021-05-27 17:01:19	FunkyBob	"all the shoes" and "all the items for all users with cart flag enabled " are quite different
+2021-05-27 17:02:30	-->	GinFuyou (~Fuyou@reya.cloud.tilaa.com) has joined #django
+2021-05-27 17:03:02	wallbroken	FunkyBob: well,  the admin page will be a page from where i can check all the user activity
+2021-05-27 17:03:03	djacobs	Well i need to be able to send print commands from the cloud, to the local network of the user.
+2021-05-27 17:03:16	<--	marty331 (~marty331@c-98-201-142-174.hsd1.tx.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-27 17:03:16	wallbroken	*users
+2021-05-27 17:03:59	FunkyBob	djacobs: oh
+2021-05-27 17:04:01	djacobs	but the best i can come up with is some client-sided script/program to perform the print command, so that my django app just feeds the images to be printend
+2021-05-27 17:09:29	--	irc: disconnected from server
+2021-05-27 17:41:24	-->	reno (~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net) has joined #django
+2021-05-27 17:41:24	--	Topic for #django is "Welcome to #django || Please provide code and __full__ traceback in a pastebin || Pastebin at: http://dpaste.de/ -- do not use pastebin.com! || Django CoC applies: https://www.djangoproject.com/conduct/ || Django bugfix releases issued: 3.2.3, 3.1.11, and 2.2.23 https://www.djangoproject.com/weblog/2021/may/13/bugfix-releases/""
+2021-05-27 17:41:24	--	Topic set by felixx on Thu, 20 May 2021 02:55:46
+2021-05-27 17:41:24	--	Channel #django: 187 nicks (1 op, 3 voices, 183 normals)
+2021-05-27 17:41:24	--	Channel created on Wed, 19 May 2021 08:50:34
+2021-05-27 17:45:29	-->	kyzaodro (~kyzaodro@KD027091254165.ppp-bb.dion.ne.jp) has joined #django
+2021-05-27 17:45:41	<--	explore (uid233125@id-233125.stonehaven.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-05-27 17:47:56	-->	waveclaw (~quassel@ip68-97-140-218.ok.ok.cox.net) has joined #django
+2021-05-27 19:03:33	--	irc: disconnected from server
+2021-05-27 19:03:58	-->	reno (~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net) has joined #django
+2021-05-27 19:03:58	--	Topic for #django is "Welcome to #django || Please provide code and __full__ traceback in a pastebin || Pastebin at: http://dpaste.de/ -- do not use pastebin.com! || Django CoC applies: https://www.djangoproject.com/conduct/ || Django bugfix releases issued: 3.2.3, 3.1.11, and 2.2.23 https://www.djangoproject.com/weblog/2021/may/13/bugfix-releases/""
+2021-05-27 19:03:58	--	Topic set by felixx on Thu, 20 May 2021 02:55:46
+2021-05-27 19:03:58	--	Channel #django: 184 nicks (1 op, 3 voices, 180 normals)
+2021-05-27 19:03:58	--	Channel created on Wed, 19 May 2021 08:50:34
+2021-05-27 19:05:09	-->	djacobs (~IceChat95@109.133.171.241) has joined #django
+2021-05-28 09:18:23	--	irc: disconnected from server
+2021-05-28 09:18:47	-->	reno (~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net) has joined #django
+2021-05-28 09:18:47	--	Topic for #django is "Welcome to #django || Please provide code and __full__ traceback in a pastebin || Pastebin at: http://dpaste.de/ -- do not use pastebin.com! || Django CoC applies: https://www.djangoproject.com/conduct/ || Django bugfix releases issued: 3.2.3, 3.1.11, and 2.2.23 https://www.djangoproject.com/weblog/2021/may/13/bugfix-releases/""
+2021-05-28 09:18:47	--	Topic set by felixx on Thu, 20 May 2021 02:55:46
+2021-05-28 09:18:47	--	Channel #django: 187 nicks (1 op, 4 voices, 182 normals)
+2021-05-28 09:18:47	--	Channel created on Wed, 19 May 2021 08:50:34
+2021-05-28 09:20:29	teut	the UpdateView and CreateView both share a common form by default  , i.e.,   the one with "<modelname>_form.html"  , I know we can use different ones. But if I 'm using a single one,  how can I do  something like  {% id "i m in the update view"  %}?
+2021-05-28 09:20:39	wallbroken	GinFuyou: how?
+2021-05-28 09:21:17	+apollo13	teut: I guess the update view has an object to update
+2021-05-28 09:21:24	+apollo13	so maybe {% if object %} ?
+2021-05-28 09:21:31	teut	from django.contrib.auth.models import User    wallbroken
+2021-05-28 09:21:46	+apollo13	or if both have an object then "if object.pk" -- only an update view would have an object with a pk
+2021-05-28 09:22:33	wallbroken	teut: thank you
+2021-05-28 09:22:54	teut	thanks apollo13
+2021-05-28 09:22:54	+apollo13	yeah I think {% if object.pk %} will tell you it is an update view
+2021-05-28 09:23:08	+apollo13	both will have an "object", but for create it will be rather empty
+2021-05-28 09:23:35	teut	oh both views have the object, I didnt know that
+2021-05-28 09:23:55	GinFuyou	wallbroken, https://docs.djangoproject.com/en/3.2/topics/auth/customizing/#referencing-the-user-model most correct way, but general import also works
+2021-05-28 09:25:36	+apollo13	teut: ccbv.co.uk/ is usually useful for class based generic views
+2021-05-28 09:25:47	teut	yes I have that link
+2021-05-28 09:25:52	-->	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has joined #django
+2021-05-28 09:29:03	<--	joshy (~joshy@145.250.209.1) has quit (Quit: Connection closed)
+2021-05-28 09:37:04	djacobs	TIL: that my hosting provider only allows to run php-code, and no python.... :D
+2021-05-28 09:38:08	-->	autophagy (~mika@user/autophagy) has joined #django
+2021-05-28 09:41:21	<--	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 09:42:06	<--	cwt (~cwt@2403:6200:88a2:55b1:1dcf:bab4:5ed8:a6af) has quit (Quit: Leaving)
+2021-05-28 09:42:37	wallbroken	GinFuyou: i have a button called "remove" https://www.dropbox.com/s/fjww1j8egtpd4fn/capture1.png?dl=0
+2021-05-28 09:42:57	wallbroken	it now is removing only the object for the user from i'm logged in
+2021-05-28 09:43:28	wallbroken	i prefeer that the button will have a dropdown where to select the user where to remove the item from cart
+2021-05-28 09:44:01	wallbroken	in that example i want a dropdown with "Admin" and "Sara"
+2021-05-28 09:44:22	wallbroken	when i select Sara and click ok, it will remove the item from the sara's cart
+2021-05-28 09:48:32	<--	teut (~teut@122.162.162.247) has quit (Ping timeout: 272 seconds)
+2021-05-28 09:52:47	GinFuyou	wallbroken, well then you have to add a form with user ModelChoiceField
+2021-05-28 09:55:06	-->	gpwasinuse (~gordon@96.71.93.13) has joined #django
+2021-05-28 09:55:40	gpwasinuse	what happened with freenode? i saw the announcement that they took control of the channel but nothing about why
+2021-05-28 09:58:07	Rikem	gpwasinuse: https://www.kline.sh/
+2021-05-28 09:59:18	gpwasinuse	wow
+2021-05-28 09:59:58	gpwasinuse	I lost my nick so that is frustrating
+2021-05-28 10:01:18	gpwasinuse	I am having a confusing issue - bulk_create() on postgres isn't setting the instance ids.  I've not use bulk_create much but from memory I thought this just happened.  Using django 3.1 and postgres:12
+2021-05-28 10:01:23	-->	cwt (~cwt@2403:6200:88a2:55b1:1dcf:bab4:5ed8:a6af) has joined #django
+2021-05-28 10:02:51	<--	crowbar (~user@user/crowbar) has quit (Ping timeout: 244 seconds)
+2021-05-28 10:04:02	gpwasinuse	Would DISABLE_SERVER_SIDE_CURSORS = True cause this issue by chance?
+2021-05-28 10:04:09	<--	cwt (~cwt@2403:6200:88a2:55b1:1dcf:bab4:5ed8:a6af) has quit (Quit: Leaving)
+2021-05-28 10:05:14	wallbroken	GinFuyou:
+2021-05-28 10:05:15	wallbroken	class CartAdminRemove(forms.Form):
+2021-05-28 10:05:15	wallbroken	    removedItem = forms.ModelChoiceField()
+2021-05-28 10:05:27	wallbroken	do i need to add something inside the brackets, right?
+2021-05-28 10:07:00	GinFuyou	yes, look at your other forms, it would need a queryset. We'll have to override it on init later
+2021-05-28 10:07:10	-->	tree (~psb@user/psb) has joined #django
+2021-05-28 10:07:11	GinFuyou	or, wait, we could probably do it easier
+2021-05-28 10:07:46	GinFuyou	We could use a ModelForm for Shoe with fields = ['user_cart']
+2021-05-28 10:08:14	GinFuyou	then don't have to declare field and queryset manually
+2021-05-28 10:08:14	wallbroken	so, what line do i need to add?
+2021-05-28 10:09:40	GinFuyou	https://dpaste.org/jFfS this will do I guess
+2021-05-28 10:09:57	GinFuyou	but what view it is for?
+2021-05-28 10:10:36	<--	frankie (~frankie@net-130-25-175-172.cust.vodafonedsl.it) has quit (Read error: Connection reset by peer)
+2021-05-28 10:10:43	GinFuyou	because if it's a list of shoes we will have to make a form for each shoe
+2021-05-28 10:11:09	wallbroken	https://github.com/ClaudioViti/lookbook/blob/multi-user-dev/shoes/views.py#L87
+2021-05-28 10:11:33	<--	finster (~finster@2a01:4f8:c17:4faa::2) has quit (Quit: leaving)
+2021-05-28 10:12:23	GinFuyou	Probably we will change it to use a formset instead. Form class still is useful
+2021-05-28 10:12:35	-->	mambang (~mambang@user/mambang) has joined #django
+2021-05-28 10:15:07	-->	mehwork (~mehwork@98.185.199.35.bc.googleusercontent.com) has joined #django
+2021-05-28 10:15:22	mehwork	is it right to say that an "endpoint" is a full verb+route like these are 2 different endpoints (even though the same url): `GET localhost:8080/employees/42` and `DELETE localhost:8080/employees/42` ?
+2021-05-28 10:19:28	wallbroken	GinFuyou: if you want give me the code, i'll test it
+2021-05-28 10:19:47	GinFuyou	wallbroken, I'm working on it
+2021-05-28 10:20:02	<--	Balistic (~Balistic@155.93.250.10) has left #django
+2021-05-28 10:22:08	<--	Harlin (~DonQixote@2603:300b:663:e800:774d:95a1:91ef:f883) has quit (Quit: Leaving)
+2021-05-28 10:28:52	<--	Bathtub_Joe (~Joe@47.183.208.10) has quit (Ping timeout: 272 seconds)
+2021-05-28 10:30:48	<--	zodman (uid139198@id-139198.charlton.irccloud.com) has quit (Quit: Connection closed for inactivity)
+2021-05-28 10:32:43	<--	tree (~psb@user/psb) has quit (Quit: tree)
+2021-05-28 10:34:44	GinFuyou	wallbroken, it will more changes to become operational but idea is like that https://dpaste.org/K22n#L
+2021-05-28 10:35:14	-->	aplainzetakind (~johndoe@captainludd.powered.by.lunarbnc.net) has joined #django
+2021-05-28 10:35:37	<--	dakh7_ (~dakh7@ip98-169-201-138.dc.dc.cox.net) has quit (Read error: Connection reset by peer)
+2021-05-28 10:35:43	wallbroken	GinFuyou: not clear what you did
+2021-05-28 10:35:58	-->	especial (~especial@cm-84.214.231.176.getinternet.no) has joined #django
+2021-05-28 10:36:34	-->	teut (~teut@122.162.162.247) has joined #django
+2021-05-28 10:36:49	wallbroken	shoe formset?
+2021-05-28 10:36:50	GinFuyou	mostly https://dpaste.org/K22n#L29,30,36,37,60,67 some other changes are not vital
+2021-05-28 10:38:12	GinFuyou	yes, to make a form for each shoe I used a formset, and replaced loop to iterate formset instead of object_list directly
+2021-05-28 10:38:36	-->	twinsignal (~twinsigna@68.235.43.20) has joined #django
+2021-05-28 10:38:48	GinFuyou	We won't need to handle formset submission actually
+2021-05-28 10:39:26	GinFuyou	it is there for convenience
+2021-05-28 10:40:16	GinFuyou	But you will have to update your JS to send user ids
+2021-05-28 10:40:30	wallbroken	model_formsetfactory is not defined
+2021-05-28 10:40:54	<--	fjmorazan (~quassel@user/fjmorazan) has quit (Quit: fjmorazan)
+2021-05-28 10:41:18	GinFuyou	import it. There may also be other minor things I've omitted or misused
+2021-05-28 10:41:25	<--	mtk- (~mtk-@37.187.126.81) has quit (Quit: leaving)
+2021-05-28 10:41:40	GinFuyou	since I code blindly without testing
+2021-05-28 10:41:55	b-rex	in production, hopefully.
+2021-05-28 10:42:00	-->	fjmorazan (~quassel@user/fjmorazan) has joined #django
+2021-05-28 10:42:56	<--	twinsignal (~twinsigna@68.235.43.20) has quit (Client Quit)
+2021-05-28 10:43:28	wallbroken	Invalid block tag on line 88: 'endwith', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2021-05-28 10:48:02	wallbroken	well, the result is totally crap
+2021-05-28 10:48:29	wallbroken	https://dpaste.org/ZLZB
+2021-05-28 10:48:38	wallbroken	the code is as you wanted?
+2021-05-28 10:49:05	<--	bancroft (~bancroft@bras-base-mtrlpq3015w-grc-11-70-55-136-62.dsl.bell.ca) has quit (Remote host closed the connection)
+2021-05-28 10:49:31	-->	knbk (~quassel@84-24-92-123.cable.dynamic.v4.ziggo.nl) has joined #django
+2021-05-28 10:53:56	nedbat	wallbroken: why is the endwith on line 91 in the paste, but the error message is about line 88?
+2021-05-28 10:54:14	wallbroken	because that error was old, and i fixed it
+2021-05-28 10:54:32	nedbat	wallbroken: oh, why did you paste the code?
+2021-05-28 10:54:32	wallbroken	but now the rendered page is totally crap
+2021-05-28 10:55:41	wallbroken	because what i get is terrible: https://www.dropbox.com/s/fjww1j8egtpd4fn/Capture1.PNG?dl=0
+2021-05-28 10:59:42	-->	GiLgAmEzH (~gilgamezh@a214055.upc-a.chello.nl) has joined #django
+2021-05-28 10:59:54	GinFuyou	Maybe someone notice something, I don't see how my code could render that, at least it closes <tr> with a single image and there is no form
+2021-05-28 11:01:09	wallbroken	well but there is some django issue
+2021-05-28 11:01:16	wallbroken	do you see that i have a duplicated item?
+2021-05-28 11:01:24	wallbroken	number 19
+2021-05-28 11:01:28	wallbroken	why?
+2021-05-28 11:01:35	wallbroken	i should not have it
+2021-05-28 11:01:53	wallbroken	and if i modify, the changes are not permanent
+2021-05-28 11:05:48	-->	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has joined #django
+2021-05-28 11:20:06	teut	Uploaded file: https://uploads.kiwiirc.com/files/75d3963e3db1bc18ef277afdfc822ddf/pasted.txt
+2021-05-28 11:20:40	teut	I have written this functionality in clean method but looking at the docs it doesn't look like it should be in the clean method so where should  it be put?
+2021-05-28 11:21:04	teut	clean is for validation purposes only, and it does not return anything
+2021-05-28 11:23:30	teut	is django 4 coming https://django.readthedocs.io/en/latest/topics/forms/modelforms.html#s-overriding-clean-on-a-modelformset?
+2021-05-28 11:26:27	-->	argento (~argent0@168.227.96.51) has joined #django
+2021-05-28 11:28:02	-->	ironbeard (~geoffrey@130-45-89-178.dyn.grandenetworks.net) has joined #django
+2021-05-28 11:28:11	ironbeard	 I'm creating Model A that will have references to a specific instance of Model B. Is it more  efficient (db query-wise) to set up a ForeignKey in ModelA to ModelB and use `limit_choices_to` to isolate the specific instance of ModelB, or to use a @property wrapper and `return ModelB.objects.get(foo=bar)`? Specifically, I will be using the field values of ModelB often in some methods of ModelA.
+2021-05-28 11:29:02	GinFuyou	FK will be better since you can use select_related
+2021-05-28 11:30:10	GinFuyou	teut, in upload_to callable perhaps?
+2021-05-28 11:30:43	ironbeard	@GinFuyou: thanks :)
+2021-05-28 11:31:01	teut	isn't that for upload to say aws?
+2021-05-28 11:31:07	teut	uploading*
+2021-05-28 11:31:27	GinFuyou	it's for any uploading
+2021-05-28 11:32:06	teut	ok, I ll try thanks
+2021-05-28 11:32:16	wallbroken	GinFuyou: so?
+2021-05-28 11:32:29	teut	https://django.readthedocs.io/en/latest/topics/forms/modelforms.html#s-overriding-clean-on-a-modelformset   and is this django 4 docs?
+2021-05-28 11:32:50	GinFuyou	wallbroken, I'm not sure what I should see and where...
+2021-05-28 11:33:27	wallbroken	GinFuyou: i sent you a screenshot
+2021-05-28 11:33:29	wallbroken	did you see it?
+2021-05-28 11:34:35	GinFuyou	I don't see any 19's there
+2021-05-28 11:35:05	wallbroken	GinFuyou: https://www.dropbox.com/s/j0swlwc00mcm4x0/untitlesd.png?dl=0
+2021-05-28 11:35:24	wallbroken	this is what i see
+2021-05-28 11:35:30	wallbroken	the dropdown is ok
+2021-05-28 11:36:02	teut	https://imgbb.com/  use this wallbroken
+2021-05-28 11:36:03	wallbroken	but if i try to edit the users inside it, then the edit is not persistent
+2021-05-28 11:37:02	GinFuyou	Yes, as I said you need to make your js handle sending users ids there
+2021-05-28 11:37:35	<--	ironbeard (~geoffrey@130-45-89-178.dyn.grandenetworks.net) has quit (Ping timeout: 248 seconds)
+2021-05-28 11:37:58	GinFuyou	for duplicates, could try adding distinct() to queryset in the view, though expected it to not happen in this query
+2021-05-28 11:38:36	wallbroken	queryset = Shoe.objects.filter(cart_user__in = User.objects.all())
+2021-05-28 11:38:38	wallbroken	here?
+2021-05-28 11:38:52	GinFuyou	wallbroken, yes
+2021-05-28 11:39:05	wallbroken	queryset = Shoe.objects.filter(cart_user__in = User.objects.distinct())
+2021-05-28 11:39:07	wallbroken	this way?
+2021-05-28 11:39:16	GinFuyou	teut, what about django 4? I think it's what expected after 3.2
+2021-05-28 11:39:30	teut	a sudden jump?
+2021-05-28 11:39:59	GinFuyou	why sudden? after 2.2 was 3.0
+2021-05-28 11:40:09	teut	what? I didnt know that
+2021-05-28 11:40:28	GinFuyou	I think it's versioning scheme since 2.0
+2021-05-28 11:40:36	teut	ok
+2021-05-28 11:41:09	GinFuyou	wallbroken, no, outside of  Shoe.objects.filter(cart_user__in = User.objects.all()).distinct()
+2021-05-28 11:41:19	GinFuyou	outside of () *
+2021-05-28 11:41:37	-->	thiras (~thiras@user/thiras) has joined #django
+2021-05-28 11:42:17	<--	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 11:43:13	wallbroken	ok
+2021-05-28 11:43:18	wallbroken	now the problem is javascript part
+2021-05-28 11:46:24	GinFuyou	yes, it should send full form data, shoe id and users ids. When it does final part in python is trivial
+2021-05-28 11:47:00	wallbroken	we cannot modify the existing one?
+2021-05-28 11:47:28	<--	DnzAtWrk (~DnzAtWrk@mobile-access-6df04b-240.dhcp.inet.fi) has quit (Quit: Leaving)
+2021-05-28 11:48:07	GinFuyou	which view handles it now, same CartUpdateView ?
+2021-05-28 11:48:09	-->	chris34 (~chris34@elst.uberspace.de) has joined #django
+2021-05-28 11:50:37	wallbroken	yes
+2021-05-28 11:53:04	<--	GiLgAmEzH (~gilgamezh@a214055.upc-a.chello.nl) has quit (Read error: Connection reset by peer)
+2021-05-28 11:56:40	wallbroken	the ideal thing is to have only on button for the entire cart
+2021-05-28 11:56:44	wallbroken	not for every item
+2021-05-28 12:00:38	-->	Xof (~Xof@157-131-136-66.dedicated.static.sonic.net) has joined #django
+2021-05-28 12:02:30	GinFuyou	hm? Not sure what you mean, since we made a list of items in all carts...
+2021-05-28 12:02:48	GinFuyou	with given logic it's easier to add a new view
+2021-05-28 12:03:29	wallbroken	GinFuyou: instead of having a "remove" button for each item of the cart
+2021-05-28 12:03:42	wallbroken	i want a "save" button for entire cart
+2021-05-28 12:04:01	-->	Tier (~tier@37.214.54.55) has joined #django
+2021-05-28 12:04:10	GinFuyou	ah I see. Then it could be repurposed to use full formset submit
+2021-05-28 12:05:23	teut	anyway  to use getattr in templates?
+2021-05-28 12:05:37	GinFuyou	Could skip JS then too
+2021-05-28 12:05:45	teut	apart from custom creation of tags
+2021-05-28 12:06:06	GinFuyou	not really, DTL doesn't allow passing arguments
+2021-05-28 12:06:35	teut	was that for me GinFuyou?
+2021-05-28 12:07:01	GinFuyou	yes, the last one
+2021-05-28 12:07:29	GinFuyou	There could be 3rd-party templates libs
+2021-05-28 12:08:28	GinFuyou	but generally it will likely be considered "doing it wrong" in the django mindset.
+2021-05-28 12:08:42	teut	I still don't get it why doesn't the form.<a file field>   has no initial data
+2021-05-28 12:09:06	teut	I m in updateview and have the object from which I m extracting the file name
+2021-05-28 12:09:46	wallbroken	GinFuyou: if you want to give me the code to try...
+2021-05-28 12:09:47	teut	  {% if field.name == "email_content" or field.name == "file_attach"  %}    <i>Previously uploaded {{window.<field>.name}}</i> {% endif %}
+2021-05-28 12:10:07	teut	that field, I think I need if else for each field otherwise
+2021-05-28 12:10:10	GinFuyou	Because there is no reasonable initial value for file inputs. If you see admin it uses separate widget to show link to existing (server-side) file
+2021-05-28 12:10:34	teut	how to force it to use file name as text?
+2021-05-28 12:11:05	teut	and use a TextField maybe?
+2021-05-28 12:13:02	-->	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has joined #django
+2021-05-28 12:14:44	teut	the file name always exists so it should be a parameter to the form
+2021-05-28 12:14:59	teut	attribute
+2021-05-28 12:15:11	GinFuyou	wallbroken, have to step away for some time... you need to wrap <form> around whole formset loop. Add submit button to the end, cstf token tag and shoe_formset.management_form inside of it
+2021-05-28 12:16:01	<--	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has quit (Client Quit)
+2021-05-28 12:17:39	wallbroken	GinFuyou: later you will come back?
+2021-05-28 12:18:30	-->	Skriptmonkey (~Skriptmon@149-92-237-24.gci.net) has joined #django
+2021-05-28 12:18:45	-->	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has joined #django
+2021-05-28 12:21:49	<--	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has quit (Client Quit)
+2021-05-28 12:22:26	<--	Ergo^ (~ergo@185.55.8.59.c.fiberdirekt.net) has quit (Ping timeout: 272 seconds)
+2021-05-28 12:22:38	-->	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has joined #django
+2021-05-28 12:25:29	<--	argento (~argent0@168.227.96.51) has quit (Ping timeout: 264 seconds)
+2021-05-28 12:33:08	-->	LordBizagon (~Lord@70-229-215-124.lightspeed.frokca.sbcglobal.net) has joined #django
+2021-05-28 12:35:45	-->	Ergo^ (~ergo@185.55.8.59.c.fiberdirekt.net) has joined #django
+2021-05-28 12:37:35	-->	twomanytacos (uid366386@id-366386.tooting.irccloud.com) has joined #django
+2021-05-28 12:44:02	-->	bitdex (~bitdex@gateway/tor-sasl/bitdex) has joined #django
+2021-05-28 12:44:35	<--	Ergo^ (~ergo@185.55.8.59.c.fiberdirekt.net) has quit (Ping timeout: 264 seconds)
+2021-05-28 12:46:38	<--	bitdex (~bitdex@gateway/tor-sasl/bitdex) has quit (Client Quit)
+2021-05-28 12:47:43	<--	k3nny (~k3nny@user/k3nny) has quit (Quit: Leaving)
+2021-05-28 12:52:13	-->	Lycurgus (~juan@cpe-45-46-140-49.buffalo.res.rr.com) has joined #django
+2021-05-28 12:54:17	-->	bitdex (~bitdex@gateway/tor-sasl/bitdex) has joined #django
+2021-05-28 13:00:53	<--	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 13:02:23	-->	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has joined #django
+2021-05-28 13:03:16	<--	especial (~especial@cm-84.214.231.176.getinternet.no) has quit (Remote host closed the connection)
+2021-05-28 13:04:15	<--	gpwasinuse (~gordon@96.71.93.13) has quit (Ping timeout: 252 seconds)
+2021-05-28 13:05:38	-->	Guddu (~Guddu@117.222.80.81) has joined #django
+2021-05-28 13:08:09	<--	Lance (~Lance@ip72-220-252-25.sd.sd.cox.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 13:09:47	<--	sbmsr (~pi@212.102.61.51) has quit (Ping timeout: 264 seconds)
+2021-05-28 13:10:50	-->	Treskjeg (~TreSkjeg@h96-61-229-68.ivnsut.broadband.dynamic.tds.net) has joined #django
+2021-05-28 13:11:14	<--	luxliquidus (~luxliquid@2601:140:8e00:224:f6c9:d3a3:ac94:417b) has quit (Read error: Connection reset by peer)
+2021-05-28 13:11:21	-->	luxliquidus_ (~luxliquid@2601:140:8e00:224:f6c9:d3a3:ac94:417b) has joined #django
+2021-05-28 13:11:33	-->	sbmsr (~pi@2600:1700:63d0:4830:9670:3c44:ca85:cefd) has joined #django
+2021-05-28 13:12:33	<--	Treskjeg (~TreSkjeg@h96-61-229-68.ivnsut.broadband.dynamic.tds.net) has quit (Client Quit)

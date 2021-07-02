@@ -1,0 +1,499 @@
+2021-05-28 09:46:40	-->	reno (~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net) has joined #javascript
+2021-05-28 09:46:40	--	Topic for #javascript is "JavaScript is *not* Java | Just ask your question | Don't paste code in the channel | Can't talk? Get registered ( https://git.io/vaTS2 )"
+2021-05-28 09:46:40	--	Topic set by ljharb (sid43720@user/ljharb) on Thu, 20 May 2021 12:05:26
+2021-05-28 09:46:40	--	Channel #javascript: 238 nicks (1 op, 3 voices, 234 normals)
+2021-05-28 09:46:42	--	Channel created on Wed, 19 May 2021 08:50:29
+2021-05-28 09:46:57	<--	dom_jax (~jacksd60@user/dom-jax/x-5655732) has quit (Client Quit)
+2021-05-28 09:48:47	<--	stenno (~stenno@user/stenno) has quit (Ping timeout: 248 seconds)
+2021-05-28 09:50:08	-->	carkmorwin (~carkmorwi@user/carkmorwin) has joined #javascript
+2021-05-28 09:51:38	<--	carkmorwin (~carkmorwi@user/carkmorwin) has quit (Client Quit)
+2021-05-28 09:54:41	<--	brezanac (~brezanac@dynamic-213-198-222-227.adsl.eunet.rs) has quit (Quit: Leaving)
+2021-05-28 09:55:06	-->	onosendi1 (~onosendi@user/onosendi) has joined #javascript
+2021-05-28 09:56:39	<--	leduyquang753 (~leduyquan@27.73.107.184) has quit (Quit: leaving)
+2021-05-28 09:58:51	<--	wovixo (~wovixo@128.104.205.49) has quit (Read error: Connection reset by peer)
+2021-05-28 09:58:55	<--	diamondbond (~diamondbo@175.157.127.199) has quit (Ping timeout: 248 seconds)
+2021-05-28 09:59:01	-->	dom_jax (~jacksd60@user/dom-jax/x-5655732) has joined #javascript
+2021-05-28 09:59:27	<--	onosendi1 (~onosendi@user/onosendi) has quit (Ping timeout: 248 seconds)
+2021-05-28 10:00:44	-->	carkmorwin (~carkmorwi@user/carkmorwin) has joined #javascript
+2021-05-28 10:02:21	qswz	I should open-source my useForm hook, it's a killer
+2021-05-28 10:02:39	qswz	that with react-query are some must have
+2021-05-28 10:02:45	<--	dragosr (~dragosr@S0106001100110011.vf.shawcable.net) has quit (Quit: Leaving)
+2021-05-28 10:02:55	-->	dragosr (~dragosr@S0106001100110011.vf.shawcable.net) has joined #javascript
+2021-05-28 10:03:31	<--	carkmorwin (~carkmorwi@user/carkmorwin) has quit (Client Quit)
+2021-05-28 10:07:25	pagnol	qswz: you use GraphQL too?
+2021-05-28 10:07:29	pagnol	what's your setup
+2021-05-28 10:07:30	qswz	no
+2021-05-28 10:07:35	qswz	a rest API
+2021-05-28 10:07:37	pagnol	ah
+2021-05-28 10:07:47	qswz	with some added things like includes=field1,field2
+2021-05-28 10:08:04	pagnol	oh I assumed react-query was a GraphQL thing
+2021-05-28 10:08:10	qswz	not only
+2021-05-28 10:08:25	qswz	works well with any async reuests
+2021-05-28 10:08:30	qswz	requests*
+2021-05-28 10:09:09	qswz	useQuery (and useMutation) are just some query wrappers giving you a isLoading, and error states
+2021-05-28 10:09:22	qswz	and caching
+2021-05-28 10:09:32	pagnol	I have a React spa in which the data fetching is a little bit all over the place and was looking for some way to tidy up
+2021-05-28 10:09:54	qswz	yea, check it, we recently tried it, works well
+2021-05-28 10:10:04	pagnol	I will
+2021-05-28 10:10:17	qswz	before we were implementing ourself some kind of caching
+2021-05-28 10:10:33	qswz	usequery is great for getting rid of useEffect's
+2021-05-28 10:10:49	qswz	that cleans things up a lot
+2021-05-28 10:17:15	-->	ku (~ku@2601:280:c780:7ea0:bdb5:230d:40c:e48e) has joined #javascript
+2021-05-28 10:20:16	velix	qswz: Man... when will you deliver my pizza? I'm waiting for hours now :)
+2021-05-28 10:20:46	-->	stenno (~stenno@user/stenno) has joined #javascript
+2021-05-28 10:21:32	<--	silv3r_m00n (~enlighten@110.227.89.23) has left #javascript
+2021-05-28 10:21:33	webstrand	Anyone familiar with parcel plugins? I can't figure out how parcel decides _which_ transforms to apply to particular files.
+2021-05-28 10:22:08	<--	Harlin (~DonQixote@2603:300b:663:e800:774d:95a1:91ef:f883) has quit (Quit: Leaving)
+2021-05-28 10:22:09	webstrand	from looking at the typescript & livescript plugins, does it just blindly try all transformers?
+2021-05-28 10:22:25	-->	sillyslux (~sillyslux@m83-180-51-16.cust.tele2.hr) has joined #javascript
+2021-05-28 10:23:29	qswz	if it' slike webpack, there's a regex
+2021-05-28 10:23:54	qswz	 { test: /\.css$/, use: 'css-loader' },
+2021-05-28 10:24:06	qswz	oh for plugins?
+2021-05-28 10:24:34	webstrand	no regex anywhere that I can find
+2021-05-28 10:24:35	qswz	you just put them, and parcel/webpack decide what to do with them
+2021-05-28 10:24:38	webstrand	for example https://github.com/c0deaddict/parcel-transformer-livescript/blob/master/src/LiveScriptTransformer.js
+2021-05-28 10:24:45	qswz	plugins is different than
+2021-05-28 10:25:19	qswz	I don't know parcel, sorry
+2021-05-28 10:25:50	webstrand	thanks for trying. With the advent of parcel v2, their documentation is woefully incomplete (or I'm not reading the right docs)
+2021-05-28 10:29:17	-->	carkmorwin (~carkmorwi@user/carkmorwin) has joined #javascript
+2021-05-28 10:29:22	<--	sheetjs (~sheetjs@pool-173-54-145-7.nwrknj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2021-05-28 10:29:35	-->	cthulchu (~Cthulchu@193.194.107.250) has joined #javascript
+2021-05-28 10:30:46	<--	carkmorwin (~carkmorwi@user/carkmorwin) has quit (Client Quit)
+2021-05-28 10:31:42	-->	sheetjs (~sheetjs@pool-173-54-145-7.nwrknj.fios.verizon.net) has joined #javascript
+2021-05-28 10:31:58	velix	pizza { .sauce, .cheese, .toppings, .oregano }
+2021-05-28 10:32:05	velix	.morecheese
+2021-05-28 10:33:26	<--	onion (~zzz@user/yin) has quit (Quit: onion)
+2021-05-28 10:33:43	sheetjs	while(1) pizza.cheese++;
+2021-05-28 10:33:52	sheetjs	for(;;) ++pizza.cheese;
+2021-05-28 10:36:10	velix	.cheese not found :(
+2021-05-28 10:36:43	sheetjs	there wouldn't be an error.  you would just have NaN cheese
+2021-05-28 10:36:53	sheetjs	n> var pizza = {}; ++pizza.cheese; pizza
+2021-05-28 10:36:54	+jellobot	(okay) { cheese: NaN }
+2021-05-28 10:36:57	-->	aplainzetakind (~johndoe@captainludd.powered.by.lunarbnc.net) has joined #javascript
+2021-05-28 10:36:59	-->	fakuve (~fakuve@158.223.165.3) has joined #javascript
+2021-05-28 10:37:22	qswz	NeiN
+2021-05-28 10:37:45	sheetjs	you jest qswz but Excel localizes formula names
+2021-05-28 10:38:20	sheetjs	summing column A is SUM(A:A) in en-US Excel.  In fr-FR it is SOMME(A:A)
+2021-05-28 10:38:21	fakuve	Hi Polar Bears , can anyone of Fluffy you asses me with this ? Why in https://jsfiddle.net/ux3065rt/ ? I get in line 28 (TypeError: records[id].tracks.push is not a function
+2021-05-28 10:38:22	fakuve	)
+2021-05-28 10:38:33	qswz	it's terrible
+2021-05-28 10:39:08	qswz	fakuve: console.log's it
+2021-05-28 10:39:25	sheetjs	english Excel has a function ECMA.CEILING
+2021-05-28 10:39:37	sheetjs	norwegian Excel calls it ECMA.AVRUND.GJELDENDE.MULTIPLUM
+2021-05-28 10:39:37	qswz	tracks might be a string or something, you'll know
+2021-05-28 10:39:53	qswz	what a bad idea haha
+2021-05-28 10:40:24	qswz	it gives excel much more maintenance work
+2021-05-28 10:40:44	sheetjs	fakuve: recordCollection[5439] has no tracks array
+2021-05-28 10:40:53	-->	lightning (~satellite@cpe-174-107-66-235.sc.res.rr.com) has joined #javascript
+2021-05-28 10:40:54	<--	fjmorazan (~quassel@user/fjmorazan) has quit (Quit: fjmorazan)
+2021-05-28 10:41:13	qswz	records[id].tracks?.push()
+2021-05-28 10:41:14	fakuve	sheetjs: yep I see
+2021-05-28 10:41:16	-->	carkmorwin (~carkmorwi@user/carkmorwin) has joined #javascript
+2021-05-28 10:41:19	stenno	ECMA.T_PAAMAYIM_NEKUDOTAYIM
+2021-05-28 10:41:25	fakuve	thanks
+2021-05-28 10:41:28	qswz	which is bad tho, fix it rather
+2021-05-28 10:41:39	<--	carkmorwin (~carkmorwi@user/carkmorwin) has quit (Client Quit)
+2021-05-28 10:41:53	qswz	ACMEScript
+2021-05-28 10:42:00	-->	fjmorazan (~quassel@user/fjmorazan) has joined #javascript
+2021-05-28 10:43:07	<--	basudev (~basudev@sourcehut/user/basudev) has quit (Quit: basudev)
+2021-05-28 10:43:22	sheetjs	fakuve: did you possibly mean records[id].tracks = [] in line 25?
+2021-05-28 10:43:50	sheetjs	it doesn't make sense to set it to value in line 25 since you will be pushing to it later
+2021-05-28 10:44:35	aplainzetakind	https://dpaste.com/72YWDAWMH I await this in a try block, which works fine when it doesn't throw, but when it throws and I catch, what I catch is a Promise. What's the proper way to get the json out of this?
+2021-05-28 10:44:56	fakuve	Ok , the interpretation erropr is in 28 though
+2021-05-28 10:45:04	fakuve	i will check
+2021-05-28 10:45:31	webstrand	qswz: apparently parcel isn't zero-configuration. It uses .parcelrc to hide it's regexes. Thanks for sending me down the right track.
+2021-05-28 10:45:47	<--	lightning (~satellite@cpe-174-107-66-235.sc.res.rr.com) has quit (Ping timeout: 264 seconds)
+2021-05-28 10:45:47	qswz	yw
+2021-05-28 10:45:51	sheetjs	did esbuild or some other tool take over?
+2021-05-28 10:47:43	ljharb	no
+2021-05-28 10:48:03	ljharb	esbuild is from the bazel folks, so i wouldn't expect it to be great anyways, but either way it's wayyyyy too young to be production-ready
+2021-05-28 10:49:20	fakuve	sheetjs: cheers it was just set the next condition as   else if (prop == "tracks" &&  value != ""){
+2021-05-28 10:49:37	sheetjs	its 2021.  when excel is eschewing 40 years of backwards compatibility, nothing is too young for production readiness
+2021-05-28 10:51:48	sheetjs	fakuve: that still won't be correct since tracks won't be an array
+2021-05-28 10:52:27	fakuve	yep then the value will be created in an array datatype
+2021-05-28 10:52:40	fakuve	forgot to mention that second tweak
+2021-05-28 10:52:57	qswz	bad
+2021-05-28 10:53:16	qswz	oh I misread, nvm
+2021-05-28 10:54:23	-->	domhnall_ (~domhnall@143.244.45.78) has joined #javascript
+2021-05-28 10:54:23	<--	domhnall_ (~domhnall@143.244.45.78) has quit (Client Quit)
+2021-05-28 10:54:29	-->	hnOsmium0001 (uid453710@id-453710.stonehaven.irccloud.com) has joined #javascript
+2021-05-28 10:54:43	--	domhnall is now known as Guest4362
+2021-05-28 10:54:44	-->	slaughter (~s@97-113-103-213.tukw.qwest.net) has joined #javascript
+2021-05-28 10:54:55	<--	pagnol (~user@014198154145.ctinets.com) has quit (Ping timeout: 264 seconds)
+2021-05-28 10:55:59	<--	blez (~blez@213.91.182.96) has quit (Ping timeout: 264 seconds)
+2021-05-28 10:58:07	<--	Guest4362 (~domhnall@user/domhnall/x-2887755) has quit (Ping timeout: 248 seconds)
+2021-05-28 10:58:09	<--	stkrdknmibalz (~test@rrcs-75-87-43-226.sw.biz.rr.com) has quit (Quit: WeeChat 3.0.1)
+2021-05-28 10:58:32	-->	nomic (~nomic@2a00:23c6:9910:1201:dcc8:4fc3:e4d0:9c5b) has joined #javascript
+2021-05-28 11:05:48	<--	is0ke3 (~is0ke3@user/is0ke3) has quit (Ping timeout: 272 seconds)
+2021-05-28 11:06:39	<--	ku (~ku@2601:280:c780:7ea0:bdb5:230d:40c:e48e) has quit (Ping timeout: 248 seconds)
+2021-05-28 11:07:00	<--	fbandov (~fbandov@95.91.209.121) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 11:07:33	-->	is0ke3 (~is0ke3@user/is0ke3) has joined #javascript
+2021-05-28 11:08:27	merpnderp	Are you all still in freenode, or you all make a clean break?
+2021-05-28 11:08:50	-->	alystair (~alystair@user/alystair) has joined #javascript
+2021-05-28 11:10:26	austincheney	i squat in both
+2021-05-28 11:12:01	<--	alystair (~alystair@user/alystair) has quit (Remote host closed the connection)
+2021-05-28 11:12:02	<--	slaughter (~s@97-113-103-213.tukw.qwest.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 11:12:23	dom_jax	what are the user number comparisons for this channel, freenode vs. libera?
+2021-05-28 11:13:07	<--	orkim (~orkim@user/orkim) has quit (Quit: quit)
+2021-05-28 11:13:19	-->	orkim (~orkim@user/orkim) has joined #javascript
+2021-05-28 11:13:30	ljharb	freenode obviously has more
+2021-05-28 11:13:39	ljharb	but 90% of the people in there are idling
+2021-05-28 11:14:14	sheetjs	you're comparing a 16 year old channel to a <16 day old channel
+2021-05-28 11:14:50	dom_jax	yeah I imagined it would be more, just interested in how much more
+2021-05-28 11:14:54	sheetjs	freenode ##javascript: Registered : Mar 15 18:39:59 2005 (16y 11w 0d ago)
+2021-05-28 11:15:01	ljharb	having 200+ in here so fast is actually impressive
+2021-05-28 11:15:08	-->	slaughter (~s@97-113-103-213.tukw.qwest.net) has joined #javascript
+2021-05-28 11:15:09	dom_jax	yeah agreed!
+2021-05-28 11:15:16	sheetjs	libera #javascript: Registered : May 20 17:04:50 2021 +0000 (1w 0d 23h ago)
+2021-05-28 11:15:25	ljharb	there's about 800 in the other one
+2021-05-28 11:16:02	theskillwithin	ljharb no need to debate drama anymore
+2021-05-28 11:16:12	ljharb	indeed
+2021-05-28 11:16:25	dom_jax	Yep, fair enough. Back to JS...
+2021-05-28 11:16:40	theskillwithin	ugh
+2021-05-28 11:16:43	--	Mode #javascript [+o sheetjs] by ChanServ
+2021-05-28 11:16:50	--	sheetjs has changed topic for #javascript from "JavaScript is *not* Java | Just ask your question | Don't paste code in the channel | Can't talk? Get registered ( https://git.io/vaTS2 )" to "No discussions about FreeNode drama | JavaScript is *not* Java | Just ask your question | Don't paste code in the channel | Can't talk? Get registered ( https://git.io/vaTS2 )"
+2021-05-28 11:16:57	--	Mode #javascript [-o sheetjs] by ChanServ
+2021-05-28 11:16:59	sheetjs	there
+2021-05-28 11:17:01	theskillwithin	oh wait
+2021-05-28 11:17:18	sheetjs	should that say IRC drama?
+2021-05-28 11:18:42	Kirjava	no let people talk about other juicy IRC drama
+2021-05-28 11:18:49	theskillwithin	i was just being asshole cuz he said that earlier
+2021-05-28 11:19:22	theskillwithin	maybe should be allowed here
+2021-05-28 11:19:31	Kirjava	"no drama, no Java"
+2021-05-28 11:19:34	theskillwithin	up to u ops
+2021-05-28 11:19:36	stenno	lol
+2021-05-28 11:19:50	sheetjs	what about dramascript?
+2021-05-28 11:19:52	Kirjava	the first rule of #javascript is...
+2021-05-28 11:19:54	dom_jax	Should be "no Java, no drama"
+2021-05-28 11:20:40	sheetjs	theskillwithin can change the topic
+2021-05-28 11:21:05	theskillwithin	shit, putting it on me now
+2021-05-28 11:21:06	Kirjava	just set -t and let the community decide
+2021-05-28 11:21:10	Kirjava	that cant go wrong, right?
+2021-05-28 11:21:19	stenno	please no
+2021-05-28 11:21:20	ljharb	yeah no
+2021-05-28 11:21:23	stenno	lol
+2021-05-28 11:21:25	Kirjava	:^)
+2021-05-28 11:22:00	theskillwithin	too many no's
+2021-05-28 11:23:24	Dorward	What about Llamas?
+2021-05-28 11:23:27	sheetjs	"yeah no" could have been an affirmative statement
+2021-05-28 11:23:49	stenno	Dorward: cuidados los llamas!!
+2021-05-28 11:24:16	stenno	las?
+2021-05-28 11:24:26	sheetjs	there was a scene in veep where they were reviewing ballots.  one voter wrote F*** SELINA MEYER.
+2021-05-28 11:24:30	merpnderp	Can we at least talk shite about typescript?
+2021-05-28 11:24:38	merpnderp	"Typescript is not Javascript"
+2021-05-28 11:24:40	ljharb	merpnderp: you mean, facts about it?
+2021-05-28 11:24:44	sheetjs	the meyer team successfully won the vote by arguing that there was an implied comma
+2021-05-28 11:25:08	Kirjava	seems legit
+2021-05-28 11:25:15	theskillwithin	back in the day u could talk about wtver u want as long as it didn't intefer with someones question and wasn't racist
+2021-05-28 11:25:38	sheetjs	attitudes regarding typescript have changed over the years
+2021-05-28 11:25:46	-->	stkrdknmibalz (~test@rrcs-75-87-43-226.sw.biz.rr.com) has joined #javascript
+2021-05-28 11:26:12	dom_jax	are people more pro-TS these days then?
+2021-05-28 11:26:19	sheetjs	to an extent, once you start introducing compilers and transpilers, it doesn't really matter what you use
+2021-05-28 11:26:33	Kirjava	although using stage-0 might bite you
+2021-05-28 11:26:35	systemfault	dom_jax: IRL? Certainly. On this channel? NOPE.
+2021-05-28 11:26:37	Kirjava	;_;
+2021-05-28 11:26:46	sheetjs	practically speaking, modern JS is no different from a compile-to-JS language like typescript
+2021-05-28 11:26:46	merpnderp	I hate TS.
+2021-05-28 11:26:49	dom_jax	lol
+2021-05-28 11:27:19	merpnderp	You might say "But isn't hate too strong of a word?" and I'd say "nope."
+2021-05-28 11:27:42	merpnderp	Course I started TS in its very first days on angular 1.x
+2021-05-28 11:27:45	merpnderp	So f TS.
+2021-05-28 11:27:54	stenno	there is not much to hate about TS i think
+2021-05-28 11:28:01	systemfault	stenno: Right.
+2021-05-28 11:28:05	ljharb	Kirjava: using stage < 3 will definitely bite you
+2021-05-28 11:28:10	systemfault	I do pure FP with TS and it's fine, really.
+2021-05-28 11:28:14	ljharb	stenno: yes there is
+2021-05-28 11:28:23	merpnderp	If you want it to be more complicated to configure, implement, and maintain, then TS is for you.
+2021-05-28 11:28:25	stenno	ljharb: there is much to hate about TS?
+2021-05-28 11:28:39	Kirjava	stage <3 has all the fun stuff though
+2021-05-28 11:28:49	stenno	'the love stage'
+2021-05-28 11:28:52	Kirjava	( ͡° ͜ʖ ͡°)
+2021-05-28 11:29:11	theskillwithin	stage 3 is the love stage right
+2021-05-28 11:29:21	Kirjava	less than three
+2021-05-28 11:29:28	theskillwithin	oh lala
+2021-05-28 11:30:05	dom_jax	it is an extra step when you take in to consideration compiling etc. but as sheetjs said, you have to do very similar things with modern JS anyway
+2021-05-28 11:30:13	dom_jax	Well, a lot of us do
+2021-05-28 11:30:15	sheetjs	n> var x = 0; x &= 1; x &&= 2; x
+2021-05-28 11:30:16	+jellobot	(okay) 0
+2021-05-28 11:30:25	sheetjs	n> var x = 0; x |= 1; x ||= 2; x
+2021-05-28 11:30:25	+jellobot	(okay) 1
+2021-05-28 11:30:26	systemfault	dom_jax: Any competent dev do in 2021
+2021-05-28 11:30:28	Kirjava	I like the approach of just using LSP with typescript and having babel just strip everything out
+2021-05-28 11:30:40	Kirjava	skipping tsc
+2021-05-28 11:30:55	systemfault	Kirjava: I do mostly TS on the backend... so tsc alone is enough
+2021-05-28 11:31:07	ljharb	tsc should only ever be used for typechecking
+2021-05-28 11:31:12	ljharb	it's a shitty transpiler
+2021-05-28 11:31:18	systemfault	Says the guy who hates the language.
+2021-05-28 11:31:39	dom_jax	and then babel for the other bits ljharb?
+2021-05-28 11:31:42	ljharb	i'm not sure why my opinion of TS has any bearing on my opinion of the quality of its output
+2021-05-28 11:31:43	ljharb	dom_jax: yes
+2021-05-28 11:31:53	theskillwithin	i don't like TS as well, a lot of setup for not much benefit on frontend
+2021-05-28 11:31:55	ljharb	TS is "fine" but it's got lots of bugs and is not a superset of JS
+2021-05-28 11:32:27	joepie91	my main complaint about TS is that it makes the nice features of JS harder to use
+2021-05-28 11:32:46	joepie91	in exchange for questionable reliability improvements
+2021-05-28 11:33:02	joepie91	(which may actually be negative depending on circumstances)
+2021-05-28 11:33:17	Kirjava	it's heavily use case dependent imo
+2021-05-28 11:33:32	joepie91	as a type system it's just not a very good one
+2021-05-28 11:33:39	systemfault	joepie91: Because you say so?
+2021-05-28 11:33:43	merpnderp	For SPA's at $work, I never encounter a bug and think "Man, strong typing would have kept this from happening."
+2021-05-28 11:33:46	<--	theskillwithin (~theskillw@user/theskillwithin) has left #javascript (Textual IRC Client: www.textualapp.com)
+2021-05-28 11:34:04	systemfault	joepie91: Because you've read something on a blogpost that said that TS had an unsound type system... without knowing what it means?
+2021-05-28 11:34:05	Kirjava	in contrast I use JS nearly always and get that thought a lot
+2021-05-28 11:34:05	ljharb	those kinds of bugs just don't happen in reality
+2021-05-28 11:34:21	-->	cog (~Atlas@2604:3d08:b280:b200:9d95:e475:88b:5f6c) has joined #javascript
+2021-05-28 11:34:21	systemfault	I mean, I understand people not liking TS... no issue.
+2021-05-28 11:34:24	joepie91	merpnderp: that matches my experience. my code certainly has bugs, but almost never of the type (heh) that TS would have prevented
+2021-05-28 11:34:27	ljharb	google did a study on the entire internet, for their "strong mode" proposal, and found that avoiding type coercions wouldn't actually help enough to make the proposal worth it
+2021-05-28 11:34:29	dom_jax	I do however get 7 unit tests in and think, types would have sorted this... But I still don't reach for TS
+2021-05-28 11:34:29	-->	theskillwithin (~theskillw@user/theskillwithin) has joined #javascript
+2021-05-28 11:34:30	systemfault	But the points they keep repeating... over and over...
+2021-05-28 11:34:33	merpnderp	joepie91: lol
+2021-05-28 11:34:35	ljharb	because *people don't ship those kinds of bugs*
+2021-05-28 11:34:55	theskillwithin	ill say this, iv never ever on frontend been confused about what type something is
+2021-05-28 11:35:08	systemfault	theskillwithin: Unrelated.
+2021-05-28 11:35:31	theskillwithin	so therefor i don't use ts
+2021-05-28 11:35:33	merpnderp	Is it a string, is it an object, is it superman? If you find yourself asking these questions, your code is spaghetti and you need to start over.
+2021-05-28 11:35:43	systemfault	theskillwithin: Let's say you have function "lol" that takes a string as a parameter, but it can only be "omg" or "rofl", then with TS you can enforce that
+2021-05-28 11:35:51	joepie91	the benefits are more pronounced with a Rust-style type system that also encodes ownership, but that itself then comes at a significant cost that isn't always (or maybe even 'often') worth it
+2021-05-28 11:36:01	systemfault	theskillwithin: You'll see a red line if you use any other string... it's no big deal really
+2021-05-28 11:36:08	ljharb	you can't actually enforce it
+2021-05-28 11:36:11	systemfault	I can personally live with JS or with TS
+2021-05-28 11:36:15	ljharb	you can only enforce it in typed code
+2021-05-28 11:36:21	ljharb	runtime type checks let you actually enforce it
+2021-05-28 11:36:41	joepie91	if your function is called 'lol' and your inputs are 'omg' and 'rofl', you probably have bigger problems than type annotations
+2021-05-28 11:36:51	ljharb	roflcopter()
+2021-05-28 11:36:58	systemfault	joepie91: Thanks for missing the point.
+2021-05-28 11:37:02	theskillwithin	tis an example
+2021-05-28 11:37:15	joepie91	yes, it's an example that is so contrived that it no longer resembles reality
+2021-05-28 11:37:27	stenno	soi soi soi
+2021-05-28 11:37:29	systemfault	fetch(myUrl, { includes: '?????' }) ?
+2021-05-28 11:37:30	joepie91	it's intentionally chosen to be poorly named and designed
+2021-05-28 11:37:41	systemfault	Is that real-world enough for you?
+2021-05-28 11:37:44	ljharb	the in-editor prompts are nice.; but you don't need TS for that.
+2021-05-28 11:37:56	dom_jax	JSDoc
+2021-05-28 11:38:04	merpnderp	systemfault: but I wouldn't pass a string. I'd create an object to emulate and enums? const lolParams = {omg: true, rofl: true};
+2021-05-28 11:38:16	cog	TS rarely saves me from initial development bugs.  But it has saved me from so many refactor bugs it's insane.
+2021-05-28 11:38:40	merpnderp	systemfault: now my code complete means if I fat finger it, I'll know instantly, but I won't because I'll see the code complete option and click *tab* and never have a problem.
+2021-05-28 11:38:41	GreenJello	I'm writing a lambda currently with JS+jsdoc+tsc
+2021-05-28 11:38:42	systemfault	(For the fetch example, the name of the property is 'credentials', not 'includes')
+2021-05-28 11:38:44	theskillwithin	systemfault only time id appreciate ts is if u backends don't give me consistent data 😛
+2021-05-28 11:38:58	systemfault	GreenJello: How is it working so far?
+2021-05-28 11:39:05	GreenJello	surprisingly not terrible
+2021-05-28 11:39:16	cog	theskillwithin: That happens more often than I'd like with APIs.
+2021-05-28 11:39:20	ljharb	jsdoc, eesh
+2021-05-28 11:39:22	ljharb	i'd rather use TS
+2021-05-28 11:39:33	ljharb	cog: tests should save you from those
+2021-05-28 11:40:39	systemfault	Anyway, good luck trying to avoid learning a little TS. Unless you're a freelance, you _will_ eventually have to deal with it.
+2021-05-28 11:40:54	systemfault	Every new big project is typed...
+2021-05-28 11:41:05	systemfault	Every frontend framework is typed.
+2021-05-28 11:41:14	ljharb	not every, for either. but ofc you need to know it
+2021-05-28 11:41:30	systemfault	Every framework worth mentioning.
+2021-05-28 11:41:37	-->	thiras (~thiras@user/thiras) has joined #javascript
+2021-05-28 11:41:42	ljharb	also not true.
+2021-05-28 11:41:52	systemfault	Vue? React? Angular? Svelte?
+2021-05-28 11:42:00	systemfault	Which one?
+2021-05-28 11:42:00	ljharb	react doesn't use TS.
+2021-05-28 11:42:06	systemfault	It uses FlowType.
+2021-05-28 11:42:08	systemfault	So?
+2021-05-28 11:42:21	ljharb	"is typed" doesn't mean "you have to learn TS"
+2021-05-28 11:42:23	systemfault	I said "typed", not "using TS"
+2021-05-28 11:42:24	ljharb	those are different.
+2021-05-28 11:42:25	theskillwithin	idk what react uses, i just use react
+2021-05-28 11:42:37	ljharb	many big projects are typed. not every one is.
+2021-05-28 11:42:47	ljharb	not every typed project uses TS, altho ofc all new ones do
+2021-05-28 11:43:10	ljharb	and that you should know how to use TS, doesn't mean it's a good choice for every project.
+2021-05-28 11:43:43	systemfault	I personally love TS's type system, and I thank JS for it. But I really hate all those C#ers/Javaers trying to import their silly patterns in TS/JS
+2021-05-28 11:44:23	shan	damn i wish i was around to see ##javascript when it was starting out
+2021-05-28 11:44:32	shan	are there any cool articles from around the time JS first came out
+2021-05-28 11:44:43	shan	Like the one on Eric Meyer's website talking about CSS
+2021-05-28 11:44:56	systemfault	Nobody took JS seriously before XMLHttpRequest happened...
+2021-05-28 11:45:03	shan	like a review of the language or revolutionary features or whatever
+2021-05-28 11:45:04	merpnderp	systemfault: Vue uses TS but does' t mean you need TS to use it?
+2021-05-28 11:45:05	systemfault	Was that around 2003-4?
+2021-05-28 11:45:12	merpnderp	We're using Vue3 at work and write zero TS.
+2021-05-28 11:45:14	-->	wovixo (~wovixo@128.104.205.49) has joined #javascript
+2021-05-28 11:45:15	systemfault	merpnderp: No
+2021-05-28 11:45:16	ljharb	systemfault: 2007 i think
+2021-05-28 11:45:26	stenno	you have type hints in react
+2021-05-28 11:45:27	systemfault	ljharb: Oh, that late in 20xx, surprised
+2021-05-28 11:45:30	stenno	whatsitcalled
+2021-05-28 11:45:31	merpnderp	systemfault: And I've been using TS since maybe 2013.
+2021-05-28 11:45:59	-->	blez (~blez@213.91.182.96) has joined #javascript
+2021-05-28 11:46:37	ljharb	systemfault: oh hm, looks like it's been in IE since 99, but the term "ajax" was in 2005, which is when google maps came out
+2021-05-28 11:46:43	ljharb	systemfault: so around 2005
+2021-05-28 11:46:44	stenno	proptypes
+2021-05-28 11:47:06	shan	https://sharkysoft.com/archive/1997/jsa/content/039.html nice
+2021-05-28 11:47:18	systemfault	Facebook doesn't use them anymore... they believe that compile-time types are enough for them. Not sure I agree with that though
+2021-05-28 11:47:28	<--	DnzAtWrk (~DnzAtWrk@mobile-access-6df04b-240.dhcp.inet.fi) has quit (Quit: Leaving)
+2021-05-28 11:47:45	ljharb	propTypes are amazing
+2021-05-28 11:47:48	systemfault	That makes your component a bit less reliable... for a minor performance improvement.
+2021-05-28 11:47:54	ljharb	and it's super dumb of facebook to stop using them
+2021-05-28 11:47:55	systemfault	(not using proptypes)
+2021-05-28 11:48:06	stenno	its 'just' typehinting, right?
+2021-05-28 11:48:12	stenno	or is there something else behind it
+2021-05-28 11:48:21	systemfault	No, it's actually runtime type validation
+2021-05-28 11:48:55	systemfault	I don't remember if you can strip them using your bundler though...
+2021-05-28 11:48:58	ljharb	and as such, it's much more powerful than what flow or TS can do
+2021-05-28 11:49:00	systemfault	Not sure why you would...
+2021-05-28 11:49:00	ljharb	you can strip them
+2021-05-28 11:49:04	ljharb	it doesn't help much tho
+2021-05-28 11:49:05	stenno	i see
+2021-05-28 11:49:21	theskillwithin	umm propTypes are fucking amazing if ur passing down complex data props esp from api
+2021-05-28 11:49:23	ljharb	stenno: https://npmjs.com/airbnb-prop-types
+2021-05-28 11:49:32	stenno	thx
+2021-05-28 11:49:36	ljharb	just set your test framework to fail tests if console.error/warn is called, and you're golden
+2021-05-28 11:49:39	dom_jax	we only added proptypes because Storybook.js had a nice UI to show them at the time
+2021-05-28 11:49:47	ljharb	i'd suggest using *both* propTypes and TS if you're using TS
+2021-05-28 11:49:48	stenno	oh wow that goes complex
+2021-05-28 11:49:53	ljharb	stenno: it's super powerful
+2021-05-28 11:49:59	stenno	looks like it, yeah
+2021-05-28 11:50:28	theskillwithin	or we have to use propTypes cuz backends use TS instead of documenting their api's
+2021-05-28 11:51:01	theskillwithin	😋
+2021-05-28 11:52:35	-->	fbandov (~fbandov@2a02:8109:b6c0:ae7c:cc9:2d2a:13e1:304e) has joined #javascript
+2021-05-28 11:52:37	<--	fbandov (~fbandov@2a02:8109:b6c0:ae7c:cc9:2d2a:13e1:304e) has quit (Client Quit)
+2021-05-28 11:53:25	wovixo	Hello all, anyone have any strong opinions either way on Svelte? (https://svelte.dev/)
+2021-05-28 11:53:53	systemfault	https://i.redd.it/wra9pru80t171.jpg
+2021-05-28 11:54:19	stenno	oof
+2021-05-28 11:55:12	stenno	my partner has a phd in computer science
+2021-05-28 11:55:17	stenno	so far they are doing just fine though
+2021-05-28 11:55:17	shan	wovixo: svelte is cool
+2021-05-28 11:55:26	shan	stenno: partner as in romantic or at work
+2021-05-28 11:55:32	stenno	romantic
+2021-05-28 11:55:53	-->	onosendi1 (~onosendi@user/onosendi) has joined #javascript
+2021-05-28 11:56:06	shan	how did you not realise they had a phd in CS before getting inv-- oh i get what you mean after i saw the meme
+2021-05-28 11:56:30	stenno	yeah it was a reference to the meme
+2021-05-28 11:56:39	dom_jax	wovixo: Not actually used Svelte, but the creator Rich Harris has some great talks about it
+2021-05-28 11:56:58	wovixo	Svelte seems to be running a pretty big hype machine, but less code and a smaller footprint in the browser is mighty appealing, especially if the performance numbers are actually true.
+2021-05-28 11:57:39	shan	dom_jax: yeah i saw the talks recently it's great
+2021-05-28 11:57:51	shan	i had to use it for a bit to contribute on a project and i was mighty impressed
+2021-05-28 11:57:57	wovixo	Not a huge fan of the CSS approach, but I'm sure there's a way to integrate something like Tailwind.
+2021-05-28 11:58:02	dom_jax	I love how he gushes over spreadsheets
+2021-05-28 11:58:02	shan	it's v easy and there's a lot of utility stuff
+2021-05-28 11:58:42	shan	dom_jax: :DDDD it's funny because recently as part of some covid relief work stuff i've been doing i've been interacting with spreadsheets a lot and it's incredibly cool
+2021-05-28 11:59:05	theskillwithin	you use svealt. ima use react
+2021-05-28 11:59:09	shan	throw something like google apps script into the mix and you have like a weapon of mass destruction in terms of power
+2021-05-28 11:59:26	wovixo	I haven't done a ton of front-end stuff lately; basic Vue and React, but Svelte seems like it's a lot simpler to get decent results with.
+2021-05-28 11:59:28	dom_jax	Anyone used their more framework-y stuff like SvelteKit, Sapper or Elder.js?
+2021-05-28 11:59:28	shan	theskillwithin: "virtual DOM is pure overhead" -- Svelte people
+2021-05-28 11:59:34	dom_jax	shan: xD
+2021-05-28 11:59:49	shan	by the way there's a (very) small community of svelte users in #svelte
+2021-05-28 12:00:02	dom_jax	ah, nice
+2021-05-28 12:00:09	shan	sadly the "official" svelte channel is Discord
+2021-05-28 12:00:10	wovixo	Nice, have to check that out.
+2021-05-28 12:00:19	<--	onosendi1 (~onosendi@user/onosendi) has quit (Ping timeout: 264 seconds)
+2021-05-28 12:01:22	-->	Betal (~Beta@user/betal) has joined #javascript
+2021-05-28 12:01:33	theskillwithin	iv seen too many projects excited about stuff like that, and then refactor to react once it gets larger
+2021-05-28 12:01:47	theskillwithin	well too many i mean like 3
+2021-05-28 12:01:56	austincheney	lol
+2021-05-28 12:02:08	shan	honestly there's no way to really describe svelte other than "really refreshing and cool"
+2021-05-28 12:02:12	wovixo	theskillwithin: Projects that started with Svelte, or similar tools?
+2021-05-28 12:02:28	shan	try building something simple or following along with the tutorial, they've put a lot of effort into making it easy to learn and use
+2021-05-28 12:03:14	dom_jax	may be a noob question, but how does debugging work on the frontend with Svelte?
+2021-05-28 12:03:20	-->	arthurpbs (~arthurpbs@168.121.98.36) has joined #javascript
+2021-05-28 12:03:29	dom_jax	sourcemaps type thing?
+2021-05-28 12:03:42	wovixo	dom_jax: Good question!
+2021-05-28 12:03:43	shan	good question
+2021-05-28 12:03:47	 *	shan does not actually know
+2021-05-28 12:04:13	shan	https://svelte.dev/tutorial/debug nice
+2021-05-28 12:04:32	shan	One approach is to use console.log(...) inside your markup. If you want to pause execution, though, you can use the {@debug ...} tag with a comma-separated list of values you want to inspect:  If you now open your devtools and start interacting with the <input> elements, you'll trigger the debugger as the value of user changes.
+2021-05-28 12:04:59	<--	friend (friend@c-73-43-171-169.hsd1.ga.comcast.net) has quit (Ping timeout: 264 seconds)
+2021-05-28 12:05:02	<--	hassoon (hassoon@grape.ircnow.org) has quit (Changing host)
+2021-05-28 12:05:02	-->	hassoon (hassoon@user/hassoon) has joined #javascript
+2021-05-28 12:05:38	dom_jax	shan: that's cool
+2021-05-28 12:06:12	 *	shan shall watch Svelte's career with great interest
+2021-05-28 12:06:17	wovixo	Yeah, pretty swank. It actually works pretty well, at least their little demo does. How that scales to larger apps is another question.
+2021-05-28 12:06:29	shan	good question
+2021-05-28 12:07:21	wovixo	It's not clear to me if the source files are 'compiled' to one file or several.
+2021-05-28 12:08:05	shan	compiled to an index.html and a bundle.js
+2021-05-28 12:08:22	shan	well actually you can specify what file and stuff i think
+2021-05-28 12:08:35	 *	shan doesn't know the specifics too well
+2021-05-28 12:09:14	<--	nomic (~nomic@2a00:23c6:9910:1201:dcc8:4fc3:e4d0:9c5b) has quit (Quit: Leaving)
+2021-05-28 12:09:56	systemfault	stenno: That meme was a way to show how I feel right now.
+2021-05-28 12:10:13	systemfault	stenno: I wasn't aiming at anyone specific.
+2021-05-28 12:10:39	stenno	oh you have a phd too?
+2021-05-28 12:10:41	wovixo	shan: https://github.com/sveltejs/svelte/issues/2546
+2021-05-28 12:11:24	systemfault	stenno: Nope, but I spent the last 15 years working in CS.
+2021-05-28 12:11:42	shan	wovixo: OH he addressed this in one of the talks
+2021-05-28 12:11:48	stenno	blep
+2021-05-28 12:11:49	theskillwithin	systemfault has a phd in the skill within
+2021-05-28 12:11:50	shan	Rethinking Reactivity, i think?
+2021-05-28 12:12:58	wovixo	Interesting - TS support as well. https://svelte.dev/blog/svelte-and-typescript
+2021-05-28 12:13:38	stenno	should be 15 years for me too now but i had some breaks inbetween
+2021-05-28 12:13:50	theskillwithin	so many devs with cs degree's i know still paying off college debt
+2021-05-28 12:13:53	stenno	oh wait i am old
+2021-05-28 12:13:58	stenno	more like 20 years then
+2021-05-28 12:14:05	theskillwithin	and i have no debt and make more then them
+2021-05-28 12:14:11	theskillwithin	as a dropout
+2021-05-28 12:14:43	<--	slaughter (~s@97-113-103-213.tukw.qwest.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2021-05-28 12:15:35	-->	slaughter (~s@97-113-103-213.tukw.qwest.net) has joined #javascript
+2021-05-28 12:15:57	-->	gehn (~gehn@77.247.181.209) has joined #javascript
+2021-05-28 12:16:20	-->	friend (friend@c-73-43-171-169.hsd1.ga.comcast.net) has joined #javascript
+2021-05-28 12:17:36	shan	theskillwithin: i'm different (tm), i'm working on my EE degree
+2021-05-28 12:17:50	theskillwithin	i don't know what that is
+2021-05-28 12:19:03	-->	paulcarroty (~paulcarro@2001:470:69fc:105::216) has joined #javascript
+2021-05-28 12:19:05	stenno	electrical engineering would be my guess
+2021-05-28 12:19:11	theskillwithin	oooo
+2021-05-28 12:19:18	theskillwithin	nice
+2021-05-28 12:19:34	shan	what stenno said, yeah
+2021-05-28 12:19:46	theskillwithin	hell ya, thats awesome
+2021-05-28 12:19:57	shan	so much math
+2021-05-28 12:19:59	 *	shan cringes
+2021-05-28 12:20:11	stenno	math is the cool part of programming
+2021-05-28 12:20:19	theskillwithin	ya math is cool
+2021-05-28 12:20:24	dom_jax	EE - nice!
+2021-05-28 12:20:26	theskillwithin	i wish i knew more
+2021-05-28 12:20:40	shan	stenno: well programming math is cool
+2021-05-28 12:20:45	shan	ee math on the other hand
+2021-05-28 12:20:47	dom_jax	There's a whole other world of SoftEng which is closer to the EE side which just baffles me
+2021-05-28 12:20:51	 *	shan cringes some more
+2021-05-28 12:20:52	stenno	oh that must be different lol
+2021-05-28 12:21:00	shan	stenno: gnarly calculus
+2021-05-28 12:21:08	shan	apparently electricity isn't all that straightforward
+2021-05-28 12:21:18	stenno	lots of physics too
+2021-05-28 12:21:27	stenno	yeah thats a bit too low-level for my taste :D
+2021-05-28 12:21:34	dom_jax	don't lick batteries
+2021-05-28 12:21:37	dom_jax	or do
+2021-05-28 12:21:58	shan	too much physics
+2021-05-28 12:22:14	shan	i'm waiting for a couple of semesters to pass so we can get to the fun stuff
+2021-05-28 12:22:22	-->	ariedro (~pi@152.169.72.213) has joined #javascript
+2021-05-28 12:24:57	<--	ph3t (~ph3t@user/ph3t) has quit (Quit: ZZZzzz…)
+2021-05-28 12:25:17	-->	erat (~erat@2601:1c2:1100:18e0:4443:eed1:2eee:787d) has joined #javascript
+2021-05-28 12:25:18	<--	erat (~erat@2601:1c2:1100:18e0:4443:eed1:2eee:787d) has quit (Remote host closed the connection)
+2021-05-28 12:26:19	-->	erat (~erat@2601:1c2:1100:18e0:4443:eed1:2eee:787d) has joined #javascript
+2021-05-28 12:27:21	-->	ph3t (~ph3t@user/ph3t) has joined #javascript
+2021-05-28 12:27:41	<--	jonifen (~jonifen@user/jonifen) has quit (Quit: Leaving)
+2021-05-28 12:30:06	-->	alyve (~Alyve@user/alyve) has joined #javascript
+2021-05-28 12:32:55	<--	wovixo (~wovixo@128.104.205.49) has quit (Quit: Leaving)
+2021-05-28 12:41:06	-->	lightning (~satellite@cpe-174-107-66-235.sc.res.rr.com) has joined #javascript
+2021-05-28 12:41:07	-->	diamondbond (~diamondbo@175.157.127.199) has joined #javascript
+2021-05-28 12:45:19	<--	lightning (~satellite@cpe-174-107-66-235.sc.res.rr.com) has quit (Ping timeout: 248 seconds)
+2021-05-28 12:51:17	-->	nomic (~nomic@2a00:23c6:9910:1201:dcc8:4fc3:e4d0:9c5b) has joined #javascript
+2021-05-28 12:53:43	velix	sillyslux is a Dogecoin billionair now.
+2021-05-28 12:56:30	<--	Naan (~Naan@user/naan) has quit (Quit: Leaving)
+2021-05-28 12:59:35	-->	amahl (~amahl@dxv5skyy95x-mzmyd9kkt-3.rev.dnainternet.fi) has joined #javascript
+2021-05-28 13:00:26	-->	onosendi1 (~onosendi@user/onosendi) has joined #javascript
+2021-05-28 13:02:51	-->	NoiseEee (~NoiseEee@178.128.153.219) has joined #javascript
+2021-05-28 13:03:22	-->	teut (~teut@122.162.162.247) has joined #javascript
+2021-05-28 13:03:22	qswz	V=R*I
+2021-05-28 13:04:53	doc	ah yes, but what you really want is P=V*I
+2021-05-28 13:05:01	doc	everybody wants P
+2021-05-28 13:07:00	teut	https://bpa.st/OPQA
+2021-05-28 13:07:11	teut	can someone help how to reach that div?
+2021-05-28 13:07:35	doc	teut: make your life easier, add an id or class
+2021-05-28 13:08:18	teut	ok, ya would be simple then
+2021-05-28 13:08:24	teut	that*
+2021-05-28 13:08:32	teut	but is it cleaner?
+2021-05-28 13:08:37	-->	devslash (~devslash@185.38.14.150) has joined #javascript
+2021-05-28 13:08:41	doc	yes
+2021-05-28 13:09:20	teut	hmm, ok
+2021-05-28 13:09:28	qswz	I want energy
+2021-05-28 13:09:36	doc	you could try doing some selector combination based on parents and children until you can pick that one out, but it's slower, and more brittle. Has to parse through the doc to pick out the component, AND if you decide to move it then your selector will break
+2021-05-28 13:09:38	qswz	so I integrate power in time
+2021-05-28 13:10:06	teut	yes you are  right, id would be much much easier
+2021-05-28 13:10:13	doc	(the slower is marginal it should be said)
+2021-05-28 13:14:15	<--	gehn (~gehn@77.247.181.209) has quit (Remote host closed the connection)
+2021-05-28 13:14:23	-->	TheBeachmaster (~TheBeachm@41.80.17.156) has joined #javascript
+2021-05-28 13:15:22	webstrand	Anyone know if it's possible to preserve JSX in swc output?
+2021-05-28 13:15:31	--	EdFletcherT137__ is now known as EdFletcher
+2021-05-28 13:20:17	GreenJello	webstrand, I don't, but you can with babel
+2021-05-28 13:20:50	-->	gehn (~gehn@109.201.152.176) has joined #javascript

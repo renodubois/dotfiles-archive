@@ -1,0 +1,1675 @@
+2021-05-27 14:33:09	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 14:33:10	--	irc: connected to irc.libera.chat/6667 (217.182.79.119)
+2021-05-27 14:33:10	--	tantalum.libera.chat: *** Checking Ident
+2021-05-27 14:33:10	--	tantalum.libera.chat: *** Looking up your hostname...
+2021-05-27 14:33:11	--	tantalum.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-05-27 14:33:15	--	tantalum.libera.chat: *** No Ident response
+2021-05-27 14:33:15	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-05-27 14:33:15	--	Your host is tantalum.libera.chat[217.182.79.119/6667], running version solanum-1.0-dev
+2021-05-27 14:33:15	--	This server was created Thu May 20 2021 at 07:14:27 UTC
+2021-05-27 14:33:15	--	tantalum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-05-27 14:33:15	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-05-27 14:33:15	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-05-27 14:33:15	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-05-27 14:33:15	--	There are 48 users and 21773 invisible on 19 servers
+2021-05-27 14:33:15	--	34 :IRC Operators online
+2021-05-27 14:33:15	--	6 :unknown connection(s)
+2021-05-27 14:33:15	--	16272 :channels formed
+2021-05-27 14:33:15	--	I have 2155 clients and 1 servers
+2021-05-27 14:33:15	--	2155 2924 :Current local users 2155, max 2924
+2021-05-27 14:33:15	--	21821 21832 :Current global users 21821, max 21832
+2021-05-27 14:33:15	--	Highest connection count: 2925 (2924 clients) (35937 connections received)
+2021-05-27 14:33:15	--	- tantalum.libera.chat Message of the Day - 
+2021-05-27 14:33:15	--	- Welcome to libera.chat, the IRC network for free & open-source software
+2021-05-27 14:33:15	--	- and peer directed projects.
+2021-05-27 14:33:15	--	-  
+2021-05-27 14:33:15	--	- Please visit us in #libera for questions and support.
+2021-05-27 14:33:15	--	End of /MOTD command.
+2021-05-27 14:33:15	--	User mode [+Ri] by reno
+2021-05-27 14:35:09	--	MSG(NickServ): REGISTER ************************************************
+2021-05-27 14:35:09	--	NickServ (NickServ@services.libera.chat): An email containing nickname activation instructions has been sent to me@renodubois.com.
+2021-05-27 14:35:10	--	NickServ (NickServ@services.libera.chat): Please check the address if you don't receive it. If it is incorrect, DROP then REGISTER again.
+2021-05-27 14:35:10	--	NickServ (NickServ@services.libera.chat): If you do not complete registration within one day, your nickname will expire.
+2021-05-27 14:35:10	--	NickServ (NickServ@services.libera.chat): reno is now registered to me@renodubois.com.
+2021-05-27 14:35:43	--	MSG(NickServ): VERIFY REGISTER *********************
+2021-05-27 14:35:43	--	NickServ (NickServ@services.libera.chat): reno has now been verified.
+2021-05-27 14:35:43	--	NickServ (NickServ@services.libera.chat): Thank you for verifying your e-mail address! You have taken steps in ensuring that your registrations are not exploited.
+2021-05-27 14:36:21	--	irc: disconnected from server
+2021-05-27 14:39:21	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 14:39:21	--	irc: connected to irc.libera.chat/6667 (176.58.122.119)
+2021-05-27 14:39:21	--	lithium.libera.chat: *** Checking Ident
+2021-05-27 14:39:21	--	lithium.libera.chat: *** Looking up your hostname...
+2021-05-27 14:39:22	--	lithium.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-05-27 14:39:26	--	lithium.libera.chat: *** No Ident response
+2021-05-27 14:39:26	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-05-27 14:39:26	--	irc: client capability, requesting: sasl
+2021-05-27 14:39:26	--	irc: client capability, enabled: sasl
+2021-05-27 14:39:27	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-05-27 14:39:27	--	SASL authentication successful
+2021-05-27 14:39:28	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-05-27 14:39:28	--	Your host is lithium.libera.chat[176.58.122.119/6667], running version solanum-1.0-dev
+2021-05-27 14:39:28	--	This server was created Thu May 20 2021 at 07:14:36 UTC
+2021-05-27 14:39:28	--	lithium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-05-27 14:39:28	--	SAFELIST ELIST=CTU KNOCK MONITOR=100 CALLERID=g ETRACE FNC WHOX CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-05-27 14:39:28	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-05-27 14:39:28	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-05-27 14:39:28	--	There are 49 users and 21770 invisible on 19 servers
+2021-05-27 14:39:28	--	33 :IRC Operators online
+2021-05-27 14:39:28	--	6 :unknown connection(s)
+2021-05-27 14:39:28	--	16290 :channels formed
+2021-05-27 14:39:28	--	I have 2221 clients and 1 servers
+2021-05-27 14:39:28	--	2221 3057 :Current local users 2221, max 3057
+2021-05-27 14:39:28	--	21819 21832 :Current global users 21819, max 21832
+2021-05-27 14:39:28	--	Highest connection count: 3058 (3057 clients) (35269 connections received)
+2021-05-27 14:39:28	--	- lithium.libera.chat Message of the Day - 
+2021-05-27 14:39:28	--	- Welcome to libera.chat, the IRC network for free & open-source software
+2021-05-27 14:39:28	--	- and peer directed projects.
+2021-05-27 14:39:28	--	-  
+2021-05-27 14:39:28	--	- Please visit us in #libera for questions and support.
+2021-05-27 14:39:28	--	End of /MOTD command.
+2021-05-27 14:39:28	--	User mode [+Ri] by reno
+2021-05-27 14:39:28	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on May 27 19:36:21 2021 +0000.
+2021-05-27 14:40:19	--	MSG(alis): LIST *python*
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*python*'
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): ##learnpython                                      12
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): ##python-code-quality                               1 :Channel for all PyCQA projects https://github.com/PyCQA
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): ##python-friendly                                   7 :Code is magic; words of power to enact change over any distance. Python is a great language to work magic with; we can help you learn how. Ask, don't ask to ask. — https://docs.python.org/tutorial/ — New programmer? https://greenteapress.com/wp/think-python/ — https://gto76.github.io/python-cheatsheet/
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): ##python-offtopic-offtopic                          2
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): ##python-pl                                         1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): ##python.pl                                         7
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #fedora-python                                     20
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #freebsd-python                                    14
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #freenode-python                                    1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #gentoo-python                                     48 :Set e.g. PYTHON_TARGETS: -* python3_8 python3_9 in /etc/portage/package.use if you want to install Python modules for multiple Python versions. | https://wiki.gentoo.org/wiki/Project:Python#Documentation
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #micropython-fr                                     1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #nycpython                                          2
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #opensuse-python                                    6
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #pdxpython                                          2
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python                                           756 :Anything Python is on-topic. | Don't paste, use https://bpa.st/+python | Welcome to Libera, our new home. Questions about this channel? https://www.pound-python.org | CoC: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Ops: #python-ops
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-br                                          3 :Bem-vindo ao canal brasileiro sobre python | Para colar código use http://bpaste.net | Para tirar dúvidas, diga qual é sua dúvida e seja paciente pela resposta
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-cs                                          2 :Vitejte v mistnosti o programovacim jazyce Python | http://python.cz | Logy: http://irc.python.cz  | Vice nez 5 radku textu vkladejte napr. pres http://dpaste.com/ |! Authoritative namespace owners msg wereii
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-dev                                        46 :Python core development discussion | Read the devguide at https://devguide.python.org/ | Bots notifications: #python-dev-notifs
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-dev-notifs                                 11
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-diamond                                     1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-dk                                          3
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-doc                                         4 :Let's talk about Python documentation
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-docs                                        1 :Please go to #python-doc, that's the wrong chan :D
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-docs-fr                                     3
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-es                                          5 :Bienvenidos(as)... Tema: Python | Se acepta offtopic -- usar con moderación.
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-fr                                         87 :Développement Python | https://discuss.afpy.org | #afpy | #django-fr | https://pythonbooks.revolunet.com | café/thé/chocolat et kamoulox
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-fr-off                                     22
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-fr-stras                                    2
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-gsoc                                       15 :http://python-gsoc.org/ || Getting Started: http://python-gsoc.org/#gettingstarted || If you have a question ask it - don't just say 'hello', please also stick around as we may not be immediately here
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-gsoc-bc                                    10
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-gssapi                                      5 :latest version: python-gssapi v1.6.12 (2020-12-10) Meyer (patch 11), requests-gssapi v1.2.3 (2020-03-31), urllib-gssapi v1.0.1 (2018-02-23), httpx-gssapi v0.16 (2020-01-27) | https://github.com/pythongssapi
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-i18n                                        1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-infra                                       8 :Discussion and operation of the PSF Infrastructure Working Group | Having a problem that needs a larger discussion? https://github.com/python/psf-infra-meta/issues | Participation must comply with the Python Software Foundation Community Code of Conduct https://www.python.org/psf/codeofconduct/
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-ldap                                        1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-nl                                          3
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-offtopic                                   61 :WELCOME TO #rust-offtopic | NO SYSTEMD | NO GOLD | BE EXCELLENT TO EACH OTHER | NO NSFW | NO MISSED REFERENCES | why = WHY_NOT;
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-op                                          1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-ops                                         9 :Trouble joining or talking in any #python and #python-* channel? Ask here. | Idlers will be kicked, #python-offtopic for casual conversation. | No ops around? Try asking #libera staffers for help. | Identified but can't get into #python? Log out of nickserv, re-identify, and try again.
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-pl                                          2
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-requests                                    1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-testing                                     2
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-uk                                         11
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python-unregistered                                4
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python.de                                         19 :http://python.org und http://python.org/doc/  | > 3 zeilen code -> Paste:  https://gist.github.com/ | Einsteiger: (DE) http://py-tutorial-de.readthedocs.org/de/python-3.3/ (EN)  http://wiki.python.org/moin/BeginnersGuide
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python.ie                                          1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python.it                                          2
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python.pl                                          6
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #python.tw                                          3
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #pythonpackages                                     1
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #pythonpune                                         9 :Welcome to PythonPune | http://meetup.com/PythonPune | Mailing list: https://groups.google.com/group/pythonpune | https://github.com/pythonpune/meetup-talks| Have question: https://dontasktoask.com
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #utahpython                                         3
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): #WxPython                                           6
+2021-05-27 14:40:19	--	alis (alis@services.libera.chat): End of output.
+2021-05-27 14:46:08	--	MSG(alis): LIST *stl*
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*stl*'
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): ##fastlizard4                                       4
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): #anarchistlibraries                                 1
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): #anarchistlibrary                                   5 :Projects: https://www.anarchistlibraries.net/libraries
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): #bastli                                             1
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): #estlcam                                            1
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): #Groestlcoin                                        1 :web: https://www.groestlcoin.org/ | src: https://github.com/Groestlcoin | forum: http://groestlcoin.org/forum/ | rdd: http://reddit.com/r/groestlcoin | tw: https://twitter.com/GroestlcoinTeam | fb: https://www.facebook.com/groups/groestlcoin/ | Telegram: http://t.me/groestl | Discord: https://discord.gg/vCKxQBz | Groestlcoin Core v2.21.1 released UPGRADE ASAP
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): #herbstluftwm                                      25 :herbstluftwm v0.9.3 https://herbstluftwm.org | 10 years | Welcome to the new home of hlwm's irc channel
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): #mostlyabsurd                                       4
+2021-05-27 14:46:08	--	alis (alis@services.libera.chat): #rustlang                                           1
+2021-05-27 14:46:09	--	alis (alis@services.libera.chat): #sidehustle                                         1 :Welcome to a channel dedicated to businesses through side hustles and growth hacking. Feel free to use this channel as a community of like-minded entrepreneurs assisting each other on their quest to produce their dreams.
+2021-05-27 14:46:09	--	alis (alis@services.libera.chat): #southeastlinuxfest                                19 :SouthEast LinuxFest .:. SELF 2021 Virtual Event June 11-13, 2021 .:. SELF 2022 likely June 10-12, 2022 .:. Sheraton Charlotte Airport Hotel .:. Charlotte, NC .:. Remote ham radio exam session at SELF2021 https://ham.study/sessions/60a641ceefb891eabe95c51d/1
+2021-05-27 14:46:09	--	alis (alis@services.libera.chat): #ss-pastlives                                       2 :A place to talk about past life mysteries and the like | Try Our Side Rooms: https://pastebin.com/Ds0arWyG
+2021-05-27 14:46:09	--	alis (alis@services.libera.chat): #waragainstlibera                                   1
+2021-05-27 14:46:09	--	alis (alis@services.libera.chat): End of output.
+2021-05-27 14:46:21	--	MSG(alis): LIST *stlouis*
+2021-05-27 14:46:21	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*stlouis*'
+2021-05-27 14:46:21	--	alis (alis@services.libera.chat): End of output.
+2021-05-27 14:46:49	--	MSG(alis): LIST *rust*
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*rust*'
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): ##hackage-trustees                                  2
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): ##perustulo                                         1
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): ##rust-offtopic                                     6
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): ##rust-pt                                           2 :Discussão em português sobre a linguagem de programação rust
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): ##trust                                             6
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #bitcoin-rust                                      25 :Discussion of rust-bitcoin, rust-lightning and related crates | For rust-miniscript see ##miniscript | For general bitcoin discussion #bitcoin | Channel logs forthcoming
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #crustaceans                                        2
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #fedora-rust                                        7
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #gentoo-rust                                       16 :Rust on gentoo | https://wiki.gentoo.org/wiki/Project:Rust
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #gentoo-trustees                                   28
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #hackage-trustees                                   1
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #illumos-rust                                       6 :A(nother) place to discuss rustlang on illumos based systems.
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #kde-rust                                           3
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #krustykrab                                         2
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #mrustc                                             3 :Mutabah's Rust Compiler - https://github.com/thepowersgang/mrustc
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #nixos-discusses-rust                               1
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #nixos-rust                                        10
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #pdxrust                                            1
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #rust                                              10
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #rust-av                                            9
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #rust-bitcoin                                      12 :Due to Libera's namespacing policy, the equivalent freenode channel is #bitcoin-rust
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #rust-embedded                                     21
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #rust-fr                                           16
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #rust-offtopic                                      1
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #rustlang                                           1
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #rustorion                                          2 :A game about space empires, with focus on multiplayer and strategy | https://gitlab.com/rustorion/rustorion | doesn't really exist yet
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): #trustworthy                                        1
+2021-05-27 14:46:49	--	alis (alis@services.libera.chat): End of output.
+2021-05-27 14:48:15	--	MSG(alis): LIST *django*
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*django*'
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django                                           187 :Welcome to #django || Please provide code and __full__ traceback in a pastebin || Pastebin at: http://dpaste.de/ -- do not use pastebin.com! || Django CoC applies: https://www.djangoproject.com/conduct/ || Django bugfix releases issued: 3.2.3, 3.1.11, and 2.2.23 https://www.djangoproject.com/weblog/2021/may/13/bugfix-releases/"
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-channels                                    4
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-cms                                         1
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-core                                        3
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-de                                          5
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-dev                                        27
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-fi                                          2
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-geo                                         2
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-polymorphic                                 1
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-social                                      3
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-sprint                                      3
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-websites                                    2
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #django-wiki                                        1
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #djangocon                                          1
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #djangocph                                          4
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): #ottawa-django                                      1
+2021-05-27 14:48:15	--	alis (alis@services.libera.chat): End of output.
+2021-05-27 14:48:51	--	django: No such channel
+2021-05-27 14:49:44	--	MSG(alis): LIST python
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*python*'
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): ##learnpython                                      12
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): ##python-code-quality                               1 :Channel for all PyCQA projects https://github.com/PyCQA
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): ##python-friendly                                   8 :Code is magic; words of power to enact change over any distance. Python is a great language to work magic with; we can help you learn how. Ask, don't ask to ask. — https://docs.python.org/tutorial/ — New programmer? https://greenteapress.com/wp/think-python/ — https://gto76.github.io/python-cheatsheet/
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): ##python-offtopic-offtopic                          2
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): ##python-pl                                         1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): ##python.pl                                         7
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #fedora-python                                     20
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #freebsd-python                                    14
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #freenode-python                                    1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #gentoo-python                                     48 :Set e.g. PYTHON_TARGETS: -* python3_8 python3_9 in /etc/portage/package.use if you want to install Python modules for multiple Python versions. | https://wiki.gentoo.org/wiki/Project:Python#Documentation
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #micropython-fr                                     1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #nycpython                                          2
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #opensuse-python                                    6
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #pdxpython                                          2
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python                                           757 :Anything Python is on-topic. | Don't paste, use https://bpa.st/+python | Welcome to Libera, our new home. Questions about this channel? https://www.pound-python.org | CoC: https://j.mp/psf-coc | Tutorial: https://j.mp/MCAhYx | New programmer? https://j.mp/23X7emF | Ops: #python-ops
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-br                                          3 :Bem-vindo ao canal brasileiro sobre python | Para colar código use http://bpaste.net | Para tirar dúvidas, diga qual é sua dúvida e seja paciente pela resposta
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-cs                                          2 :Vitejte v mistnosti o programovacim jazyce Python | http://python.cz | Logy: http://irc.python.cz  | Vice nez 5 radku textu vkladejte napr. pres http://dpaste.com/ |! Authoritative namespace owners msg wereii
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-dev                                        47 :Python core development discussion | Read the devguide at https://devguide.python.org/ | Bots notifications: #python-dev-notifs
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-dev-notifs                                 11
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-diamond                                     1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-dk                                          3
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-doc                                         4 :Let's talk about Python documentation
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-docs                                        1 :Please go to #python-doc, that's the wrong chan :D
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-docs-fr                                     3
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-es                                          5 :Bienvenidos(as)... Tema: Python | Se acepta offtopic -- usar con moderación.
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-fr                                         87 :Développement Python | https://discuss.afpy.org | #afpy | #django-fr | https://pythonbooks.revolunet.com | café/thé/chocolat et kamoulox
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-fr-off                                     22
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-fr-stras                                    2
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-gsoc                                       15 :http://python-gsoc.org/ || Getting Started: http://python-gsoc.org/#gettingstarted || If you have a question ask it - don't just say 'hello', please also stick around as we may not be immediately here
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-gsoc-bc                                    10
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-gssapi                                      5 :latest version: python-gssapi v1.6.12 (2020-12-10) Meyer (patch 11), requests-gssapi v1.2.3 (2020-03-31), urllib-gssapi v1.0.1 (2018-02-23), httpx-gssapi v0.16 (2020-01-27) | https://github.com/pythongssapi
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-i18n                                        1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-infra                                       8 :Discussion and operation of the PSF Infrastructure Working Group | Having a problem that needs a larger discussion? https://github.com/python/psf-infra-meta/issues | Participation must comply with the Python Software Foundation Community Code of Conduct https://www.python.org/psf/codeofconduct/
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-ldap                                        1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-nl                                          3
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-offtopic                                   61 :WELCOME TO #rust-offtopic | NO SYSTEMD | NO GOLD | BE EXCELLENT TO EACH OTHER | NO NSFW | NO MISSED REFERENCES | why = WHY_NOT;
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-op                                          1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-ops                                         9 :Trouble joining or talking in any #python and #python-* channel? Ask here. | Idlers will be kicked, #python-offtopic for casual conversation. | No ops around? Try asking #libera staffers for help. | Identified but can't get into #python? Log out of nickserv, re-identify, and try again.
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-pl                                          2
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-requests                                    1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-testing                                     2
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-uk                                         11
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python-unregistered                                4
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python.de                                         19 :http://python.org und http://python.org/doc/  | > 3 zeilen code -> Paste:  https://gist.github.com/ | Einsteiger: (DE) http://py-tutorial-de.readthedocs.org/de/python-3.3/ (EN)  http://wiki.python.org/moin/BeginnersGuide
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python.ie                                          1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python.it                                          2
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python.pl                                          6
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #python.tw                                          3
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #pythonpackages                                     1
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #pythonpune                                         9 :Welcome to PythonPune | http://meetup.com/PythonPune | Mailing list: https://groups.google.com/group/pythonpune | https://github.com/pythonpune/meetup-talks| Have question: https://dontasktoask.com
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #utahpython                                         3
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): #WxPython                                           6
+2021-05-27 14:49:44	--	alis (alis@services.libera.chat): End of output.
+2021-05-27 17:09:29	--	irc: lag is high, reconnecting to server libera
+2021-05-27 17:09:29	--	irc: disconnected from server
+2021-05-27 17:09:29	--	irc: reconnecting to server in 10 seconds
+2021-05-27 17:09:39	--	irc: reconnecting to server...
+2021-05-27 17:09:39	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 17:09:49	=!=	irc: address "irc.libera.chat" not found
+2021-05-27 17:09:49	=!=	irc: error: Temporary failure in name resolution
+2021-05-27 17:09:49	--	irc: reconnecting to server in 20 seconds
+2021-05-27 17:10:09	--	irc: reconnecting to server...
+2021-05-27 17:10:09	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 17:10:19	=!=	irc: address "irc.libera.chat" not found
+2021-05-27 17:10:19	=!=	irc: error: Temporary failure in name resolution
+2021-05-27 17:10:19	--	irc: reconnecting to server in 40 seconds
+2021-05-27 17:10:59	--	irc: reconnecting to server...
+2021-05-27 17:10:59	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 17:11:09	=!=	irc: address "irc.libera.chat" not found
+2021-05-27 17:11:09	=!=	irc: error: Temporary failure in name resolution
+2021-05-27 17:11:09	--	irc: reconnecting to server in 1 minute, 20 seconds
+2021-05-27 17:12:29	--	irc: reconnecting to server...
+2021-05-27 17:12:29	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 17:12:39	=!=	irc: address "irc.libera.chat" not found
+2021-05-27 17:12:39	=!=	irc: error: Temporary failure in name resolution
+2021-05-27 17:12:39	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2021-05-27 17:15:19	--	irc: reconnecting to server...
+2021-05-27 17:15:19	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 17:15:29	=!=	irc: address "irc.libera.chat" not found
+2021-05-27 17:15:29	=!=	irc: error: Temporary failure in name resolution
+2021-05-27 17:15:29	--	irc: reconnecting to server in 5 minutes, 20 seconds
+2021-05-27 17:20:49	--	irc: reconnecting to server...
+2021-05-27 17:20:49	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 17:20:59	=!=	irc: address "irc.libera.chat" not found
+2021-05-27 17:20:59	=!=	irc: error: Temporary failure in name resolution
+2021-05-27 17:20:59	--	irc: reconnecting to server in 10 minutes
+2021-05-27 17:30:59	--	irc: reconnecting to server...
+2021-05-27 17:30:59	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 17:31:09	=!=	irc: address "irc.libera.chat" not found
+2021-05-27 17:31:09	=!=	irc: error: Temporary failure in name resolution
+2021-05-27 17:31:09	--	irc: reconnecting to server in 10 minutes
+2021-05-27 17:41:09	--	irc: reconnecting to server...
+2021-05-27 17:41:09	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 17:41:09	--	irc: connected to irc.libera.chat/6667 (93.158.239.37)
+2021-05-27 17:41:10	--	strontium.libera.chat: *** Checking Ident
+2021-05-27 17:41:10	--	strontium.libera.chat: *** Looking up your hostname...
+2021-05-27 17:41:10	--	strontium.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-05-27 17:41:16	--	strontium.libera.chat: *** No Ident response
+2021-05-27 17:41:16	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-05-27 17:41:16	--	irc: client capability, requesting: sasl
+2021-05-27 17:41:16	--	irc: client capability, enabled: sasl
+2021-05-27 17:41:17	--	You are now logged in as reno (reno!reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net)
+2021-05-27 17:41:17	--	SASL authentication successful
+2021-05-27 17:41:18	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-05-27 17:41:18	--	Your host is strontium.libera.chat[93.158.239.37/6667], running version solanum-1.0-dev
+2021-05-27 17:41:18	--	This server was created Sat May 22 2021 at 19:05:06 UTC
+2021-05-27 17:41:18	--	strontium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-05-27 17:41:18	--	ETRACE KNOCK WHOX CALLERID=g FNC SAFELIST ELIST=CTU MONITOR=100 CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-05-27 17:41:18	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-05-27 17:41:18	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-05-27 17:41:18	--	There are 50 users and 21215 invisible on 21 servers
+2021-05-27 17:41:18	--	34 :IRC Operators online
+2021-05-27 17:41:18	--	6 :unknown connection(s)
+2021-05-27 17:41:18	--	16263 :channels formed
+2021-05-27 17:41:18	--	I have 2132 clients and 1 servers
+2021-05-27 17:41:18	--	2132 2214 :Current local users 2132, max 2214
+2021-05-27 17:41:18	--	21265 21832 :Current global users 21265, max 21832
+2021-05-27 17:41:18	--	Highest connection count: 2215 (2214 clients) (20954 connections received)
+2021-05-27 17:41:18	--	- strontium.libera.chat Message of the Day - 
+2021-05-27 17:41:18	--	- Welcome to libera.chat, the IRC network for free & open-source software
+2021-05-27 17:41:18	--	- and peer directed projects.
+2021-05-27 17:41:18	--	-  
+2021-05-27 17:41:18	--	- Please visit us in #libera for questions and support.
+2021-05-27 17:41:18	--	End of /MOTD command.
+2021-05-27 17:41:18	--	User mode [+Ri] by reno
+2021-05-27 17:41:18	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on May 27 22:08:00 2021 +0000.
+2021-05-27 19:03:33	--	irc: lag is high, reconnecting to server libera
+2021-05-27 19:03:33	--	irc: disconnected from server
+2021-05-27 19:03:33	--	irc: reconnecting to server in 10 seconds
+2021-05-27 19:03:43	--	irc: reconnecting to server...
+2021-05-27 19:03:43	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-27 19:03:44	--	irc: connected to irc.libera.chat/6667 (130.185.232.126)
+2021-05-27 19:03:44	--	copper.libera.chat: *** Checking Ident
+2021-05-27 19:03:44	--	copper.libera.chat: *** Looking up your hostname...
+2021-05-27 19:03:44	--	copper.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-05-27 19:03:50	--	copper.libera.chat: *** No Ident response
+2021-05-27 19:03:50	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-05-27 19:03:50	--	irc: client capability, requesting: sasl
+2021-05-27 19:03:50	--	irc: client capability, enabled: sasl
+2021-05-27 19:03:51	--	You are now logged in as reno (reno!reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net)
+2021-05-27 19:03:51	--	SASL authentication successful
+2021-05-27 19:03:52	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-05-27 19:03:52	--	Your host is copper.libera.chat[130.185.232.126/6667], running version solanum-1.0-dev
+2021-05-27 19:03:52	--	This server was created Thu May 27 2021 at 22:29:48 UTC
+2021-05-27 19:03:52	--	copper.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-05-27 19:03:52	--	CALLERID=g SAFELIST ELIST=CTU ETRACE KNOCK MONITOR=100 WHOX FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-05-27 19:03:52	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-05-27 19:03:52	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-05-27 19:03:52	--	There are 49 users and 21024 invisible on 21 servers
+2021-05-27 19:03:52	--	33 :IRC Operators online
+2021-05-27 19:03:52	--	5 :unknown connection(s)
+2021-05-27 19:03:52	--	16227 :channels formed
+2021-05-27 19:03:52	--	I have 96 clients and 1 servers
+2021-05-27 19:03:52	--	96 96 :Current local users 96, max 96
+2021-05-27 19:03:52	--	21073 21302 :Current global users 21073, max 21302
+2021-05-27 19:03:52	--	Highest connection count: 97 (96 clients) (187 connections received)
+2021-05-27 19:03:52	--	- copper.libera.chat Message of the Day - 
+2021-05-27 19:03:52	--	- Welcome to libera.chat, the IRC network for free & open-source software
+2021-05-27 19:03:52	--	- and peer directed projects.
+2021-05-27 19:03:52	--	-  
+2021-05-27 19:03:52	--	- Please visit us in #libera for questions and support.
+2021-05-27 19:03:52	--	End of /MOTD command.
+2021-05-27 19:03:52	--	User mode [+Ri] by reno
+2021-05-27 19:03:52	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net on May 27 22:54:16 2021 +0000.
+2021-05-28 09:18:23	--	irc: lag is high, reconnecting to server libera
+2021-05-28 09:18:23	--	irc: disconnected from server
+2021-05-28 09:18:23	--	irc: reconnecting to server in 10 seconds
+2021-05-28 09:18:33	--	irc: reconnecting to server...
+2021-05-28 09:18:33	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-28 09:18:33	--	irc: connected to irc.libera.chat/6667 (195.148.124.80)
+2021-05-28 09:18:33	--	zinc.libera.chat: *** Checking Ident
+2021-05-28 09:18:33	--	zinc.libera.chat: *** Looking up your hostname...
+2021-05-28 09:18:33	--	zinc.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-05-28 09:18:39	--	zinc.libera.chat: *** No Ident response
+2021-05-28 09:18:39	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-05-28 09:18:39	--	irc: client capability, requesting: sasl
+2021-05-28 09:18:39	--	irc: client capability, enabled: sasl
+2021-05-28 09:18:40	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-05-28 09:18:41	--	SASL authentication successful
+2021-05-28 09:18:41	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-05-28 09:18:41	--	Your host is zinc.libera.chat[195.148.124.80/6667], running version solanum-1.0-dev
+2021-05-28 09:18:41	--	This server was created Thu May 27 2021 at 22:10:06 UTC
+2021-05-28 09:18:41	--	zinc.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-05-28 09:18:41	--	WHOX CALLERID=g SAFELIST ELIST=CTU MONITOR=100 ETRACE FNC KNOCK CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-05-28 09:18:41	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-05-28 09:18:41	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-05-28 09:18:41	--	There are 50 users and 22323 invisible on 21 servers
+2021-05-28 09:18:41	--	32 :IRC Operators online
+2021-05-28 09:18:41	--	6 :unknown connection(s)
+2021-05-28 09:18:41	--	16438 :channels formed
+2021-05-28 09:18:41	--	I have 1719 clients and 1 servers
+2021-05-28 09:18:41	--	1719 1719 :Current local users 1719, max 1719
+2021-05-28 09:18:41	--	22373 22400 :Current global users 22373, max 22400
+2021-05-28 09:18:41	--	Highest connection count: 1720 (1719 clients) (5790 connections received)
+2021-05-28 09:18:41	--	- zinc.libera.chat Message of the Day - 
+2021-05-28 09:18:41	--	- Welcome to libera.chat, the IRC network for free & open-source software
+2021-05-28 09:18:41	--	- and peer directed projects.
+2021-05-28 09:18:41	--	-  
+2021-05-28 09:18:41	--	- Please visit us in #libera for questions and support.
+2021-05-28 09:18:41	--	End of /MOTD command.
+2021-05-28 09:18:41	--	User mode [+Ri] by reno
+2021-05-28 09:18:41	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net on May 28 00:22:26 2021 +0000.
+2021-05-28 09:45:35	--	MSG(alis): LIST react
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*react*'
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): ##react                                             1
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): ##reactjs                                           1
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #archreactor                                        1
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #kde-reactos                                        1
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #react                                              2
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #reactjs                                           47 :React, a JS library for building UIs | https://reactjs.org/ | To share code: https://gist.github.com (and name the file.jsx) or make an interactive test case on https://codesandbox.io
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #reactnative                                        1
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #reactos                                           14 :ReactOS main Channel | https://www.reactos.org | Try our Mattermost at https://chat.reactos.org | ReactOS 0.4.13 has been released! | Shop: http://bit.ly/1EvK3c3 | We're on GitHub now: https://github.com/reactos/reactos | Bug reports at: https://jira.reactos.org | Testman URL: https://www.reactos.org/testman | ISOs: https://www.reactos.org/getbuilds
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #reactos-dev                                        3 :ReactOS Development Channel | Try our Mattermost at https://chat.reactos.org | GitHub: https://github.com/reactos/reactos | Please keep on topic -- join #ReactOS for general chatter | ReactOS 0.4.13 is out! | Testman URL: https://www.reactos.org/testman | Bugs: https://jira.reactos.org
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #reactos-german                                     1 :ReactOS-Kanal auf Deutsch
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #reactos-offtopic                                   2 :#reactos-offtopic ReactOS's \Device\Null -- The channel for everything too offtopic to discuss in #reactos -- NO INSULTS OR FLAMEWARS, our bans are ready.
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): #ReactOS-RosBE                                      2 :ReactOS Build Environment Channel | Current Versions: Windows: 2.2.1 | Unix: 2.2.1
+2021-05-28 09:45:36	--	alis (alis@services.libera.chat): End of output.
+2021-05-28 09:46:17	--	MSG(alis): LIST javascript
+2021-05-28 09:46:17	--	alis (alis@services.libera.chat): Returning maximum of 64 channel names matching '*javascript*'
+2021-05-28 09:46:17	--	alis (alis@services.libera.chat): ##javascript                                        1 :JavaScript is *not* Java | Just ask your question | Don't paste code in the channel | Can't talk? Get registered ( https://git.io/vaTS2 )
+2021-05-28 09:46:17	--	alis (alis@services.libera.chat): ##javascript-br                                     3 :JavaScript Brasil! Para discussoes genericas, visite #dev-br
+2021-05-28 09:46:17	--	alis (alis@services.libera.chat): ##javascript-offtopic                               1
+2021-05-28 09:46:17	--	alis (alis@services.libera.chat): #javascript                                       237 :JavaScript is *not* Java | Just ask your question | Don't paste code in the channel | Can't talk? Get registered ( https://git.io/vaTS2 )
+2021-05-28 09:46:17	--	alis (alis@services.libera.chat): #learnjavascript                                    1
+2021-05-28 09:46:17	--	alis (alis@services.libera.chat): End of output.
+2021-05-28 13:48:36	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-28 13:48:36	--	irc: connected to irc.libera.chat/6667 (130.239.18.120)
+2021-05-28 13:48:36	--	tungsten.libera.chat: *** Checking Ident
+2021-05-28 13:48:37	--	tungsten.libera.chat: *** Looking up your hostname...
+2021-05-28 13:48:37	--	tungsten.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-05-28 13:48:43	--	tungsten.libera.chat: *** No Ident response
+2021-05-28 13:48:43	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-05-28 13:48:43	--	Your host is tungsten.libera.chat[130.239.18.120/6667], running version solanum-1.0-dev
+2021-05-28 13:48:43	--	This server was created Fri May 21 2021 at 20:24:06 UTC
+2021-05-28 13:48:43	--	tungsten.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-05-28 13:48:43	--	FNC MONITOR=100 KNOCK WHOX CALLERID=g ETRACE SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-05-28 13:48:43	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-05-28 13:48:43	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-05-28 13:48:43	--	There are 53 users and 22603 invisible on 21 servers
+2021-05-28 13:48:43	--	33 :IRC Operators online
+2021-05-28 13:48:43	--	10 :unknown connection(s)
+2021-05-28 13:48:43	--	16527 :channels formed
+2021-05-28 13:48:43	--	I have 2056 clients and 1 servers
+2021-05-28 13:48:43	--	2056 2362 :Current local users 2056, max 2362
+2021-05-28 13:48:43	--	22656 22682 :Current global users 22656, max 22682
+2021-05-28 13:48:43	--	Highest connection count: 2363 (2362 clients) (23775 connections received)
+2021-05-28 13:48:43	--	- tungsten.libera.chat Message of the Day - 
+2021-05-28 13:48:43	--	- Welcome to libera.chat, the IRC network for free & open-source software
+2021-05-28 13:48:43	--	- and peer directed projects.
+2021-05-28 13:48:43	--	-  
+2021-05-28 13:48:43	--	- Please visit us in #libera for questions and support.
+2021-05-28 13:48:43	--	End of /MOTD command.
+2021-05-28 13:48:43	--	User mode [+Ri] by reno
+2021-05-28 13:48:43	--	NickServ (NickServ@services.libera.chat): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ IDENTIFY reno <password>
+2021-05-28 13:49:12	--	MSG(NickServ): IDENTIFY ***********************************
+2021-05-28 13:49:12	--	NickServ (NickServ@services.libera.chat): You are now identified for reno.
+2021-05-28 13:49:12	--	NickServ (NickServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on May 28 18:23:13 2021 +0000.
+2021-05-28 15:01:43	--	irc: lag is high, reconnecting to server libera
+2021-05-28 15:01:43	--	irc: disconnected from server
+2021-05-28 15:01:43	--	irc: reconnecting to server in 10 seconds
+2021-05-28 15:01:53	--	irc: reconnecting to server...
+2021-05-28 15:01:53	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-28 15:02:03	=!=	irc: address "irc.libera.chat" not found
+2021-05-28 15:02:03	=!=	irc: error: Temporary failure in name resolution
+2021-05-28 15:02:03	--	irc: reconnecting to server in 20 seconds
+2021-05-28 15:02:23	--	irc: reconnecting to server...
+2021-05-28 15:02:23	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-28 15:02:33	=!=	irc: address "irc.libera.chat" not found
+2021-05-28 15:02:33	=!=	irc: error: Temporary failure in name resolution
+2021-05-28 15:02:33	--	irc: reconnecting to server in 40 seconds
+2021-05-28 15:03:13	--	irc: reconnecting to server...
+2021-05-28 15:03:13	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-28 15:03:23	=!=	irc: address "irc.libera.chat" not found
+2021-05-28 15:03:23	=!=	irc: error: Temporary failure in name resolution
+2021-05-28 15:03:23	--	irc: reconnecting to server in 1 minute, 20 seconds
+2021-05-28 15:04:43	--	irc: reconnecting to server...
+2021-05-28 15:04:43	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-28 15:04:53	=!=	irc: address "irc.libera.chat" not found
+2021-05-28 15:04:53	=!=	irc: error: Temporary failure in name resolution
+2021-05-28 15:04:53	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2021-05-28 15:07:33	--	irc: reconnecting to server...
+2021-05-28 15:07:33	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-28 15:07:43	=!=	irc: address "irc.libera.chat" not found
+2021-05-28 15:07:43	=!=	irc: error: Temporary failure in name resolution
+2021-05-28 15:07:43	--	irc: reconnecting to server in 5 minutes, 20 seconds
+2021-05-28 20:00:18	--	irc: reconnecting to server...
+2021-05-28 20:00:18	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-28 20:00:28	=!=	irc: address "irc.libera.chat" not found
+2021-05-28 20:00:28	=!=	irc: error: Temporary failure in name resolution
+2021-05-28 20:00:28	--	irc: reconnecting to server in 10 minutes
+2021-05-28 20:10:28	--	irc: reconnecting to server...
+2021-05-28 20:10:28	--	irc: connecting to server irc.libera.chat/6667...
+2021-05-28 20:10:29	--	irc: connected to irc.libera.chat/6667 (195.148.124.80)
+2021-05-28 20:10:29	--	zinc.libera.chat: *** Checking Ident
+2021-05-28 20:10:29	--	zinc.libera.chat: *** Looking up your hostname...
+2021-05-28 20:10:30	--	zinc.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-05-28 20:10:35	--	zinc.libera.chat: *** No Ident response
+2021-05-28 20:10:35	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-05-28 20:10:35	--	Your host is zinc.libera.chat[195.148.124.80/6667], running version solanum-1.0-dev
+2021-05-28 20:10:35	--	This server was created Thu May 27 2021 at 22:10:06 UTC
+2021-05-28 20:10:35	--	zinc.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-05-28 20:10:35	--	WHOX CALLERID=g SAFELIST ELIST=CTU MONITOR=100 ETRACE FNC KNOCK CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-05-28 20:10:35	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-05-28 20:10:35	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-05-28 20:10:35	--	There are 51 users and 22237 invisible on 21 servers
+2021-05-28 20:10:35	--	34 :IRC Operators online
+2021-05-28 20:10:35	--	11 :unknown connection(s)
+2021-05-28 20:10:35	--	16482 :channels formed
+2021-05-28 20:10:35	--	I have 1961 clients and 1 servers
+2021-05-28 20:10:35	--	1961 2297 :Current local users 1961, max 2297
+2021-05-28 20:10:35	--	22288 22719 :Current global users 22288, max 22719
+2021-05-28 20:10:35	--	Highest connection count: 2298 (2297 clients) (11220 connections received)
+2021-05-28 20:10:35	--	- zinc.libera.chat Message of the Day - 
+2021-05-28 20:10:35	--	- Welcome to libera.chat, the IRC network for free & open-source software
+2021-05-28 20:10:35	--	- and peer directed projects.
+2021-05-28 20:10:35	--	-  
+2021-05-28 20:10:35	--	- Please visit us in #libera for questions and support.
+2021-05-28 20:10:35	--	End of /MOTD command.
+2021-05-28 20:10:35	--	User mode [+Ri] by reno
+2021-05-28 20:10:35	--	NickServ (NickServ@services.libera.chat): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ IDENTIFY reno <password>
+2021-06-02 13:44:12	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-02 13:44:12	--	irc: connected to irc.libera.chat/6667 (217.182.79.119)
+2021-06-02 13:44:13	--	tantalum.libera.chat: *** Checking Ident
+2021-06-02 13:44:13	--	tantalum.libera.chat: *** Looking up your hostname...
+2021-06-02 13:44:14	--	tantalum.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-02 13:44:18	--	tantalum.libera.chat: *** No Ident response
+2021-06-02 13:44:18	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-02 13:44:18	--	Your host is tantalum.libera.chat[217.182.79.119/6667], running version solanum-1.0-dev
+2021-06-02 13:44:18	--	This server was created Tue Jun 1 2021 at 19:35:19 UTC
+2021-06-02 13:44:18	--	tantalum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-02 13:44:18	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-02 13:44:18	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-02 13:44:18	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-02 13:44:18	--	There are 61 users and 26502 invisible on 23 servers
+2021-06-02 13:44:18	--	36 :IRC Operators online
+2021-06-02 13:44:18	--	11 :unknown connection(s)
+2021-06-02 13:44:18	--	17570 :channels formed
+2021-06-02 13:44:18	--	I have 1948 clients and 1 servers
+2021-06-02 13:44:18	--	1948 1951 :Current local users 1948, max 1951
+2021-06-02 13:44:18	--	26563 26577 :Current global users 26563, max 26577
+2021-06-02 13:44:18	--	Highest connection count: 1952 (1951 clients) (8823 connections received)
+2021-06-02 13:44:18	--	- tantalum.libera.chat Message of the Day -
+2021-06-02 13:44:18	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-02 13:44:18	--	- and peer directed projects.
+2021-06-02 13:44:18	--	-
+2021-06-02 13:44:18	--	- Use of Libera Chat is governed by our network policies.
+2021-06-02 13:44:18	--	-
+2021-06-02 13:44:18	--	- Please visit us in #libera for questions and support.
+2021-06-02 13:44:18	--	-
+2021-06-02 13:44:18	--	- Website and documentation:  https://libera.chat
+2021-06-02 13:44:18	--	- Webchat:                    https://web.libera.chat
+2021-06-02 13:44:18	--	- Network policies:           https://libera.chat/policies
+2021-06-02 13:44:18	--	- Email:                      support@libera.chat
+2021-06-02 13:44:18	--	End of /MOTD command.
+2021-06-02 13:44:18	--	User mode [+Ri] by reno
+2021-06-02 13:44:18	--	NickServ (NickServ@services.libera.chat): This nickname is registered. Please choose a different nickname, or identify via /msg NickServ IDENTIFY reno <password>
+2021-06-02 13:45:20	--	irc: disconnected from server
+2021-06-02 13:45:20	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-02 13:45:20	--	irc: connected to irc.libera.chat/6667 (130.185.232.126)
+2021-06-02 13:45:20	--	copper.libera.chat: *** Checking Ident
+2021-06-02 13:45:20	--	copper.libera.chat: *** Looking up your hostname...
+2021-06-02 13:45:21	--	copper.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-02 13:45:27	--	copper.libera.chat: *** No Ident response
+2021-06-02 13:45:27	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-02 13:45:27	--	irc: client capability, requesting: sasl
+2021-06-02 13:45:27	--	irc: client capability, enabled: sasl
+2021-06-02 13:45:28	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-02 13:45:28	--	SASL authentication successful
+2021-06-02 13:45:29	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-02 13:45:29	--	Your host is copper.libera.chat[130.185.232.126/6667], running version solanum-1.0-dev
+2021-06-02 13:45:29	--	This server was created Tue Jun 1 2021 at 19:41:23 UTC
+2021-06-02 13:45:29	--	copper.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-02 13:45:29	--	CALLERID=g SAFELIST ELIST=CTU ETRACE KNOCK MONITOR=100 WHOX FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-02 13:45:29	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-02 13:45:29	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-02 13:45:29	--	There are 61 users and 26493 invisible on 23 servers
+2021-06-02 13:45:29	--	36 :IRC Operators online
+2021-06-02 13:45:29	--	8 :unknown connection(s)
+2021-06-02 13:45:29	--	17569 :channels formed
+2021-06-02 13:45:29	--	I have 1355 clients and 1 servers
+2021-06-02 13:45:29	--	1355 1363 :Current local users 1355, max 1363
+2021-06-02 13:45:29	--	26554 26577 :Current global users 26554, max 26577
+2021-06-02 13:45:29	--	Highest connection count: 1364 (1363 clients) (5757 connections received)
+2021-06-02 13:45:29	--	- copper.libera.chat Message of the Day -
+2021-06-02 13:45:29	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-02 13:45:29	--	- and peer directed projects.
+2021-06-02 13:45:29	--	-
+2021-06-02 13:45:29	--	- Use of Libera Chat is governed by our network policies.
+2021-06-02 13:45:29	--	-
+2021-06-02 13:45:29	--	- Please visit us in #libera for questions and support.
+2021-06-02 13:45:29	--	-
+2021-06-02 13:45:29	--	- Website and documentation:  https://libera.chat
+2021-06-02 13:45:29	--	- Webchat:                    https://web.libera.chat
+2021-06-02 13:45:29	--	- Network policies:           https://libera.chat/policies
+2021-06-02 13:45:29	--	- Email:                      support@libera.chat
+2021-06-02 13:45:29	--	End of /MOTD command.
+2021-06-02 13:45:29	--	User mode [+Ri] by reno
+2021-06-02 13:45:29	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on May 28 20:00:10 2021 +0000.
+2021-06-02 14:33:30	--	irc: lag is high, reconnecting to server libera
+2021-06-02 14:33:30	--	irc: disconnected from server
+2021-06-02 14:33:30	--	irc: reconnecting to server in 10 seconds
+2021-06-02 14:33:40	--	irc: reconnecting to server...
+2021-06-02 14:33:40	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-02 14:33:40	--	irc: connected to irc.libera.chat/6667 (93.158.239.37)
+2021-06-02 14:33:41	--	strontium.libera.chat: *** Checking Ident
+2021-06-02 14:33:41	--	strontium.libera.chat: *** Looking up your hostname...
+2021-06-02 14:33:41	--	strontium.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-02 14:33:46	--	strontium.libera.chat: *** No Ident response
+2021-06-02 14:33:46	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-02 14:33:46	--	irc: client capability, requesting: sasl
+2021-06-02 14:33:46	--	irc: client capability, enabled: sasl
+2021-06-02 14:33:47	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-02 14:33:47	--	SASL authentication successful
+2021-06-02 14:33:48	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-02 14:33:48	--	Your host is strontium.libera.chat[93.158.239.37/6667], running version solanum-1.0-dev
+2021-06-02 14:33:48	--	This server was created Sat May 22 2021 at 19:05:06 UTC
+2021-06-02 14:33:48	--	strontium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-02 14:33:48	--	ETRACE KNOCK WHOX CALLERID=g FNC SAFELIST ELIST=CTU MONITOR=100 CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-02 14:33:48	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-02 14:33:48	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-02 14:33:48	--	There are 61 users and 26522 invisible on 23 servers
+2021-06-02 14:33:48	--	36 :IRC Operators online
+2021-06-02 14:33:48	--	4 :unknown connection(s)
+2021-06-02 14:33:48	--	17595 :channels formed
+2021-06-02 14:33:48	--	I have 2622 clients and 1 servers
+2021-06-02 14:33:48	--	2622 2938 :Current local users 2622, max 2938
+2021-06-02 14:33:48	--	26583 26594 :Current global users 26583, max 26594
+2021-06-02 14:33:48	--	Highest connection count: 2939 (2938 clients) (40955 connections received)
+2021-06-02 14:33:48	--	- strontium.libera.chat Message of the Day -
+2021-06-02 14:33:48	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-02 14:33:48	--	- and peer directed projects.
+2021-06-02 14:33:48	--	-
+2021-06-02 14:33:48	--	- Use of Libera Chat is governed by our network policies.
+2021-06-02 14:33:48	--	-
+2021-06-02 14:33:48	--	- Please visit us in #libera for questions and support.
+2021-06-02 14:33:48	--	-
+2021-06-02 14:33:48	--	- Website and documentation:  https://libera.chat
+2021-06-02 14:33:48	--	- Webchat:                    https://web.libera.chat
+2021-06-02 14:33:48	--	- Network policies:           https://libera.chat/policies
+2021-06-02 14:33:48	--	- Email:                      support@libera.chat
+2021-06-02 14:33:48	--	End of /MOTD command.
+2021-06-02 14:33:48	--	User mode [+Ri] by reno
+2021-06-02 14:33:48	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 02 19:31:35 2021 +0000.
+2021-06-02 15:38:11	--	irc: lag is high, reconnecting to server libera
+2021-06-02 15:38:11	--	irc: disconnected from server
+2021-06-02 15:38:11	--	irc: reconnecting to server in 10 seconds
+2021-06-02 15:38:21	--	irc: reconnecting to server...
+2021-06-02 15:38:21	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-02 15:38:21	--	irc: connected to irc.libera.chat/6667 (130.185.232.126)
+2021-06-02 15:38:21	--	copper.libera.chat: *** Checking Ident
+2021-06-02 15:38:21	--	copper.libera.chat: *** Looking up your hostname...
+2021-06-02 15:38:22	--	copper.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-02 15:38:27	--	copper.libera.chat: *** No Ident response
+2021-06-02 15:38:28	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-02 15:38:28	--	irc: client capability, requesting: sasl
+2021-06-02 15:38:28	--	irc: client capability, enabled: sasl
+2021-06-02 15:38:29	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-02 15:38:29	--	SASL authentication successful
+2021-06-02 15:38:29	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-02 15:38:29	--	Your host is copper.libera.chat[130.185.232.126/6667], running version solanum-1.0-dev
+2021-06-02 15:38:29	--	This server was created Tue Jun 1 2021 at 19:41:23 UTC
+2021-06-02 15:38:29	--	copper.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-02 15:38:29	--	CALLERID=g SAFELIST ELIST=CTU ETRACE KNOCK MONITOR=100 WHOX FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-02 15:38:29	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-02 15:38:29	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-02 15:38:29	--	There are 60 users and 26375 invisible on 23 servers
+2021-06-02 15:38:29	--	36 :IRC Operators online
+2021-06-02 15:38:29	--	7 :unknown connection(s)
+2021-06-02 15:38:29	--	17587 :channels formed
+2021-06-02 15:38:29	--	I have 1329 clients and 1 servers
+2021-06-02 15:38:29	--	1329 1374 :Current local users 1329, max 1374
+2021-06-02 15:38:29	--	26435 26597 :Current global users 26435, max 26597
+2021-06-02 15:38:30	--	Highest connection count: 1375 (1374 clients) (6274 connections received)
+2021-06-02 15:38:30	--	- copper.libera.chat Message of the Day -
+2021-06-02 15:38:30	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-02 15:38:30	--	- and peer directed projects.
+2021-06-02 15:38:30	--	-
+2021-06-02 15:38:30	--	- Use of Libera Chat is governed by our network policies.
+2021-06-02 15:38:30	--	-
+2021-06-02 15:38:30	--	- Please visit us in #libera for questions and support.
+2021-06-02 15:38:30	--	-
+2021-06-02 15:38:30	--	- Website and documentation:  https://libera.chat
+2021-06-02 15:38:30	--	- Webchat:                    https://web.libera.chat
+2021-06-02 15:38:30	--	- Network policies:           https://libera.chat/policies
+2021-06-02 15:38:30	--	- Email:                      support@libera.chat
+2021-06-02 15:38:30	--	End of /MOTD command.
+2021-06-02 15:38:30	--	User mode [+Ri] by reno
+2021-06-02 15:38:30	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 02 20:31:30 2021 +0000.
+2021-06-02 22:19:30	--	irc: lag is high, reconnecting to server libera
+2021-06-02 22:19:30	--	irc: disconnected from server
+2021-06-02 22:19:30	--	irc: reconnecting to server in 10 seconds
+2021-06-02 22:19:40	--	irc: reconnecting to server...
+2021-06-02 22:19:40	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-02 22:19:46	--	irc: connected to irc.libera.chat/6667 (130.185.232.126)
+2021-06-02 22:19:46	--	copper.libera.chat: *** Checking Ident
+2021-06-02 22:19:46	--	copper.libera.chat: *** Looking up your hostname...
+2021-06-02 22:19:47	--	copper.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-06-02 22:19:53	--	copper.libera.chat: *** No Ident response
+2021-06-02 22:19:53	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-02 22:19:53	--	irc: client capability, requesting: sasl
+2021-06-02 22:19:53	--	irc: client capability, enabled: sasl
+2021-06-02 22:19:54	--	You are now logged in as reno (reno!reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net)
+2021-06-02 22:19:54	--	SASL authentication successful
+2021-06-02 22:19:55	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-02 22:19:55	--	Your host is copper.libera.chat[130.185.232.126/6667], running version solanum-1.0-dev
+2021-06-02 22:19:55	--	This server was created Tue Jun 1 2021 at 19:41:23 UTC
+2021-06-02 22:19:55	--	copper.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-02 22:19:55	--	CALLERID=g SAFELIST ELIST=CTU ETRACE KNOCK MONITOR=100 WHOX FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-02 22:19:55	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-02 22:19:55	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-02 22:19:55	--	There are 58 users and 25297 invisible on 23 servers
+2021-06-02 22:19:55	--	36 :IRC Operators online
+2021-06-02 22:19:55	--	2 :unknown connection(s)
+2021-06-02 22:19:55	--	17406 :channels formed
+2021-06-02 22:19:55	--	I have 1168 clients and 1 servers
+2021-06-02 22:19:55	--	1168 1374 :Current local users 1168, max 1374
+2021-06-02 22:19:55	--	25355 26597 :Current global users 25355, max 26597
+2021-06-02 22:19:55	--	Highest connection count: 1375 (1374 clients) (8451 connections received)
+2021-06-02 22:19:55	--	- copper.libera.chat Message of the Day -
+2021-06-02 22:19:55	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-02 22:19:55	--	- and peer directed projects.
+2021-06-02 22:19:55	--	-
+2021-06-02 22:19:55	--	- Use of Libera Chat is governed by our network policies.
+2021-06-02 22:19:55	--	-
+2021-06-02 22:19:55	--	- Please visit us in #libera for questions and support.
+2021-06-02 22:19:55	--	-
+2021-06-02 22:19:55	--	- Website and documentation:  https://libera.chat
+2021-06-02 22:19:55	--	- Webchat:                    https://web.libera.chat
+2021-06-02 22:19:55	--	- Network policies:           https://libera.chat/policies
+2021-06-02 22:19:55	--	- Email:                      support@libera.chat
+2021-06-02 22:19:55	--	End of /MOTD command.
+2021-06-02 22:19:55	--	User mode [+Ri] by reno
+2021-06-02 22:19:55	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 02 22:37:50 2021 +0000.
+2021-06-03 09:24:26	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-03 09:24:26	--	irc: connected to irc.libera.chat/6667 (51.89.226.78)
+2021-06-03 09:24:26	--	mercury.libera.chat: *** Checking Ident
+2021-06-03 09:24:26	--	mercury.libera.chat: *** Looking up your hostname...
+2021-06-03 09:24:27	--	mercury.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-03 09:24:32	--	mercury.libera.chat: *** No Ident response
+2021-06-03 09:24:32	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-03 09:24:32	--	irc: client capability, requesting: sasl
+2021-06-03 09:24:32	--	irc: client capability, enabled: sasl
+2021-06-03 09:24:33	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-03 09:24:33	--	SASL authentication successful
+2021-06-03 09:24:33	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-03 09:24:33	--	Your host is mercury.libera.chat[51.89.226.78/6667], running version solanum-1.0-dev
+2021-06-03 09:24:33	--	This server was created Sat May 22 2021 at 08:43:11 UTC
+2021-06-03 09:24:33	--	mercury.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-03 09:24:33	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-03 09:24:33	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-03 09:24:33	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-03 09:24:33	--	There are 62 users and 26370 invisible on 23 servers
+2021-06-03 09:24:33	--	37 :IRC Operators online
+2021-06-03 09:24:33	--	8 :unknown connection(s)
+2021-06-03 09:24:33	--	17648 :channels formed
+2021-06-03 09:24:33	--	I have 2381 clients and 1 servers
+2021-06-03 09:24:33	--	2381 3333 :Current local users 2381, max 3333
+2021-06-03 09:24:33	--	26432 26597 :Current global users 26432, max 26597
+2021-06-03 09:24:33	--	Highest connection count: 3334 (3333 clients) (38135 connections received)
+2021-06-03 09:24:33	--	- mercury.libera.chat Message of the Day -
+2021-06-03 09:24:33	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-03 09:24:33	--	- and peer directed projects.
+2021-06-03 09:24:33	--	-
+2021-06-03 09:24:33	--	- Use of Libera Chat is governed by our network policies.
+2021-06-03 09:24:33	--	-
+2021-06-03 09:24:33	--	- Please visit us in #libera for questions and support.
+2021-06-03 09:24:33	--	-
+2021-06-03 09:24:33	--	- Website and documentation:  https://libera.chat
+2021-06-03 09:24:33	--	- Webchat:                    https://web.libera.chat
+2021-06-03 09:24:33	--	- Network policies:           https://libera.chat/policies
+2021-06-03 09:24:33	--	- Email:                      support@libera.chat
+2021-06-03 09:24:33	--	End of /MOTD command.
+2021-06-03 09:24:33	--	User mode [+Ri] by reno
+2021-06-03 09:24:33	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net on Jun 03 03:57:26 2021 +0000.
+2021-06-03 11:17:33	--	irc: lag is high, reconnecting to server libera
+2021-06-03 11:17:33	--	irc: disconnected from server
+2021-06-03 11:17:33	--	irc: reconnecting to server in 10 seconds
+2021-06-03 11:17:43	--	irc: reconnecting to server...
+2021-06-03 11:17:43	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-03 11:17:43	--	irc: connected to irc.libera.chat/6667 (51.89.226.78)
+2021-06-03 11:17:43	--	mercury.libera.chat: *** Checking Ident
+2021-06-03 11:17:44	--	mercury.libera.chat: *** Looking up your hostname...
+2021-06-03 11:17:44	--	mercury.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-03 11:17:49	--	mercury.libera.chat: *** No Ident response
+2021-06-03 11:17:49	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-03 11:17:49	--	irc: client capability, requesting: sasl
+2021-06-03 11:17:49	--	irc: client capability, enabled: sasl
+2021-06-03 11:17:50	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-03 11:17:50	--	SASL authentication successful
+2021-06-03 11:17:50	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-03 11:17:50	--	Your host is mercury.libera.chat[51.89.226.78/6667], running version solanum-1.0-dev
+2021-06-03 11:17:50	--	This server was created Sat May 22 2021 at 08:43:11 UTC
+2021-06-03 11:17:50	--	mercury.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-03 11:17:50	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-03 11:17:50	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-03 11:17:50	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-03 11:17:50	--	There are 61 users and 26531 invisible on 23 servers
+2021-06-03 11:17:50	--	37 :IRC Operators online
+2021-06-03 11:17:50	--	9 :unknown connection(s)
+2021-06-03 11:17:50	--	17627 :channels formed
+2021-06-03 11:17:50	--	I have 2484 clients and 1 servers
+2021-06-03 11:17:50	--	2484 3333 :Current local users 2484, max 3333
+2021-06-03 11:17:50	--	26592 26633 :Current global users 26592, max 26633
+2021-06-03 11:17:50	--	Highest connection count: 3334 (3333 clients) (38627 connections received)
+2021-06-03 11:17:50	--	- mercury.libera.chat Message of the Day -
+2021-06-03 11:17:50	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-03 11:17:50	--	- and peer directed projects.
+2021-06-03 11:17:50	--	-
+2021-06-03 11:17:50	--	- Use of Libera Chat is governed by our network policies.
+2021-06-03 11:17:50	--	-
+2021-06-03 11:17:50	--	- Please visit us in #libera for questions and support.
+2021-06-03 11:17:50	--	-
+2021-06-03 11:17:50	--	- Website and documentation:  https://libera.chat
+2021-06-03 11:17:50	--	- Webchat:                    https://web.libera.chat
+2021-06-03 11:17:50	--	- Network policies:           https://libera.chat/policies
+2021-06-03 11:17:50	--	- Email:                      support@libera.chat
+2021-06-03 11:17:50	--	End of /MOTD command.
+2021-06-03 11:17:50	--	User mode [+Ri] by reno
+2021-06-03 11:17:50	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 03 16:15:50 2021 +0000.
+2021-06-03 14:21:37	--	irc: lag is high, reconnecting to server libera
+2021-06-03 14:21:37	--	irc: disconnected from server
+2021-06-03 14:21:37	--	irc: reconnecting to server in 10 seconds
+2021-06-03 14:21:47	--	irc: reconnecting to server...
+2021-06-03 14:21:47	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-03 14:21:47	--	irc: connected to irc.libera.chat/6667 (188.240.145.100)
+2021-06-03 14:21:48	--	iridium.libera.chat: *** Checking Ident
+2021-06-03 14:21:48	--	iridium.libera.chat: *** Looking up your hostname...
+2021-06-03 14:21:48	--	iridium.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-03 14:21:54	--	iridium.libera.chat: *** No Ident response
+2021-06-03 14:21:54	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-03 14:21:54	--	irc: client capability, requesting: sasl
+2021-06-03 14:21:54	--	irc: client capability, enabled: sasl
+2021-06-03 14:21:55	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-03 14:21:55	--	SASL authentication successful
+2021-06-03 14:21:55	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-03 14:21:55	--	Your host is iridium.libera.chat[188.240.145.100/6667], running version solanum-1.0-dev
+2021-06-03 14:21:55	--	This server was created Thu May 20 2021 at 07:14:23 UTC
+2021-06-03 14:21:55	--	iridium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-03 14:21:55	--	KNOCK SAFELIST ELIST=CTU MONITOR=100 CALLERID=g FNC WHOX ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-03 14:21:55	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-03 14:21:55	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-03 14:21:55	--	There are 60 users and 26618 invisible on 23 servers
+2021-06-03 14:21:55	--	37 :IRC Operators online
+2021-06-03 14:21:55	--	4 :unknown connection(s)
+2021-06-03 14:21:55	--	17717 :channels formed
+2021-06-03 14:21:55	--	I have 2593 clients and 1 servers
+2021-06-03 14:21:55	--	2593 3954 :Current local users 2593, max 3954
+2021-06-03 14:21:55	--	26678 26702 :Current global users 26678, max 26702
+2021-06-03 14:21:56	--	Highest connection count: 3955 (3954 clients) (48238 connections received)
+2021-06-03 14:21:56	--	- iridium.libera.chat Message of the Day -
+2021-06-03 14:21:56	--	- This server provided by NORDUnet/SUNET
+2021-06-03 14:21:56	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-03 14:21:56	--	- and peer directed projects.
+2021-06-03 14:21:56	--	-
+2021-06-03 14:21:56	--	- Use of Libera Chat is governed by our network policies.
+2021-06-03 14:21:56	--	-
+2021-06-03 14:21:56	--	- Please visit us in #libera for questions and support.
+2021-06-03 14:21:56	--	-
+2021-06-03 14:21:56	--	- Website and documentation:  https://libera.chat
+2021-06-03 14:21:56	--	- Webchat:                    https://web.libera.chat
+2021-06-03 14:21:56	--	- Network policies:           https://libera.chat/policies
+2021-06-03 14:21:56	--	- Email:                      support@libera.chat
+2021-06-03 14:21:56	--	End of /MOTD command.
+2021-06-03 14:21:56	--	User mode [+Ri] by reno
+2021-06-03 14:21:56	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 03 18:48:11 2021 +0000.
+2021-06-03 14:57:56	--	irc: lag is high, reconnecting to server libera
+2021-06-03 14:57:56	--	irc: disconnected from server
+2021-06-03 14:57:56	--	irc: reconnecting to server in 10 seconds
+2021-06-03 14:58:06	--	irc: reconnecting to server...
+2021-06-03 14:58:06	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-03 14:58:06	--	irc: connected to irc.libera.chat/6667 (51.89.226.78)
+2021-06-03 14:58:07	--	mercury.libera.chat: *** Checking Ident
+2021-06-03 14:58:07	--	mercury.libera.chat: *** Looking up your hostname...
+2021-06-03 14:58:07	--	mercury.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-03 14:58:12	--	mercury.libera.chat: *** No Ident response
+2021-06-03 14:58:12	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-03 14:58:12	--	irc: client capability, requesting: sasl
+2021-06-03 14:58:13	--	irc: client capability, enabled: sasl
+2021-06-03 14:58:13	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-03 14:58:13	--	SASL authentication successful
+2021-06-03 14:58:14	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-03 14:58:14	--	Your host is mercury.libera.chat[51.89.226.78/6667], running version solanum-1.0-dev
+2021-06-03 14:58:14	--	This server was created Sat May 22 2021 at 08:43:11 UTC
+2021-06-03 14:58:14	--	mercury.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-03 14:58:14	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-03 14:58:14	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-03 14:58:14	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-03 14:58:14	--	There are 58 users and 26589 invisible on 23 servers
+2021-06-03 14:58:14	--	37 :IRC Operators online
+2021-06-03 14:58:14	--	4 :unknown connection(s)
+2021-06-03 14:58:14	--	17690 :channels formed
+2021-06-03 14:58:14	--	I have 2543 clients and 1 servers
+2021-06-03 14:58:14	--	2543 3333 :Current local users 2543, max 3333
+2021-06-03 14:58:14	--	26647 26702 :Current global users 26647, max 26702
+2021-06-03 14:58:14	--	Highest connection count: 3334 (3333 clients) (39364 connections received)
+2021-06-03 14:58:14	--	- mercury.libera.chat Message of the Day -
+2021-06-03 14:58:14	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-03 14:58:14	--	- and peer directed projects.
+2021-06-03 14:58:14	--	-
+2021-06-03 14:58:14	--	- Use of Libera Chat is governed by our network policies.
+2021-06-03 14:58:14	--	-
+2021-06-03 14:58:14	--	- Please visit us in #libera for questions and support.
+2021-06-03 14:58:14	--	-
+2021-06-03 14:58:14	--	- Website and documentation:  https://libera.chat
+2021-06-03 14:58:14	--	- Webchat:                    https://web.libera.chat
+2021-06-03 14:58:14	--	- Network policies:           https://libera.chat/policies
+2021-06-03 14:58:14	--	- Email:                      support@libera.chat
+2021-06-03 14:58:14	--	End of /MOTD command.
+2021-06-03 14:58:14	--	User mode [+Ri] by reno
+2021-06-03 14:58:14	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 03 19:56:42 2021 +0000.
+2021-06-03 17:09:16	--	irc: lag is high, reconnecting to server libera
+2021-06-03 17:09:16	--	irc: disconnected from server
+2021-06-03 17:09:16	--	irc: reconnecting to server in 10 seconds
+2021-06-03 17:09:26	--	irc: reconnecting to server...
+2021-06-03 17:09:26	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-03 17:09:26	--	irc: connected to irc.libera.chat/6667 (130.185.232.126)
+2021-06-03 17:09:26	--	copper.libera.chat: *** Checking Ident
+2021-06-03 17:09:27	--	copper.libera.chat: *** Looking up your hostname...
+2021-06-03 17:09:27	--	copper.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-03 17:09:33	--	copper.libera.chat: *** No Ident response
+2021-06-03 17:09:33	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-03 17:09:33	--	irc: client capability, requesting: sasl
+2021-06-03 17:09:34	--	irc: client capability, enabled: sasl
+2021-06-03 17:09:34	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-03 17:09:34	--	SASL authentication successful
+2021-06-03 17:09:35	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-03 17:09:35	--	Your host is copper.libera.chat[130.185.232.126/6667], running version solanum-1.0-dev
+2021-06-03 17:09:35	--	This server was created Tue Jun 1 2021 at 19:41:23 UTC
+2021-06-03 17:09:35	--	copper.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-03 17:09:35	--	CALLERID=g SAFELIST ELIST=CTU ETRACE KNOCK MONITOR=100 WHOX FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-03 17:09:35	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-03 17:09:35	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-03 17:09:35	--	There are 57 users and 26080 invisible on 23 servers
+2021-06-03 17:09:35	--	37 :IRC Operators online
+2021-06-03 17:09:35	--	5 :unknown connection(s)
+2021-06-03 17:09:35	--	17659 :channels formed
+2021-06-03 17:09:35	--	I have 1405 clients and 1 servers
+2021-06-03 17:09:35	--	1405 1875 :Current local users 1405, max 1875
+2021-06-03 17:09:35	--	26137 26702 :Current global users 26137, max 26702
+2021-06-03 17:09:35	--	Highest connection count: 1876 (1875 clients) (13159 connections received)
+2021-06-03 17:09:35	--	- copper.libera.chat Message of the Day -
+2021-06-03 17:09:35	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-03 17:09:35	--	- and peer directed projects.
+2021-06-03 17:09:35	--	-
+2021-06-03 17:09:35	--	- Use of Libera Chat is governed by our network policies.
+2021-06-03 17:09:35	--	-
+2021-06-03 17:09:35	--	- Please visit us in #libera for questions and support.
+2021-06-03 17:09:35	--	-
+2021-06-03 17:09:35	--	- Website and documentation:  https://libera.chat
+2021-06-03 17:09:35	--	- Webchat:                    https://web.libera.chat
+2021-06-03 17:09:35	--	- Network policies:           https://libera.chat/policies
+2021-06-03 17:09:35	--	- Email:                      support@libera.chat
+2021-06-03 17:09:35	--	End of /MOTD command.
+2021-06-03 17:09:35	--	User mode [+Ri] by reno
+2021-06-03 17:09:35	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 03 22:00:41 2021 +0000.
+2021-06-04 10:26:29	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2021-06-04 10:26:29	--	irc: disconnecting from server...
+2021-06-04 10:26:29	--	irc: disconnected from server
+2021-06-04 10:26:29	--	irc: reconnecting to server in 10 seconds
+2021-06-04 10:26:39	--	irc: reconnecting to server...
+2021-06-04 10:26:39	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-04 10:26:39	--	irc: connected to irc.libera.chat/6667 (217.182.79.119)
+2021-06-04 10:26:39	--	tantalum.libera.chat: *** Checking Ident
+2021-06-04 10:26:40	--	tantalum.libera.chat: *** Looking up your hostname...
+2021-06-04 10:26:40	--	tantalum.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-06-04 10:26:45	--	tantalum.libera.chat: *** No Ident response
+2021-06-04 10:26:45	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-04 10:26:45	--	irc: client capability, requesting: sasl
+2021-06-04 10:26:45	--	irc: client capability, enabled: sasl
+2021-06-04 10:26:46	--	You are now logged in as reno (reno!reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net)
+2021-06-04 10:26:46	--	SASL authentication successful
+2021-06-04 10:26:47	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-04 10:26:47	--	Your host is tantalum.libera.chat[217.182.79.119/6667], running version solanum-1.0-dev
+2021-06-04 10:26:47	--	This server was created Tue Jun 1 2021 at 19:35:19 UTC
+2021-06-04 10:26:47	--	tantalum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-04 10:26:47	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-04 10:26:47	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-04 10:26:47	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-04 10:26:47	--	There are 58 users and 26963 invisible on 23 servers
+2021-06-04 10:26:47	--	37 :IRC Operators online
+2021-06-04 10:26:47	--	7 :unknown connection(s)
+2021-06-04 10:26:47	--	17739 :channels formed
+2021-06-04 10:26:47	--	I have 2557 clients and 1 servers
+2021-06-04 10:26:47	--	2557 2564 :Current local users 2557, max 2564
+2021-06-04 10:26:47	--	27021 27038 :Current global users 27021, max 27038
+2021-06-04 10:26:47	--	Highest connection count: 2565 (2564 clients) (23047 connections received)
+2021-06-04 10:26:47	--	- tantalum.libera.chat Message of the Day -
+2021-06-04 10:26:47	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-04 10:26:47	--	- and peer directed projects.
+2021-06-04 10:26:47	--	-
+2021-06-04 10:26:47	--	- Use of Libera Chat is governed by our network policies.
+2021-06-04 10:26:47	--	-
+2021-06-04 10:26:47	--	- Please visit us in #libera for questions and support.
+2021-06-04 10:26:47	--	-
+2021-06-04 10:26:47	--	- Website and documentation:  https://libera.chat
+2021-06-04 10:26:47	--	- Webchat:                    https://web.libera.chat
+2021-06-04 10:26:47	--	- Network policies:           https://libera.chat/policies
+2021-06-04 10:26:47	--	- Email:                      support@libera.chat
+2021-06-04 10:26:47	--	End of /MOTD command.
+2021-06-04 10:26:47	--	User mode [+Ri] by reno
+2021-06-04 10:26:47	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 03 22:20:45 2021 +0000.
+2021-06-04 13:39:20	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2021-06-04 13:39:20	--	irc: disconnecting from server...
+2021-06-04 13:39:20	--	irc: disconnected from server
+2021-06-04 13:39:20	--	irc: reconnecting to server in 10 seconds
+2021-06-04 13:39:30	--	irc: reconnecting to server...
+2021-06-04 13:39:30	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-04 13:39:30	--	irc: connected to irc.libera.chat/6667 (51.161.82.214)
+2021-06-04 13:39:30	--	molybdenum.libera.chat: *** Checking Ident
+2021-06-04 13:39:30	--	molybdenum.libera.chat: *** Looking up your hostname...
+2021-06-04 13:39:30	--	molybdenum.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-06-04 13:39:36	--	molybdenum.libera.chat: *** No Ident response
+2021-06-04 13:39:36	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-04 13:39:36	--	irc: client capability, requesting: sasl
+2021-06-04 13:39:36	--	irc: client capability, enabled: sasl
+2021-06-04 13:39:36	--	You are now logged in as reno (reno!reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net)
+2021-06-04 13:39:37	--	SASL authentication successful
+2021-06-04 13:39:37	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-04 13:39:37	--	Your host is molybdenum.libera.chat[51.161.82.214/6667], running version solanum-1.0-dev
+2021-06-04 13:39:37	--	This server was created Fri May 21 2021 at 22:15:36 UTC
+2021-06-04 13:39:37	--	molybdenum.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-04 13:39:37	--	WHOX KNOCK MONITOR=100 ETRACE FNC SAFELIST ELIST=CTU CALLERID=g CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-04 13:39:37	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-04 13:39:37	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-04 13:39:37	--	There are 57 users and 26969 invisible on 23 servers
+2021-06-04 13:39:37	--	37 :IRC Operators online
+2021-06-04 13:39:37	--	5 :unknown connection(s)
+2021-06-04 13:39:37	--	17756 :channels formed
+2021-06-04 13:39:37	--	I have 2093 clients and 1 servers
+2021-06-04 13:39:37	--	2093 3307 :Current local users 2093, max 3307
+2021-06-04 13:39:37	--	27026 27049 :Current global users 27026, max 27049
+2021-06-04 13:39:37	--	Highest connection count: 3308 (3307 clients) (40433 connections received)
+2021-06-04 13:39:37	--	- molybdenum.libera.chat Message of the Day -
+2021-06-04 13:39:37	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-04 13:39:37	--	- and peer directed projects.
+2021-06-04 13:39:37	--	-
+2021-06-04 13:39:37	--	- Use of Libera Chat is governed by our network policies.
+2021-06-04 13:39:37	--	-
+2021-06-04 13:39:37	--	- Please visit us in #libera for questions and support.
+2021-06-04 13:39:37	--	-
+2021-06-04 13:39:37	--	- Website and documentation:  https://libera.chat
+2021-06-04 13:39:37	--	- Webchat:                    https://web.libera.chat
+2021-06-04 13:39:37	--	- Network policies:           https://libera.chat/policies
+2021-06-04 13:39:37	--	- Email:                      support@libera.chat
+2021-06-04 13:39:37	--	End of /MOTD command.
+2021-06-04 13:39:37	--	User mode [+Ri] by reno
+2021-06-04 13:39:37	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net on Jun 04 18:38:43 2021 +0000.
+2021-06-04 15:16:13	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2021-06-04 15:16:13	--	irc: disconnecting from server...
+2021-06-04 15:16:13	--	irc: disconnected from server
+2021-06-04 15:16:13	--	irc: reconnecting to server in 10 seconds
+2021-06-04 15:16:23	--	irc: reconnecting to server...
+2021-06-04 15:16:23	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-04 15:16:23	--	irc: connected to irc.libera.chat/6667 (188.240.145.101)
+2021-06-04 15:16:23	--	osmium.libera.chat: *** Checking Ident
+2021-06-04 15:16:23	--	osmium.libera.chat: *** Looking up your hostname...
+2021-06-04 15:16:24	--	osmium.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-06-04 15:16:29	--	osmium.libera.chat: *** No Ident response
+2021-06-04 15:16:29	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-04 15:16:29	--	irc: client capability, requesting: sasl
+2021-06-04 15:16:29	--	irc: client capability, enabled: sasl
+2021-06-04 15:16:30	--	You are now logged in as reno (reno!reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net)
+2021-06-04 15:16:30	--	SASL authentication successful
+2021-06-04 15:16:31	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-04 15:16:31	--	Your host is osmium.libera.chat[188.240.145.101/6667], running version solanum-1.0-dev
+2021-06-04 15:16:31	--	This server was created Sat May 22 2021 at 19:04:17 UTC
+2021-06-04 15:16:31	--	osmium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-04 15:16:31	--	WHOX FNC KNOCK SAFELIST ELIST=CTU CALLERID=g MONITOR=100 ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-04 15:16:31	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-04 15:16:31	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-04 15:16:31	--	There are 59 users and 26920 invisible on 23 servers
+2021-06-04 15:16:31	--	38 :IRC Operators online
+2021-06-04 15:16:31	--	8 :unknown connection(s)
+2021-06-04 15:16:31	--	17742 :channels formed
+2021-06-04 15:16:31	--	I have 2190 clients and 1 servers
+2021-06-04 15:16:31	--	2190 2894 :Current local users 2190, max 2894
+2021-06-04 15:16:31	--	26979 27076 :Current global users 26979, max 27076
+2021-06-04 15:16:31	--	Highest connection count: 2895 (2894 clients) (32940 connections received)
+2021-06-04 15:16:31	--	- osmium.libera.chat Message of the Day -
+2021-06-04 15:16:31	--	- This server provided by NORDUnet/SUNET
+2021-06-04 15:16:31	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-04 15:16:31	--	- and peer directed projects.
+2021-06-04 15:16:31	--	-
+2021-06-04 15:16:31	--	- Use of Libera Chat is governed by our network policies.
+2021-06-04 15:16:31	--	-
+2021-06-04 15:16:31	--	- Please visit us in #libera for questions and support.
+2021-06-04 15:16:31	--	-
+2021-06-04 15:16:31	--	- Website and documentation:  https://libera.chat
+2021-06-04 15:16:31	--	- Webchat:                    https://web.libera.chat
+2021-06-04 15:16:31	--	- Network policies:           https://libera.chat/policies
+2021-06-04 15:16:31	--	- Email:                      support@libera.chat
+2021-06-04 15:16:31	--	End of /MOTD command.
+2021-06-04 15:16:31	--	User mode [+Ri] by reno
+2021-06-04 15:16:31	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net on Jun 04 20:12:19 2021 +0000.
+2021-06-04 21:26:18	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2021-06-04 21:26:18	--	irc: disconnecting from server...
+2021-06-04 21:26:18	--	irc: disconnected from server
+2021-06-04 21:26:18	--	irc: reconnecting to server in 10 seconds
+2021-06-04 21:26:28	--	irc: reconnecting to server...
+2021-06-04 21:26:28	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-04 21:26:30	--	irc: connected to irc.libera.chat/6667 (188.240.145.101)
+2021-06-04 21:26:30	--	osmium.libera.chat: *** Checking Ident
+2021-06-04 21:26:31	--	osmium.libera.chat: *** Looking up your hostname...
+2021-06-04 21:26:31	--	osmium.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-06-04 21:26:36	--	osmium.libera.chat: *** No Ident response
+2021-06-04 21:26:36	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-04 21:26:36	--	irc: client capability, requesting: sasl
+2021-06-04 21:26:38	--	irc: client capability, enabled: sasl
+2021-06-04 21:26:39	--	You are now logged in as reno (reno!reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net)
+2021-06-04 21:26:39	--	SASL authentication successful
+2021-06-04 21:26:39	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-04 21:26:39	--	Your host is osmium.libera.chat[188.240.145.101/6667], running version solanum-1.0-dev
+2021-06-04 21:26:39	--	This server was created Sat May 22 2021 at 19:04:17 UTC
+2021-06-04 21:26:39	--	osmium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-04 21:26:39	--	WHOX FNC KNOCK SAFELIST ELIST=CTU CALLERID=g MONITOR=100 ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-04 21:26:39	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-04 21:26:39	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-04 21:26:39	--	There are 56 users and 25875 invisible on 23 servers
+2021-06-04 21:26:39	--	39 :IRC Operators online
+2021-06-04 21:26:39	--	7 :unknown connection(s)
+2021-06-04 21:26:39	--	17603 :channels formed
+2021-06-04 21:26:39	--	I have 2119 clients and 1 servers
+2021-06-04 21:26:39	--	2119 2894 :Current local users 2119, max 2894
+2021-06-04 21:26:39	--	25931 27076 :Current global users 25931, max 27076
+2021-06-04 21:26:39	--	Highest connection count: 2895 (2894 clients) (34541 connections received)
+2021-06-04 21:26:39	--	- osmium.libera.chat Message of the Day -
+2021-06-04 21:26:39	--	- This server provided by NORDUnet/SUNET
+2021-06-04 21:26:39	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-04 21:26:39	--	- and peer directed projects.
+2021-06-04 21:26:39	--	-
+2021-06-04 21:26:39	--	- Use of Libera Chat is governed by our network policies.
+2021-06-04 21:26:39	--	-
+2021-06-04 21:26:39	--	- Please visit us in #libera for questions and support.
+2021-06-04 21:26:39	--	-
+2021-06-04 21:26:39	--	- Website and documentation:  https://libera.chat
+2021-06-04 21:26:39	--	- Webchat:                    https://web.libera.chat
+2021-06-04 21:26:39	--	- Network policies:           https://libera.chat/policies
+2021-06-04 21:26:39	--	- Email:                      support@libera.chat
+2021-06-04 21:26:39	--	End of /MOTD command.
+2021-06-04 21:26:39	--	User mode [+Ri] by reno
+2021-06-04 21:26:39	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net on Jun 04 21:24:49 2021 +0000.
+2021-06-09 13:18:08	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-09 13:18:08	--	irc: connected to irc.libera.chat/6667 (163.123.192.192)
+2021-06-09 13:18:08	--	tin.libera.chat: *** Checking Ident
+2021-06-09 13:18:08	--	tin.libera.chat: *** Looking up your hostname...
+2021-06-09 13:18:08	--	tin.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-09 13:18:14	--	tin.libera.chat: *** No Ident response
+2021-06-09 13:18:14	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-09 13:18:14	--	irc: client capability, requesting: sasl
+2021-06-09 13:18:14	--	irc: client capability, enabled: sasl
+2021-06-09 13:18:15	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-09 13:18:15	--	SASL authentication successful
+2021-06-09 13:18:16	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-09 13:18:16	--	Your host is tin.libera.chat[163.123.192.192/6667], running version solanum-1.0-dev
+2021-06-09 13:18:16	--	This server was created Sun Jun 6 2021 at 21:19:44 UTC
+2021-06-09 13:18:16	--	tin.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-09 13:18:16	--	MONITOR=100 CALLERID=g KNOCK WHOX FNC SAFELIST ELIST=CTU ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-09 13:18:16	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-09 13:18:16	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-09 13:18:16	--	There are 55 users and 29200 invisible on 27 servers
+2021-06-09 13:18:16	--	35 :IRC Operators online
+2021-06-09 13:18:16	--	8 :unknown connection(s)
+2021-06-09 13:18:16	--	17845 :channels formed
+2021-06-09 13:18:16	--	I have 2275 clients and 1 servers
+2021-06-09 13:18:16	--	2275 2342 :Current local users 2275, max 2342
+2021-06-09 13:18:16	--	29255 30818 :Current global users 29255, max 30818
+2021-06-09 13:18:16	--	Highest connection count: 2343 (2342 clients) (14310 connections received)
+2021-06-09 13:18:16	--	- tin.libera.chat Message of the Day -
+2021-06-09 13:18:16	--	- Welcome to Libera Chat, the IRC network for
+2021-06-09 13:18:16	--	- free & open-source software and peer directed projects.
+2021-06-09 13:18:16	--	-
+2021-06-09 13:18:16	--	- Use of Libera Chat is governed by our network policies.
+2021-06-09 13:18:16	--	-
+2021-06-09 13:18:16	--	- Please visit us in #libera for questions and support.
+2021-06-09 13:18:16	--	-
+2021-06-09 13:18:16	--	- Website and documentation:  https://libera.chat
+2021-06-09 13:18:16	--	- Webchat:                    https://web.libera.chat
+2021-06-09 13:18:16	--	- Network policies:           https://libera.chat/policies
+2021-06-09 13:18:16	--	- Email:                      support@libera.chat
+2021-06-09 13:18:16	--	End of /MOTD command.
+2021-06-09 13:18:16	--	User mode [+Ri] by reno
+2021-06-09 13:18:16	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net on Jun 05 02:27:40 2021 +0000.
+2021-06-10 09:28:16	--	irc: lag is high, reconnecting to server libera
+2021-06-10 09:28:16	--	irc: disconnected from server
+2021-06-10 09:28:16	--	irc: reconnecting to server in 10 seconds
+2021-06-10 09:28:26	--	irc: reconnecting to server...
+2021-06-10 09:28:26	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-10 09:28:26	--	irc: connected to irc.libera.chat/6667 (172.106.11.86)
+2021-06-10 09:28:26	--	silver.libera.chat: *** Checking Ident
+2021-06-10 09:28:26	--	silver.libera.chat: *** Looking up your hostname...
+2021-06-10 09:28:27	--	silver.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-10 09:28:32	--	silver.libera.chat: *** No Ident response
+2021-06-10 09:28:32	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-10 09:28:32	--	irc: client capability, requesting: sasl
+2021-06-10 09:28:32	--	irc: client capability, enabled: sasl
+2021-06-10 09:28:33	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-10 09:28:33	--	SASL authentication successful
+2021-06-10 09:28:34	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-10 09:28:34	--	Your host is silver.libera.chat[172.106.11.86/6667], running version solanum-1.0-dev
+2021-06-10 09:28:34	--	This server was created Sun Jun 6 2021 at 18:36:52 UTC
+2021-06-10 09:28:34	--	silver.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-10 09:28:34	--	ETRACE FNC SAFELIST ELIST=CTU CALLERID=g MONITOR=100 KNOCK WHOX CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-10 09:28:34	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-10 09:28:34	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-10 09:28:34	--	There are 57 users and 29757 invisible on 28 servers
+2021-06-10 09:28:34	--	37 :IRC Operators online
+2021-06-10 09:28:34	--	6 :unknown connection(s)
+2021-06-10 09:28:34	--	17919 :channels formed
+2021-06-10 09:28:34	--	I have 2085 clients and 1 servers
+2021-06-10 09:28:34	--	2085 4146 :Current local users 2085, max 4146
+2021-06-10 09:28:34	--	29814 30818 :Current global users 29814, max 30818
+2021-06-10 09:28:34	--	Highest connection count: 4147 (4146 clients) (17139 connections received)
+2021-06-10 09:28:34	--	- silver.libera.chat Message of the Day -
+2021-06-10 09:28:34	--	- This server is provided by Psychz Networks.
+2021-06-10 09:28:34	--	-
+2021-06-10 09:28:34	--	- Welcome to Libera Chat, the IRC network for
+2021-06-10 09:28:34	--	- free & open-source software and peer directed projects.
+2021-06-10 09:28:34	--	-
+2021-06-10 09:28:34	--	- Use of Libera Chat is governed by our network policies.
+2021-06-10 09:28:34	--	-
+2021-06-10 09:28:34	--	- Please visit us in #libera for questions and support.
+2021-06-10 09:28:34	--	-
+2021-06-10 09:28:34	--	- Website and documentation:  https://libera.chat
+2021-06-10 09:28:34	--	- Webchat:                    https://web.libera.chat
+2021-06-10 09:28:34	--	- Network policies:           https://libera.chat/policies
+2021-06-10 09:28:34	--	- Email:                      support@libera.chat
+2021-06-10 09:28:34	--	End of /MOTD command.
+2021-06-10 09:28:34	--	User mode [+Ri] by reno
+2021-06-10 09:28:34	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 09 22:35:46 2021 +0000.
+2021-06-10 09:38:35	--	irc: lag is high, reconnecting to server libera
+2021-06-10 09:38:35	--	irc: disconnected from server
+2021-06-10 09:38:35	--	irc: reconnecting to server in 10 seconds
+2021-06-10 09:38:45	--	irc: reconnecting to server...
+2021-06-10 09:38:45	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-10 09:38:46	--	irc: connected to irc.libera.chat/6667 (188.240.145.101)
+2021-06-10 09:38:46	--	osmium.libera.chat: *** Checking Ident
+2021-06-10 09:38:46	--	osmium.libera.chat: *** Looking up your hostname...
+2021-06-10 09:38:46	--	osmium.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-10 09:38:51	--	osmium.libera.chat: *** No Ident response
+2021-06-10 09:38:51	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-10 09:38:51	--	irc: client capability, requesting: sasl
+2021-06-10 09:38:51	--	irc: client capability, enabled: sasl
+2021-06-10 09:38:52	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-10 09:38:52	--	SASL authentication successful
+2021-06-10 09:38:52	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-10 09:38:52	--	Your host is osmium.libera.chat[188.240.145.101/6667], running version solanum-1.0-dev
+2021-06-10 09:38:52	--	This server was created Sat May 22 2021 at 19:04:17 UTC
+2021-06-10 09:38:52	--	osmium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-10 09:38:52	--	WHOX FNC KNOCK SAFELIST ELIST=CTU CALLERID=g MONITOR=100 ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-10 09:38:52	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-10 09:38:52	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-10 09:38:52	--	There are 58 users and 29797 invisible on 28 servers
+2021-06-10 09:38:52	--	37 :IRC Operators online
+2021-06-10 09:38:52	--	9 :unknown connection(s)
+2021-06-10 09:38:52	--	17928 :channels formed
+2021-06-10 09:38:52	--	I have 2080 clients and 1 servers
+2021-06-10 09:38:52	--	2080 4269 :Current local users 2080, max 4269
+2021-06-10 09:38:52	--	29855 30818 :Current global users 29855, max 30818
+2021-06-10 09:38:52	--	Highest connection count: 4270 (4269 clients) (52216 connections received)
+2021-06-10 09:38:52	--	- osmium.libera.chat Message of the Day -
+2021-06-10 09:38:52	--	- This server provided by NORDUnet/SUNET
+2021-06-10 09:38:52	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-10 09:38:52	--	- and peer directed projects.
+2021-06-10 09:38:52	--	-
+2021-06-10 09:38:52	--	- Use of Libera Chat is governed by our network policies.
+2021-06-10 09:38:52	--	-
+2021-06-10 09:38:52	--	- Please visit us in #libera for questions and support.
+2021-06-10 09:38:52	--	-
+2021-06-10 09:38:52	--	- Website and documentation:  https://libera.chat
+2021-06-10 09:38:52	--	- Webchat:                    https://web.libera.chat
+2021-06-10 09:38:52	--	- Network policies:           https://libera.chat/policies
+2021-06-10 09:38:52	--	- Email:                      support@libera.chat
+2021-06-10 09:38:52	--	End of /MOTD command.
+2021-06-10 09:38:52	--	User mode [+Ri] by reno
+2021-06-10 09:38:52	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 10 14:36:44 2021 +0000.
+2021-06-10 11:27:54	--	irc: lag is high, reconnecting to server libera
+2021-06-10 11:27:54	--	irc: disconnected from server
+2021-06-10 11:27:54	--	irc: reconnecting to server in 10 seconds
+2021-06-10 11:28:04	--	irc: reconnecting to server...
+2021-06-10 11:28:04	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-10 11:28:04	--	irc: connected to irc.libera.chat/6667 (163.123.192.192)
+2021-06-10 11:28:04	--	tin.libera.chat: *** Checking Ident
+2021-06-10 11:28:04	--	tin.libera.chat: *** Looking up your hostname...
+2021-06-10 11:28:05	--	tin.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-10 11:28:11	--	tin.libera.chat: *** No Ident response
+2021-06-10 11:28:11	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-10 11:28:11	--	irc: client capability, requesting: sasl
+2021-06-10 11:28:11	--	irc: client capability, enabled: sasl
+2021-06-10 11:28:12	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-10 11:28:12	--	SASL authentication successful
+2021-06-10 11:28:13	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-10 11:28:13	--	Your host is tin.libera.chat[163.123.192.192/6667], running version solanum-1.0-dev
+2021-06-10 11:28:13	--	This server was created Sun Jun 6 2021 at 21:19:44 UTC
+2021-06-10 11:28:13	--	tin.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-10 11:28:13	--	MONITOR=100 CALLERID=g KNOCK WHOX FNC SAFELIST ELIST=CTU ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-10 11:28:13	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-10 11:28:13	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-10 11:28:13	--	There are 55 users and 30246 invisible on 28 servers
+2021-06-10 11:28:13	--	38 :IRC Operators online
+2021-06-10 11:28:13	--	7 :unknown connection(s)
+2021-06-10 11:28:13	--	17943 :channels formed
+2021-06-10 11:28:13	--	I have 2128 clients and 1 servers
+2021-06-10 11:28:13	--	2128 2342 :Current local users 2128, max 2342
+2021-06-10 11:28:13	--	30301 30818 :Current global users 30301, max 30818
+2021-06-10 11:28:13	--	Highest connection count: 2343 (2342 clients) (17665 connections received)
+2021-06-10 11:28:13	--	- tin.libera.chat Message of the Day -
+2021-06-10 11:28:13	--	- Welcome to Libera Chat, the IRC network for
+2021-06-10 11:28:13	--	- free & open-source software and peer directed projects.
+2021-06-10 11:28:13	--	-
+2021-06-10 11:28:13	--	- Use of Libera Chat is governed by our network policies.
+2021-06-10 11:28:13	--	-
+2021-06-10 11:28:13	--	- Please visit us in #libera for questions and support.
+2021-06-10 11:28:13	--	-
+2021-06-10 11:28:13	--	- Website and documentation:  https://libera.chat
+2021-06-10 11:28:13	--	- Webchat:                    https://web.libera.chat
+2021-06-10 11:28:13	--	- Network policies:           https://libera.chat/policies
+2021-06-10 11:28:13	--	- Email:                      support@libera.chat
+2021-06-10 11:28:13	--	End of /MOTD command.
+2021-06-10 11:28:13	--	User mode [+Ri] by reno
+2021-06-10 11:28:13	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 10 16:19:41 2021 +0000.
+2021-06-10 13:05:04	--	irc: lag is high, reconnecting to server libera
+2021-06-10 13:05:04	--	irc: disconnected from server
+2021-06-10 13:05:04	--	irc: reconnecting to server in 10 seconds
+2021-06-10 13:05:14	--	irc: reconnecting to server...
+2021-06-10 13:05:14	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-10 13:05:14	--	irc: connected to irc.libera.chat/6667 (188.240.145.101)
+2021-06-10 13:05:14	--	osmium.libera.chat: *** Checking Ident
+2021-06-10 13:05:14	--	osmium.libera.chat: *** Looking up your hostname...
+2021-06-10 13:05:15	--	osmium.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-10 13:05:20	--	osmium.libera.chat: *** No Ident response
+2021-06-10 13:05:20	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-10 13:05:20	--	irc: client capability, requesting: sasl
+2021-06-10 13:05:20	--	irc: client capability, enabled: sasl
+2021-06-10 13:05:21	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-10 13:05:21	--	SASL authentication successful
+2021-06-10 13:05:22	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-10 13:05:22	--	Your host is osmium.libera.chat[188.240.145.101/6667], running version solanum-1.0-dev
+2021-06-10 13:05:22	--	This server was created Sat May 22 2021 at 19:04:17 UTC
+2021-06-10 13:05:22	--	osmium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-10 13:05:22	--	WHOX FNC KNOCK SAFELIST ELIST=CTU CALLERID=g MONITOR=100 ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-10 13:05:22	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-10 13:05:22	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-10 13:05:22	--	There are 53 users and 30778 invisible on 28 servers
+2021-06-10 13:05:22	--	38 :IRC Operators online
+2021-06-10 13:05:22	--	2 :unknown connection(s)
+2021-06-10 13:05:22	--	17933 :channels formed
+2021-06-10 13:05:22	--	I have 2229 clients and 1 servers
+2021-06-10 13:05:22	--	2229 4269 :Current local users 2229, max 4269
+2021-06-10 13:05:22	--	30831 30831 :Current global users 30831, max 30831
+2021-06-10 13:05:22	--	Highest connection count: 4270 (4269 clients) (52924 connections received)
+2021-06-10 13:05:22	--	- osmium.libera.chat Message of the Day -
+2021-06-10 13:05:22	--	- This server provided by NORDUnet/SUNET
+2021-06-10 13:05:22	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-10 13:05:22	--	- and peer directed projects.
+2021-06-10 13:05:22	--	-
+2021-06-10 13:05:22	--	- Use of Libera Chat is governed by our network policies.
+2021-06-10 13:05:22	--	-
+2021-06-10 13:05:22	--	- Please visit us in #libera for questions and support.
+2021-06-10 13:05:22	--	-
+2021-06-10 13:05:22	--	- Website and documentation:  https://libera.chat
+2021-06-10 13:05:22	--	- Webchat:                    https://web.libera.chat
+2021-06-10 13:05:22	--	- Network policies:           https://libera.chat/policies
+2021-06-10 13:05:22	--	- Email:                      support@libera.chat
+2021-06-10 13:05:22	--	End of /MOTD command.
+2021-06-10 13:05:22	--	User mode [+Ri] by reno
+2021-06-10 13:05:22	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 10 17:52:57 2021 +0000.
+2021-06-10 14:13:37	--	irc: lag is high, reconnecting to server libera
+2021-06-10 14:13:37	--	irc: disconnected from server
+2021-06-10 14:13:37	--	irc: reconnecting to server in 10 seconds
+2021-06-10 14:13:47	--	irc: reconnecting to server...
+2021-06-10 14:13:47	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-10 14:13:47	--	irc: connected to irc.libera.chat/6667 (163.123.192.192)
+2021-06-10 14:13:47	--	tin.libera.chat: *** Checking Ident
+2021-06-10 14:13:47	--	tin.libera.chat: *** Looking up your hostname...
+2021-06-10 14:13:47	--	tin.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-10 14:13:54	--	tin.libera.chat: *** No Ident response
+2021-06-10 14:13:54	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-10 14:13:54	--	irc: client capability, requesting: sasl
+2021-06-10 14:13:54	--	irc: client capability, enabled: sasl
+2021-06-10 14:13:55	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-10 14:13:55	--	SASL authentication successful
+2021-06-10 14:13:56	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-10 14:13:56	--	Your host is tin.libera.chat[163.123.192.192/6667], running version solanum-1.0-dev
+2021-06-10 14:13:56	--	This server was created Sun Jun 6 2021 at 21:19:44 UTC
+2021-06-10 14:13:56	--	tin.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-10 14:13:56	--	MONITOR=100 CALLERID=g KNOCK WHOX FNC SAFELIST ELIST=CTU ETRACE CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-10 14:13:56	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-10 14:13:56	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-10 14:13:56	--	There are 53 users and 31127 invisible on 28 servers
+2021-06-10 14:13:56	--	39 :IRC Operators online
+2021-06-10 14:13:56	--	8 :unknown connection(s)
+2021-06-10 14:13:56	--	17938 :channels formed
+2021-06-10 14:13:56	--	I have 2233 clients and 1 servers
+2021-06-10 14:13:56	--	2233 2342 :Current local users 2233, max 2342
+2021-06-10 14:13:56	--	31180 31185 :Current global users 31180, max 31185
+2021-06-10 14:13:56	--	Highest connection count: 2343 (2342 clients) (18311 connections received)
+2021-06-10 14:13:56	--	- tin.libera.chat Message of the Day -
+2021-06-10 14:13:56	--	- Welcome to Libera Chat, the IRC network for
+2021-06-10 14:13:56	--	- free & open-source software and peer directed projects.
+2021-06-10 14:13:56	--	-
+2021-06-10 14:13:56	--	- Use of Libera Chat is governed by our network policies.
+2021-06-10 14:13:56	--	-
+2021-06-10 14:13:56	--	- Please visit us in #libera for questions and support.
+2021-06-10 14:13:56	--	-
+2021-06-10 14:13:56	--	- Website and documentation:  https://libera.chat
+2021-06-10 14:13:56	--	- Webchat:                    https://web.libera.chat
+2021-06-10 14:13:56	--	- Network policies:           https://libera.chat/policies
+2021-06-10 14:13:56	--	- Email:                      support@libera.chat
+2021-06-10 14:13:56	--	End of /MOTD command.
+2021-06-10 14:13:56	--	User mode [+Ri] by reno
+2021-06-10 14:13:56	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 10 19:11:44 2021 +0000.
+2021-06-10 15:49:16	--	irc: lag is high, reconnecting to server libera
+2021-06-10 15:49:16	--	irc: disconnected from server
+2021-06-10 15:49:16	--	irc: reconnecting to server in 10 seconds
+2021-06-10 15:49:26	--	irc: reconnecting to server...
+2021-06-10 15:49:26	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-10 15:49:26	--	irc: connected to irc.libera.chat/6667 (93.158.239.37)
+2021-06-10 15:49:27	--	strontium.libera.chat: *** Checking Ident
+2021-06-10 15:49:27	--	strontium.libera.chat: *** Looking up your hostname...
+2021-06-10 15:49:27	--	strontium.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-06-10 15:49:32	--	strontium.libera.chat: *** No Ident response
+2021-06-10 15:49:32	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-10 15:49:32	--	irc: client capability, requesting: sasl
+2021-06-10 15:49:33	--	irc: client capability, enabled: sasl
+2021-06-10 15:49:33	--	You are now logged in as reno (reno!reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net)
+2021-06-10 15:49:33	--	SASL authentication successful
+2021-06-10 15:49:34	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-10 15:49:34	--	Your host is strontium.libera.chat[93.158.239.37/6667], running version solanum-1.0-dev
+2021-06-10 15:49:34	--	This server was created Sat May 22 2021 at 19:05:06 UTC
+2021-06-10 15:49:34	--	strontium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-10 15:49:34	--	ETRACE KNOCK WHOX CALLERID=g FNC SAFELIST ELIST=CTU MONITOR=100 CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-10 15:49:34	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-10 15:49:34	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-10 15:49:34	--	There are 53 users and 31305 invisible on 28 servers
+2021-06-10 15:49:34	--	40 :IRC Operators online
+2021-06-10 15:49:34	--	3 :unknown connection(s)
+2021-06-10 15:49:34	--	17950 :channels formed
+2021-06-10 15:49:34	--	I have 2255 clients and 1 servers
+2021-06-10 15:49:34	--	2255 2938 :Current local users 2255, max 2938
+2021-06-10 15:49:34	--	31358 31379 :Current global users 31358, max 31379
+2021-06-10 15:49:34	--	Highest connection count: 2939 (2938 clients) (64921 connections received)
+2021-06-10 15:49:34	--	- strontium.libera.chat Message of the Day -
+2021-06-10 15:49:34	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-10 15:49:34	--	- and peer directed projects.
+2021-06-10 15:49:34	--	-
+2021-06-10 15:49:34	--	- Use of Libera Chat is governed by our network policies.
+2021-06-10 15:49:34	--	-
+2021-06-10 15:49:34	--	- Please visit us in #libera for questions and support.
+2021-06-10 15:49:34	--	-
+2021-06-10 15:49:34	--	- Website and documentation:  https://libera.chat
+2021-06-10 15:49:34	--	- Webchat:                    https://web.libera.chat
+2021-06-10 15:49:34	--	- Network policies:           https://libera.chat/policies
+2021-06-10 15:49:34	--	- Email:                      support@libera.chat
+2021-06-10 15:49:34	--	End of /MOTD command.
+2021-06-10 15:49:34	--	User mode [+Ri] by reno
+2021-06-10 15:49:34	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 10 20:26:24 2021 +0000.
+2021-06-10 21:20:16	--	irc: lag is high, reconnecting to server libera
+2021-06-10 21:20:16	--	irc: disconnected from server
+2021-06-10 21:20:16	--	irc: reconnecting to server in 10 seconds
+2021-06-10 21:20:26	--	irc: reconnecting to server...
+2021-06-10 21:20:26	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-10 21:20:26	--	irc: connected to irc.libera.chat/6667 (130.239.18.120)
+2021-06-10 21:20:26	--	tungsten.libera.chat: *** Checking Ident
+2021-06-10 21:20:26	--	tungsten.libera.chat: *** Looking up your hostname...
+2021-06-10 21:20:26	--	tungsten.libera.chat: *** Found your hostname: 76-244-14-50.lightspeed.stlsmo.sbcglobal.net
+2021-06-10 21:20:32	--	tungsten.libera.chat: *** No Ident response
+2021-06-10 21:20:32	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-10 21:20:32	--	irc: client capability, requesting: sasl
+2021-06-10 21:20:32	--	irc: client capability, enabled: sasl
+2021-06-10 21:20:32	--	You are now logged in as reno (reno!reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net)
+2021-06-10 21:20:33	--	SASL authentication successful
+2021-06-10 21:20:33	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-10 21:20:33	--	Your host is tungsten.libera.chat[130.239.18.120/6667], running version solanum-1.0-dev
+2021-06-10 21:20:33	--	This server was created Sat May 29 2021 at 16:05:39 UTC
+2021-06-10 21:20:33	--	tungsten.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-10 21:20:33	--	FNC MONITOR=100 KNOCK WHOX CALLERID=g ETRACE SAFELIST ELIST=CTU CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-10 21:20:33	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-10 21:20:33	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 :are supported by this server
+2021-06-10 21:20:33	--	There are 55 users and 30866 invisible on 28 servers
+2021-06-10 21:20:33	--	39 :IRC Operators online
+2021-06-10 21:20:33	--	13 :unknown connection(s)
+2021-06-10 21:20:33	--	17817 :channels formed
+2021-06-10 21:20:33	--	I have 2255 clients and 1 servers
+2021-06-10 21:20:33	--	2255 3109 :Current local users 2255, max 3109
+2021-06-10 21:20:33	--	30921 31379 :Current global users 30921, max 31379
+2021-06-10 21:20:33	--	Highest connection count: 3111 (3109 clients) (43384 connections received)
+2021-06-10 21:20:33	--	- tungsten.libera.chat Message of the Day -
+2021-06-10 21:20:33	--	- Welcome to Libera Chat, the IRC network for free & open-source software
+2021-06-10 21:20:33	--	- and peer directed projects.
+2021-06-10 21:20:33	--	-
+2021-06-10 21:20:33	--	- Use of Libera Chat is governed by our network policies.
+2021-06-10 21:20:33	--	-
+2021-06-10 21:20:33	--	- Please visit us in #libera for questions and support.
+2021-06-10 21:20:33	--	-
+2021-06-10 21:20:33	--	- Website and documentation:  https://libera.chat
+2021-06-10 21:20:33	--	- Webchat:                    https://web.libera.chat
+2021-06-10 21:20:33	--	- Network policies:           https://libera.chat/policies
+2021-06-10 21:20:33	--	- Email:                      support@libera.chat
+2021-06-10 21:20:33	--	End of /MOTD command.
+2021-06-10 21:20:33	--	User mode [+Ri] by reno
+2021-06-10 21:20:33	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net on Jun 10 21:10:32 2021 +0000.
+2021-06-23 09:16:03	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-23 09:16:03	--	irc: connected to irc.libera.chat/6667 (195.148.124.80)
+2021-06-23 09:16:03	--	zinc.libera.chat: *** Checking Ident
+2021-06-23 09:16:03	--	zinc.libera.chat: *** Looking up your hostname...
+2021-06-23 09:16:04	--	zinc.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-23 09:16:10	--	zinc.libera.chat: *** No Ident response
+2021-06-23 09:16:10	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-23 09:16:10	--	irc: client capability, requesting: sasl
+2021-06-23 09:16:10	--	irc: client capability, enabled: sasl
+2021-06-23 09:16:11	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-23 09:16:11	--	SASL authentication successful
+2021-06-23 09:16:12	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-23 09:16:12	--	Your host is zinc.libera.chat[195.148.124.80/6667], running version solanum-1.0-dev
+2021-06-23 09:16:12	--	This server was created Mon Jun 14 2021 at 17:53:27 UTC
+2021-06-23 09:16:12	--	zinc.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-23 09:16:12	--	WHOX CALLERID=g SAFELIST ELIST=CTU MONITOR=100 ETRACE FNC KNOCK CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-23 09:16:12	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-23 09:16:12	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-06-23 09:16:12	--	There are 67 users and 41455 invisible on 27 servers
+2021-06-23 09:16:12	--	35 :IRC Operators online
+2021-06-23 09:16:12	--	6 :unknown connection(s)
+2021-06-23 09:16:12	--	19199 :channels formed
+2021-06-23 09:16:12	--	I have 691 clients and 1 servers
+2021-06-23 09:16:12	--	691 946 :Current local users 691, max 946
+2021-06-23 09:16:12	--	41522 41619 :Current global users 41522, max 41619
+2021-06-23 09:16:12	--	Highest connection count: 947 (946 clients) (4216 connections received)
+2021-06-23 09:16:12	--	- zinc.libera.chat Message of the Day -
+2021-06-23 09:16:12	--	- Welcome to Libera Chat, the IRC network for
+2021-06-23 09:16:12	--	- free & open-source software and peer directed projects.
+2021-06-23 09:16:12	--	-
+2021-06-23 09:16:12	--	- Use of Libera Chat is governed by our network policies.
+2021-06-23 09:16:12	--	-
+2021-06-23 09:16:12	--	- Please visit us in #libera for questions and support.
+2021-06-23 09:16:12	--	-
+2021-06-23 09:16:12	--	- Website and documentation:  https://libera.chat
+2021-06-23 09:16:12	--	- Webchat:                    https://web.libera.chat
+2021-06-23 09:16:12	--	- Network policies:           https://libera.chat/policies
+2021-06-23 09:16:12	--	- Email:                      support@libera.chat
+2021-06-23 09:16:12	--	End of /MOTD command.
+2021-06-23 09:16:12	--	User mode [+i] by reno
+2021-06-23 09:16:12	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@76-244-14-50.lightspeed.stlsmo.sbcglobal.net on Jun 11 02:26:07 2021 +0000.
+2021-06-23 13:00:30	--	irc: lag is high, reconnecting to server libera
+2021-06-23 13:00:30	--	irc: disconnected from server
+2021-06-23 13:00:30	--	irc: reconnecting to server in 10 seconds
+2021-06-23 13:00:40	--	irc: reconnecting to server...
+2021-06-23 13:00:40	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-23 13:00:40	--	irc: connected to irc.libera.chat/6667 (195.148.124.80)
+2021-06-23 13:00:40	--	zinc.libera.chat: *** Checking Ident
+2021-06-23 13:00:40	--	zinc.libera.chat: *** Looking up your hostname...
+2021-06-23 13:00:41	--	zinc.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-23 13:00:46	--	zinc.libera.chat: *** No Ident response
+2021-06-23 13:00:46	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-23 13:00:46	--	irc: client capability, requesting: sasl
+2021-06-23 13:00:46	--	irc: client capability, enabled: sasl
+2021-06-23 13:00:47	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-23 13:00:47	--	SASL authentication successful
+2021-06-23 13:00:48	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-23 13:00:48	--	Your host is zinc.libera.chat[195.148.124.80/6667], running version solanum-1.0-dev
+2021-06-23 13:00:48	--	This server was created Mon Jun 14 2021 at 17:53:27 UTC
+2021-06-23 13:00:48	--	zinc.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-23 13:00:48	--	WHOX CALLERID=g SAFELIST ELIST=CTU MONITOR=100 ETRACE FNC KNOCK CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-23 13:00:48	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-23 13:00:48	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-06-23 13:00:48	--	There are 66 users and 41620 invisible on 27 servers
+2021-06-23 13:00:48	--	35 :IRC Operators online
+2021-06-23 13:00:48	--	8 :unknown connection(s)
+2021-06-23 13:00:48	--	19248 :channels formed
+2021-06-23 13:00:48	--	I have 1234 clients and 1 servers
+2021-06-23 13:00:48	--	1234 1237 :Current local users 1234, max 1237
+2021-06-23 13:00:48	--	41686 41704 :Current global users 41686, max 41704
+2021-06-23 13:00:48	--	Highest connection count: 1238 (1237 clients) (5895 connections received)
+2021-06-23 13:00:48	--	- zinc.libera.chat Message of the Day -
+2021-06-23 13:00:48	--	- Welcome to Libera Chat, the IRC network for
+2021-06-23 13:00:48	--	- free & open-source software and peer directed projects.
+2021-06-23 13:00:48	--	-
+2021-06-23 13:00:48	--	- Use of Libera Chat is governed by our network policies.
+2021-06-23 13:00:48	--	-
+2021-06-23 13:00:48	--	- Please visit us in #libera for questions and support.
+2021-06-23 13:00:48	--	-
+2021-06-23 13:00:48	--	- Website and documentation:  https://libera.chat
+2021-06-23 13:00:48	--	- Webchat:                    https://web.libera.chat
+2021-06-23 13:00:48	--	- Network policies:           https://libera.chat/policies
+2021-06-23 13:00:48	--	- Email:                      support@libera.chat
+2021-06-23 13:00:48	--	End of /MOTD command.
+2021-06-23 13:00:48	--	User mode [+i] by reno
+2021-06-23 13:00:48	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 23 17:34:41 2021 +0000.
+2021-06-24 09:39:20	--	irc: lag is high, reconnecting to server libera
+2021-06-24 09:39:20	--	irc: disconnected from server
+2021-06-24 09:39:20	--	irc: reconnecting to server in 10 seconds
+2021-06-24 09:39:30	--	irc: reconnecting to server...
+2021-06-24 09:39:30	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-24 09:39:36	--	irc: connected to irc.libera.chat/6667 (103.196.36.38)
+2021-06-24 09:39:36	--	cadmium.libera.chat: *** Checking Ident
+2021-06-24 09:39:36	--	cadmium.libera.chat: *** Looking up your hostname...
+2021-06-24 09:39:36	--	cadmium.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-24 09:39:42	--	cadmium.libera.chat: *** No Ident response
+2021-06-24 09:39:42	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-24 09:39:42	--	irc: client capability, requesting: sasl
+2021-06-24 09:39:46	--	irc: client capability, enabled: sasl
+2021-06-24 09:39:47	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-24 09:39:47	--	SASL authentication successful
+2021-06-24 09:39:47	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-24 09:39:47	--	Your host is cadmium.libera.chat[103.196.36.38/6667], running version solanum-1.0-dev
+2021-06-24 09:39:47	--	This server was created Mon Jun 14 2021 at 17:34:05 UTC
+2021-06-24 09:39:47	--	cadmium.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-24 09:39:47	--	WHOX ETRACE KNOCK MONITOR=100 SAFELIST ELIST=CTU CALLERID=g FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-24 09:39:47	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-24 09:39:47	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-06-24 09:39:47	--	There are 63 users and 43046 invisible on 27 servers
+2021-06-24 09:39:47	--	37 :IRC Operators online
+2021-06-24 09:39:47	--	4 :unknown connection(s)
+2021-06-24 09:39:47	--	19292 :channels formed
+2021-06-24 09:39:47	--	I have 2005 clients and 1 servers
+2021-06-24 09:39:47	--	2005 2113 :Current local users 2005, max 2113
+2021-06-24 09:39:47	--	43109 43114 :Current global users 43109, max 43114
+2021-06-24 09:39:47	--	Highest connection count: 2114 (2113 clients) (24336 connections received)
+2021-06-24 09:39:47	--	- cadmium.libera.chat Message of the Day -
+2021-06-24 09:39:47	--	- This server kindly provided by Mach Dilemma (www.m-d.net)
+2021-06-24 09:39:47	--	- Welcome to Libera Chat, the IRC network for
+2021-06-24 09:39:47	--	- free & open-source software and peer directed projects.
+2021-06-24 09:39:47	--	-
+2021-06-24 09:39:47	--	- Use of Libera Chat is governed by our network policies.
+2021-06-24 09:39:47	--	-
+2021-06-24 09:39:47	--	- Please visit us in #libera for questions and support.
+2021-06-24 09:39:47	--	-
+2021-06-24 09:39:47	--	- Website and documentation:  https://libera.chat
+2021-06-24 09:39:47	--	- Webchat:                    https://web.libera.chat
+2021-06-24 09:39:47	--	- Network policies:           https://libera.chat/policies
+2021-06-24 09:39:47	--	- Email:                      support@libera.chat
+2021-06-24 09:39:47	--	End of /MOTD command.
+2021-06-24 09:39:47	--	User mode [+i] by reno
+2021-06-24 09:39:47	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 23 22:53:11 2021 +0000.
+2021-06-24 10:27:37	--	irc: lag is high, reconnecting to server libera
+2021-06-24 10:27:37	--	irc: disconnected from server
+2021-06-24 10:27:37	--	irc: reconnecting to server in 10 seconds
+2021-06-24 10:27:47	--	irc: reconnecting to server...
+2021-06-24 10:27:47	--	irc: connecting to server irc.libera.chat/6667...
+2021-06-24 10:27:47	--	irc: connected to irc.libera.chat/6667 (130.185.232.126)
+2021-06-24 10:27:47	--	copper.libera.chat: *** Checking Ident
+2021-06-24 10:27:48	--	copper.libera.chat: *** Looking up your hostname...
+2021-06-24 10:27:48	--	copper.libera.chat: *** Found your hostname: 107-143-159-186.lightspeed.stlsmo.sbcglobal.net
+2021-06-24 10:27:53	--	copper.libera.chat: *** No Ident response
+2021-06-24 10:27:53	--	irc: client capability, server supports: extended-join echo-message tls account-tag multi-prefix solanum.chat/realhost account-notify chghost sasl=PLAIN,ECDSA-NIST256P-CHALLENGE,EXTERNAL solanum.chat/identify-msg cap-notify away-notify
+2021-06-24 10:27:53	--	irc: client capability, requesting: sasl
+2021-06-24 10:27:53	--	irc: client capability, enabled: sasl
+2021-06-24 10:27:54	--	You are now logged in as reno (reno!reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net)
+2021-06-24 10:27:54	--	SASL authentication successful
+2021-06-24 10:27:55	--	Welcome to the Libera.Chat Internet Relay Chat Network reno
+2021-06-24 10:27:55	--	Your host is copper.libera.chat[130.185.232.126/6667], running version solanum-1.0-dev
+2021-06-24 10:27:55	--	This server was created Mon Jun 14 2021 at 17:46:09 UTC
+2021-06-24 10:27:55	--	copper.libera.chat solanum-1.0-dev DGQRSZaghilopsuwz CFILMPQSbcefgijklmnopqrstuvz bkloveqjfI
+2021-06-24 10:27:55	--	CALLERID=g SAFELIST ELIST=CTU ETRACE KNOCK MONITOR=100 WHOX FNC CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstuz :are supported by this server
+2021-06-24 10:27:55	--	CHANLIMIT=#:250 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=Libera.Chat STATUSMSG=@+ CASEMAPPING=rfc1459 NICKLEN=16 MAXNICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D :are supported by this server
+2021-06-24 10:27:55	--	TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz :are supported by this server
+2021-06-24 10:27:55	--	There are 63 users and 43265 invisible on 27 servers
+2021-06-24 10:27:55	--	37 :IRC Operators online
+2021-06-24 10:27:55	--	7 :unknown connection(s)
+2021-06-24 10:27:55	--	19290 :channels formed
+2021-06-24 10:27:55	--	I have 2020 clients and 1 servers
+2021-06-24 10:27:55	--	2020 2112 :Current local users 2020, max 2112
+2021-06-24 10:27:55	--	43328 43328 :Current global users 43328, max 43328
+2021-06-24 10:27:55	--	Highest connection count: 2113 (2112 clients) (25427 connections received)
+2021-06-24 10:27:55	--	- copper.libera.chat Message of the Day -
+2021-06-24 10:27:55	--	- Welcome to Libera Chat, the IRC network for
+2021-06-24 10:27:55	--	- free & open-source software and peer directed projects.
+2021-06-24 10:27:55	--	-
+2021-06-24 10:27:55	--	- Use of Libera Chat is governed by our network policies.
+2021-06-24 10:27:55	--	-
+2021-06-24 10:27:55	--	- Please visit us in #libera for questions and support.
+2021-06-24 10:27:55	--	-
+2021-06-24 10:27:55	--	- Website and documentation:  https://libera.chat
+2021-06-24 10:27:55	--	- Webchat:                    https://web.libera.chat
+2021-06-24 10:27:55	--	- Network policies:           https://libera.chat/policies
+2021-06-24 10:27:55	--	- Email:                      support@libera.chat
+2021-06-24 10:27:55	--	End of /MOTD command.
+2021-06-24 10:27:55	--	User mode [+i] by reno
+2021-06-24 10:27:55	--	SaslServ (SaslServ@services.libera.chat): Last login from: ~reno@107-143-159-186.lightspeed.stlsmo.sbcglobal.net on Jun 24 15:25:10 2021 +0000.

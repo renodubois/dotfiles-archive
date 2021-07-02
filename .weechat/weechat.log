@@ -1,0 +1,64 @@
+[2021-06-23 09:15:48] WeeChat 3.1 (compiled on Mar  7 2021 12:15:43)
+[2021-06-23 09:15:48] Reading configuration file sec.conf
+[2021-06-23 09:15:48] Reading configuration file weechat.conf
+[2021-06-23 09:15:48] Reading configuration file plugins.conf
+[2021-06-23 09:15:48] Reading configuration file charset.conf
+[2021-06-23 09:15:48] Reading configuration file logger.conf
+[2021-06-23 09:15:48] Reading configuration file exec.conf
+[2021-06-23 09:15:48] Reading configuration file trigger.conf
+[2021-06-23 09:15:48] Reading configuration file spell.conf
+[2021-06-23 09:15:48] Reading configuration file alias.conf
+[2021-06-23 09:15:48] Reading configuration file buflist.conf
+[2021-06-23 09:15:48] Reading configuration file fifo.conf
+[2021-06-23 09:15:48] Reading configuration file xfer.conf
+[2021-06-23 09:15:48] Reading configuration file irc.conf
+[2021-06-23 09:15:48] Reading configuration file relay.conf
+[2021-06-23 09:15:48] Reading configuration file ruby.conf
+[2021-06-23 09:15:48] Reading configuration file perl.conf
+[2021-06-23 09:15:49] Reading configuration file python.conf
+[2021-06-23 09:15:49] Reading configuration file script.conf
+[2021-06-23 09:15:49] Reading configuration file fset.conf
+[2021-06-23 09:16:03] irc: connecting to server irc.libera.chat/6667...
+[2021-06-23 13:00:40] irc: connecting to server irc.libera.chat/6667...
+[2021-06-24 09:39:30] irc: connecting to server irc.libera.chat/6667...
+[2021-06-24 10:27:47] irc: connecting to server irc.libera.chat/6667...
+[2021-06-24 11:05:12] Terminal lost, exiting WeeChat...
+[2021-06-24 11:05:12] Signal SIGHUP received, reloading configuration...
+[2021-06-24 11:05:12] Reloading configuration file sec.conf
+[2021-06-24 11:05:12] Reloading configuration file weechat.conf
+[2021-06-24 11:05:12] Reloading configuration file plugins.conf
+[2021-06-24 11:05:12] Reloading configuration file charset.conf
+[2021-06-24 11:05:12] Reloading configuration file logger.conf
+[2021-06-24 11:05:12] Reloading configuration file exec.conf
+[2021-06-24 11:05:12] Reloading configuration file trigger.conf
+[2021-06-24 11:05:12] Reloading configuration file spell.conf
+[2021-06-24 11:05:12] Reloading configuration file alias.conf
+[2021-06-24 11:05:12] Reloading configuration file buflist.conf
+[2021-06-24 11:05:12] Reloading configuration file fifo.conf
+[2021-06-24 11:05:12] Reloading configuration file xfer.conf
+[2021-06-24 11:05:12] Reloading configuration file irc.conf
+[2021-06-24 11:05:12] Reloading configuration file relay.conf
+[2021-06-24 11:05:12] Reloading configuration file ruby.conf
+[2021-06-24 11:05:12] Reloading configuration file perl.conf
+[2021-06-24 11:05:12] Reloading configuration file python.conf
+[2021-06-24 11:05:12] Reloading configuration file script.conf
+[2021-06-24 11:05:12] Reloading configuration file fset.conf
+[2021-06-24 11:05:12] Writing configuration file plugins.conf
+[2021-06-24 11:05:12] Writing configuration file buflist.conf
+[2021-06-24 11:05:12] Writing configuration file python.conf
+[2021-06-24 11:05:12] Writing configuration file exec.conf
+[2021-06-24 11:05:12] Writing configuration file fifo.conf
+[2021-06-24 11:05:12] Writing configuration file relay.conf
+[2021-06-24 11:05:12] Writing configuration file trigger.conf
+[2021-06-24 11:05:12] Writing configuration file logger.conf
+[2021-06-24 11:05:12] Writing configuration file charset.conf
+[2021-06-24 11:05:12] Writing configuration file spell.conf
+[2021-06-24 11:05:12] Writing configuration file alias.conf
+[2021-06-24 11:05:12] Writing configuration file irc.conf
+[2021-06-24 11:05:12] Writing configuration file fset.conf
+[2021-06-24 11:05:12] Writing configuration file perl.conf
+[2021-06-24 11:05:12] Writing configuration file ruby.conf
+[2021-06-24 11:05:12] Writing configuration file xfer.conf
+[2021-06-24 11:05:12] Writing configuration file script.conf
+[2021-06-24 11:05:12] Writing configuration file weechat.conf
+[2021-06-24 11:05:12] Writing configuration file sec.conf
