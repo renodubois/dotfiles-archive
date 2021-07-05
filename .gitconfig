@@ -6,3 +6,5 @@
 	signingkey = 5E190D3C65FAC66D
 [gc]
 	autoDetach = false
+[init]
+	defaultBranch = main
