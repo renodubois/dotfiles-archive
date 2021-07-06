@@ -22,11 +22,12 @@ set signcolumn=yes " Extra column for linting/errors, etc
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf' " fuzzy file finder
 Plug 'junegunn/fzf.vim' " fuzzy file finder
-Plug 'ludovicchabant/vim-gutentags' " ctags manager
 Plug 'neovim/nvim-lspconfig' " LSP config
+Plug 'folke/lsp-colors.nvim' " LSP color stuff
 Plug 'tpope/vim-fugitive' " Git wrapper
-Plug 'gruvbox-community/gruvbox' " Gruvbox color scheme
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-vdebug/vdebug' " Debugging
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Better syntax highlighting
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } " Better Go support
 call plug#end()
 
@@ -43,8 +44,9 @@ nnoremap <leader>gd :Git diff<CR>
 let g:vdebug_options = { 'port':9000, 'path_maps': {'/vagrant/':getcwd()}, 'server': '' }
 
 
-" LSP things
+" Lua-based Config
 lua << EOF
+-- LSP Config
 local nvim_lsp = require('lspconfig')
 local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
@@ -84,10 +86,40 @@ require'lspconfig'.gopls.setup{
 		}
 	}
 }
+
+-- Treesitter config
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    disable = {},
+  },
+  indent = {
+    enable = false,
+    disable = {},
+  },
+  ensure_installed = {
+    "tsx",
+    "fish",
+    "php",
+    "json",
+    "html",
+	"css",
+	"go",
+	"rust",
+	"javascript",
+	"typescript"
+  },
+}
 EOF
 
 " Enable Omnifunc for Go
 autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
-" enable Gruvbox 
-colorscheme gruvbox
+" enable $theme 
+syntax enable
+set termguicolors
+set winblend=0
+set wildoptions=pum
+set pumblend=5
+set background=dark
+colorscheme dracula 
