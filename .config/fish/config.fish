@@ -13,6 +13,12 @@ set -x PATH $PATH /home/reno/.cargo/bin
 function ls
 	command ls -la --color=auto $argv
 end
+function vim
+	command nvim $argv
+end
 function evim
 	command nvim /home/reno/.config/nvim/init.vim
+end
+function docker
+	command sudo docker $argv
 end
