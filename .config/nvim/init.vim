@@ -24,21 +24,34 @@ Plug 'junegunn/fzf' " fuzzy file finder
 Plug 'junegunn/fzf.vim' " fuzzy file finder
 Plug 'neovim/nvim-lspconfig' " LSP config
 Plug 'folke/lsp-colors.nvim' " LSP color stuff
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " VSCode-like autocompletion
 Plug 'tpope/vim-fugitive' " Git wrapper
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'tpope/vim-eunuch' " UNIX Command sugar
+Plug 'dyng/ctrlsf.vim' " Searching
+Plug 'dracula/vim', { 'as': 'dracula' } " theme
 Plug 'vim-vdebug/vdebug' " Debugging
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Better syntax highlighting
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } " Better Go support
+Plug 'rust-lang/rust.vim' " Better Rust support
 call plug#end()
 
 " Bindings
 " Ctrl-P file search
 let mapleader = " " 
 nnoremap <C-P> :Files<CR>
-nnoremap <C-F> :Ag<CR>
+" Fugitive bindings
 nnoremap <leader>gs :Git status<CR>
 nnoremap <leader>gc :Git commit<CR>
 nnoremap <leader>gd :Git diff<CR>
+" CtrlSF (project search) bindings -- taken from defaults on README
+nmap     <C-F>f <Plug>CtrlSFPrompt
+vmap     <C-F>f <Plug>CtrlSFVwordPath
+vmap     <C-F>F <Plug>CtrlSFVwordExec
+nmap     <C-F>n <Plug>CtrlSFCwordPath
+nmap     <C-F>p <Plug>CtrlSFPwordPath
+nnoremap <C-F>o :CtrlSFOpen<CR>
+nnoremap <C-F>t :CtrlSFToggle<CR>
+inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 
 " Debugging
 let g:vdebug_options = { 'port':9000, 'path_maps': {'/vagrant/':getcwd()}, 'server': '' }
@@ -83,6 +96,15 @@ require'lspconfig'.gopls.setup{
 				unusedparams = true
 			},
 			staticcheck = true
+		}
+	}
+}
+require'lspconfig'.rls.setup {
+	settings = {
+		rust = {
+			unstable_features = false,
+			build_on_save = false,
+			all_features = true
 		}
 	}
 }
