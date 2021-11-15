@@ -8,7 +8,6 @@ prompt redhat
 
 # Add fnm (node manager)
 export PATH=/home/reno/.fnm:$PATH
-eval "`fnm env`"
 
 # Add certs for LACRM setup
 export CAROOT="/home/reno/lacrm/LessAnnoyingCRM/certs"
@@ -25,3 +24,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH=/home/reno/.bin:$PATH
+. "$HOME/.cargo/env"
+
+eval "`fnm env`"

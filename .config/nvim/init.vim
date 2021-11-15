@@ -20,29 +20,45 @@ set signcolumn=yes " Extra column for linting/errors, etc
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf' " fuzzy file finder
-Plug 'junegunn/fzf.vim' " fuzzy file finder
+" NOTE(reno): fzf is being really slow on my Mac,
+" and I haven't been able to dig into why, but I'm
+" gonna give Telescope a go and see if it's better.
+" Plug 'junegunn/fzf' " fuzzy file finder
+" Plug 'junegunn/fzf.vim' " fuzzy file finder
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Treesitter (also a dep for telescope)
+Plug 'nvim-lua/plenary.nvim' " Dep for Telescope
+Plug 'nvim-telescope/telescope.nvim' " Telescope (fuzzy file finder)
 Plug 'neovim/nvim-lspconfig' " LSP config
 Plug 'folke/lsp-colors.nvim' " LSP color stuff
-Plug 'tpope/vim-fugitive' " Git wrapper
-Plug 'dracula/vim', { 'as': 'dracula' }
+" TODO: re-enable this when it supports neovim nightly
+Plug 'tpope/vim-fugitive' " Git wrapper 
 Plug 'vim-vdebug/vdebug' " Debugging
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Better syntax highlighting
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } " Better Go support
+" Plug 'ziglang/zig.vim' " Zig Support
+Plug 'neoclide/coc.nvim', { 'branch': 'release' } " VS:Code-like autocomplete
 call plug#end()
 
 " Bindings
 " Ctrl-P file search
 let mapleader = " " 
-nnoremap <C-P> :Files<CR>
-nnoremap <C-F> :Ag<CR>
-nnoremap <leader>gs :Git status<CR>
-nnoremap <leader>gc :Git commit<CR>
-nnoremap <leader>gd :Git diff<CR>
+nnoremap <C-P> :Telescope find_files<CR>
+nnoremap <C-F> :Telescope live_grep<CR>
+nnoremap <leader>fb :Telescope buffers<CR>
+" TODO: Re-enable these whwn I turn fugutive back on
+" nnoremap <leader>gs :Git status<CR>
+" nnoremap <leader>gc :Git commit<CR>
+" nnoremap <leader>gd :Git diff<CR>
+
+" Commands
+" Deletes buffer without closing split. (swaps to prev buffer, then deletes
+" the just switched away from buffer (bd #))
+command Bd bp\|bd \# 
 
 " Debugging
 let g:vdebug_options = { 'port':9000, 'path_maps': {'/vagrant/':getcwd()}, 'server': '' }
 
+" fzf setup
+" set rtp+=/opt/homebrew/opt/fzf
 
 " Lua-based Config
 lua << EOF
@@ -86,40 +102,36 @@ require'lspconfig'.gopls.setup{
 		}
 	}
 }
-
 -- Treesitter config
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-    disable = {},
-  },
-  indent = {
-    enable = false,
-    disable = {},
-  },
-  ensure_installed = {
-    "tsx",
-    "fish",
-    "php",
-    "json",
-    "html",
-	"css",
-	"go",
-	"rust",
-	"javascript",
-	"typescript"
-  },
-}
+--require'nvim-treesitter.configs'.setup {
+--	ensure_installed = "maintained", -- All parsers that are actively maintained (turn this off if slow)
+--	highlight = {
+--		enable = true,
+--		additional_vim_regex_highlighting = false -- Turn this off if it's too slow
+--	},
+--	-- Incremental Selection (not sure how this works, trying it out)
+--	incremental_selection = {
+--		enable = true,
+--		keymaps = {
+--			init_selection = "gnn",
+--			node_incremental = "grn",
+--			scope_incremental = "grc",
+--			node_decremental = "grm"
+--		}
+--	}
+--}
 EOF
+
+" Treesitter-based folding
+" set foldmethod=expr
+" set foldexpr=nvim_treesitter#foldexpr()
 
 " Enable Omnifunc for Go
 autocmd FileType go setlocal omnifunc=v:lua.vim.lsp.omnifunc
 
 " enable $theme 
-syntax enable
 set termguicolors
 set winblend=0
 set wildoptions=pum
 set pumblend=5
 set background=dark
-colorscheme dracula 

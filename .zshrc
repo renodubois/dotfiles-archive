@@ -98,3 +98,5 @@ export NVM_DIR="$HOME/.nvm"
 
 
 export PATH="/usr/local/sbin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
