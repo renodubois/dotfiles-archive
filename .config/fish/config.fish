@@ -1,10 +1,19 @@
+# NOTE: fish_add_path requires fish > 3.2
 # Home path
+set OS (uname)
 # TODO: Change this dynamically for macOS/Linux
-set home_path "/Users/reno"
+switch $OS
+	case Linux
+		set home_path "/home/reno"
+	case Darwin
+		set home_path "/Users/reno"
+end
 
 # PATH Modifications
-fish_add_path /opt/homebrew/bin
-fish_add_path /opt/homebrew/sbin
+if test "$OS" = "Darwin"
+	fish_add_path /opt/homebrew/bin
+	fish_add_path /opt/homebrew/sbin
+end
 fish_add_path "$home_path/.bin"
 fish_add_path "$home_path/cargo/.bin"
 
@@ -16,7 +25,9 @@ set fish_greeting ""
 set -gx EDITOR nvim
 
 # Default powerline prompt
-set fish_function_path $fish_function_path "/opt/homebrew/lib/python3.9/site_packages/powerline/bindings/fish"
+if test "$OS" = "Darwin"
+	set fish_function_path $fish_function_path "/opt/homebrew/lib/python3.9/site_packages/powerline/bindings/fish"
+end
 
 # Settings recommended by my prompt
 # TODO: determine if these are actually useful
@@ -39,18 +50,27 @@ function vim
 	command nvim $argv
 end
 function evim
-	command nvim /home/reno/.config/nvim/init.vim
+	switch (uname)
+		case Linux
+			command nvim /home/reno/.config/nvim/init.vim
+		case Darwin
+			command nvim /Users/reno/.config/nvim/init.vim
+		end
 end
 
 function pip
 	command python3.9 -m pip $argv
 end
+
+# START: m1 Specific Aliases
 function brew
 	command arch -arm64 brew $argv
 end
+
 function brew64
 	command arch -x86_64 /usr/local/bin/brew $argv
 end
+
 function dcr
 	command docker-compose run $argv
 end
@@ -68,3 +88,5 @@ end
 function docker
 	command sudo docker $argv
 end
+
+# END
