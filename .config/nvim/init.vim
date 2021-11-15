@@ -31,11 +31,15 @@ Plug 'nvim-telescope/telescope.nvim' " Telescope (fuzzy file finder)
 Plug 'neovim/nvim-lspconfig' " LSP config
 Plug 'folke/lsp-colors.nvim' " LSP color stuff
 " TODO: re-enable this when it supports neovim nightly
-Plug 'tpope/vim-fugitive' " Git wrapper 
+" Plug 'tpope/vim-fugitive' " Git wrapper 
+Plug 'tpope/vim-eunuch' " UNIX Command sugar
+Plug 'dyng/ctrlsf.vim' " Searching
+Plug 'dracula/vim', { 'as': 'dracula' } " theme
 Plug 'vim-vdebug/vdebug' " Debugging
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } " Better Go support
-" Plug 'ziglang/zig.vim' " Zig Support
+" Plug 'ziglang/zig.vim' " Zig Support (disabled, it's a bit slow)
 Plug 'neoclide/coc.nvim', { 'branch': 'release' } " VS:Code-like autocomplete
+Plug 'rust-lang/rust.vim' " Better Rust support
 call plug#end()
 
 " Bindings
@@ -53,6 +57,15 @@ nnoremap <leader>fb :Telescope buffers<CR>
 " Deletes buffer without closing split. (swaps to prev buffer, then deletes
 " the just switched away from buffer (bd #))
 command Bd bp\|bd \# 
+" CtrlSF (project search) bindings -- taken from defaults on README
+nmap     <C-F>f <Plug>CtrlSFPrompt
+vmap     <C-F>f <Plug>CtrlSFVwordPath
+vmap     <C-F>F <Plug>CtrlSFVwordExec
+nmap     <C-F>n <Plug>CtrlSFCwordPath
+nmap     <C-F>p <Plug>CtrlSFPwordPath
+nnoremap <C-F>o :CtrlSFOpen<CR>
+nnoremap <C-F>t :CtrlSFToggle<CR>
+inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
 
 " Debugging
 let g:vdebug_options = { 'port':9000, 'path_maps': {'/vagrant/':getcwd()}, 'server': '' }
@@ -67,9 +80,7 @@ local nvim_lsp = require('lspconfig')
 local on_attach = function(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
-
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
-
   -- Mappings.
   local opts = { noremap=true, silent=true }
   buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
@@ -102,6 +113,16 @@ require'lspconfig'.gopls.setup{
 		}
 	}
 }
+require'lspconfig'.rls.setup {
+	settings = {
+		rust = {
+			unstable_features = false,
+			build_on_save = false,
+			all_features = true
+		}
+	}
+}
+
 -- Treesitter config
 --require'nvim-treesitter.configs'.setup {
 --	ensure_installed = "maintained", -- All parsers that are actively maintained (turn this off if slow)
@@ -120,6 +141,7 @@ require'lspconfig'.gopls.setup{
 --		}
 --	}
 --}
+
 EOF
 
 " Treesitter-based folding

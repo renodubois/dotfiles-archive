@@ -35,9 +35,13 @@ end
 function vim
 	command nvim $argv
 end
+function vim
+	command nvim $argv
+end
 function evim
 	command nvim /home/reno/.config/nvim/init.vim
 end
+
 function pip
 	command python3.9 -m pip $argv
 end
@@ -59,4 +63,8 @@ end
 # Aliases to x86_64 versions of programs
 function py64
 	command /usr/local/bin/python3 $argv
+end
+
+function docker
+	command sudo docker $argv
 end
