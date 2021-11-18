@@ -9,6 +9,7 @@ set noerrorbells " ding ding ding
 set tabstop=4 " 4 space tabs
 set shiftwidth=4 " if using spaces, use 4 per tab
 filetype plugin indent on " from old vimrc : indentation detection
+set autoindent " Turn on autoindent
 set nowrap " Disallow wrapping
 set noswapfile " eff em
 set nobackup " TODO: look this up
@@ -40,7 +41,10 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' } " Better Go support
 " Plug 'ziglang/zig.vim' " Zig Support (disabled, it's a bit slow)
 Plug 'neoclide/coc.nvim', { 'branch': 'release' } " VS:Code-like autocomplete
 Plug 'rust-lang/rust.vim' " Better Rust support
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua' " file tree
 call plug#end()
+
 
 " Bindings
 " Ctrl-P file search
@@ -66,6 +70,10 @@ nmap     <C-F>p <Plug>CtrlSFPwordPath
 nnoremap <C-F>o :CtrlSFOpen<CR>
 nnoremap <C-F>t :CtrlSFToggle<CR>
 inoremap <C-F>t <Esc>:CtrlSFToggle<CR>
+" File Tree
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
 
 " Debugging
 let g:vdebug_options = { 'port':9000, 'path_maps': {'/vagrant/':getcwd()}, 'server': '' }
@@ -82,10 +90,10 @@ local on_attach = function(client, bufnr)
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
   -- Mappings.
-  local opts = { noremap=true, silent=true }
-  buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-  buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
-  buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
+  local opts = { noremap=true, silent=false }
+  buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+  buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+  buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
   buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
   buf_set_keymap('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
   buf_set_keymap('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
@@ -99,11 +107,20 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
 end
-require'lspconfig'.tsserver.setup{}
-require'lspconfig'.jedi_language_server.setup{}
-require'lspconfig'.intelephense.setup{}
+require'nvim-tree'.setup{}
+require'lspconfig'.tsserver.setup{
+	on_attach = on_attach
+}
+require'lspconfig'.jedi_language_server.setup{
+	on_attach = on_attach
+}
+require'lspconfig'.intelephense.setup{
+	root_dir = require'lspconfig'.util.root_pattern(".git"),
+	on_attach = on_attach
+}
 require'lspconfig'.gopls.setup{
 	cmd = {"gopls", "serve"},
+	on_attach = on_attach,
 	settings = {
 		gopls = {
 			analyses = {
@@ -114,6 +131,7 @@ require'lspconfig'.gopls.setup{
 	}
 }
 require'lspconfig'.rls.setup {
+	on_attach = on_attach,
 	settings = {
 		rust = {
 			unstable_features = false,
@@ -141,7 +159,6 @@ require'lspconfig'.rls.setup {
 --		}
 --	}
 --}
-
 EOF
 
 " Treesitter-based folding
@@ -156,4 +173,4 @@ set termguicolors
 set winblend=0
 set wildoptions=pum
 set pumblend=5
-set background=dark
+syntax on 
