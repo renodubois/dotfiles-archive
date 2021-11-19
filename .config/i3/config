@@ -1,8 +1,13 @@
 # i3 config file (v4)
 
+# start compton
+exec_always --no-startup-id compton --config ~/.config/compton.conf -b
+
 # Windows Key as the mod
 set $mod Mod4
 
+# set my monitors correctly
+exec_always --no-startup-id /home/reno/.screenlayout/default.sh
 
 # Disable window titlebars, add gaps
 for_window [class=".*"] border pixel 0

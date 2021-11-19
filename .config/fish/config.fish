@@ -88,4 +88,7 @@ end
 function docker
 	command sudo docker $argv
 end
+function docker-compose
+	command sudo docker-compose $argv
+end
 # END
