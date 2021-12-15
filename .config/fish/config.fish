@@ -15,7 +15,7 @@ if test "$OS" = "Darwin"
 	fish_add_path /opt/homebrew/sbin
 end
 fish_add_path "$home_path/.bin"
-fish_add_path "$home_path/cargo/.bin"
+fish_add_path "$home_path/.cargo/bin"
 
 # Remove default fish greeting
 set fish_greeting ""
@@ -87,5 +87,8 @@ end
 
 function docker
 	command sudo docker $argv
+end
+function docker-compose
+	command sudo docker-compose $argv
 end
 # END
