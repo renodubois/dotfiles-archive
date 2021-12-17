@@ -24,15 +24,15 @@ call plug#begin('~/.vim/plugged')
 " NOTE(reno): fzf is being really slow on my Mac,
 " and I haven't been able to dig into why, but I'm
 " gonna give Telescope a go and see if it's better.
-" Plug 'junegunn/fzf' " fuzzy file finder
-" Plug 'junegunn/fzf.vim' " fuzzy file finder
+Plug 'junegunn/fzf' " fuzzy file finder
+Plug 'junegunn/fzf.vim' " fuzzy file finder
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Treesitter (also a dep for telescope)
 Plug 'nvim-lua/plenary.nvim' " Dep for Telescope
-Plug 'nvim-telescope/telescope.nvim' " Telescope (fuzzy file finder)
+" Plug 'nvim-telescope/telescope.nvim' " Telescope (fuzzy file finder)
 Plug 'neovim/nvim-lspconfig' " LSP config
 Plug 'folke/lsp-colors.nvim' " LSP color stuff
 " TODO: re-enable this when it supports neovim nightly
-" Plug 'tpope/vim-fugitive' " Git wrapper 
+Plug 'tpope/vim-fugitive' " Git wrapper 
 Plug 'tpope/vim-eunuch' " UNIX Command sugar
 Plug 'dyng/ctrlsf.vim' " Searching
 Plug 'dracula/vim', { 'as': 'dracula' } " theme
@@ -49,13 +49,13 @@ call plug#end()
 " Bindings
 " Ctrl-P file search
 let mapleader = " " 
-nnoremap <C-P> :Telescope find_files<CR>
-nnoremap <C-F> :Telescope live_grep<CR>
-nnoremap <leader>fb :Telescope buffers<CR>
+nnoremap <C-P> :Files<CR>
+nnoremap <C-F> :Ag<CR>
+nnoremap <leader>fb :Buffers<CR>
 " TODO: Re-enable these whwn I turn fugutive back on
-" nnoremap <leader>gs :Git status<CR>
-" nnoremap <leader>gc :Git commit<CR>
-" nnoremap <leader>gd :Git diff<CR>
+nnoremap <leader>gs :Git status<CR>
+nnoremap <leader>gc :Git commit<CR>
+nnoremap <leader>gd :Git diff<CR>
 
 " Commands
 " Deletes buffer without closing split. (swaps to prev buffer, then deletes
@@ -79,7 +79,7 @@ nnoremap <leader>n :NvimTreeFindFile<CR>
 let g:vdebug_options = { 'port':9000, 'path_maps': {'/vagrant/':getcwd()}, 'server': '' }
 
 " fzf setup
-" set rtp+=/opt/homebrew/opt/fzf
+set rtp+=/opt/homebrew/opt/fzf
 
 " Lua-based Config
 lua << EOF
