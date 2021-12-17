@@ -6,8 +6,10 @@ exec_always --no-startup-id compton --config ~/.config/compton.conf -b
 # Windows Key as the mod
 set $mod Mod4
 
-# set my monitors correctly
-exec_always --no-startup-id /home/reno/.screenlayout/default.sh
+# From a random YouTube video (whoops): a fix for the screen going blank for inactivity
+exec_always --no-startup-id xset s off && xset -dpms
+# set my monitors correctly (for desktop)
+# exec_always --no-startup-id /home/reno/.screenlayout/default.sh
 
 # Disable window titlebars, add gaps
 for_window [class=".*"] border pixel 0
