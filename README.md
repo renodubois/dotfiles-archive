@@ -1,14 +1,26 @@
 # dotfiles
 
-My personal dotfiles. Config for the following programs, primarly on macOS:
-- zsh (via oh-my-zsh)
-- neovim
-- tmux
+my personal configurations for unix-y systems, mostly macOS and Linux.
 
-# TODO:
-For installing:
-- Make sure all deps are install via homebrew - cmake, python2/3
-- Clone tpm from git repo
-- install neovim python packages for YCM support
-- download oh-my-zsh
-- download spaceship prompt & link to themes dir
+## setup
+
+in your home directory, init a git repo:
+```
+git init
+```
+
+set the remote to this repo:
+```
+git remote add sh git@git.sr.ht:~reno/dotfiles
+```
+
+pull files:
+```
+git fetch --all && git pull sh main
+```
+
+to add changes, run the following:
+```
+git add -f <file>
+git commit
+```
