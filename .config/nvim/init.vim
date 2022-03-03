@@ -34,6 +34,7 @@ Plug 'folke/lsp-colors.nvim' " LSP color stuff
 " TODO: re-enable this when it supports neovim nightly
 Plug 'tpope/vim-fugitive' " Git wrapper 
 Plug 'tpope/vim-eunuch' " UNIX Command sugar
+Plug 'tpope/vim-surround' " quotes brackets and other goodness
 Plug 'dyng/ctrlsf.vim' " Searching
 Plug 'dracula/vim', { 'as': 'dracula' } " theme
 Plug 'vim-vdebug/vdebug' " Debugging
